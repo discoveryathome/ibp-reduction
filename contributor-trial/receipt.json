@@ -1,0 +1,35 @@
+{
+  "started_at": "2026-10-20T21:11:10.890496+00:00",
+  "finished_at": "2026-10-20T21:48:18.893773+00:00",
+  "elapsed_minutes": 37.13338795,
+  "kind": "same-author contributor-style trial, not independent onboarding",
+  "verified_commit": "210f3b4cf4baceba1b2fcc7776aeaa8c3ee68cd9",
+  "development_policies": 8,
+  "development_cases": 3,
+  "new_evaluation_cases": 3,
+  "exposed_regression_cases": 1,
+  "timed_trial_runs": 48,
+  "trial_certificates_checked": 16,
+  "unit_tests_passed": 15,
+  "fresh_checkout_initial_reproduce": "PASS: 17 exact certificates and deterministic sparse/learned costs on seven families; 28.21 seconds",
+  "fresh_checkout_trial_check": "PASS: 16 exact certificates, frozen source/policy bindings, and operation-count accounting; 87.40 seconds",
+  "new_family_operation_changes_vs_best_prior_percent": {
+    "bubble_one_mass": -58.60805860805861,
+    "triangle_two_mass": 77.83251231527093,
+    "box_one_mass": -48.03737061432989
+  },
+  "interpretation": "Useful prototype hill-climbing; no mature-solver or multi-loop superiority established.",
+  "machine": {
+    "cpu": "Apple M2",
+    "installed_ram_gib": 24,
+    "gpu_used": false,
+    "os": "macOS arm64"
+  },
+  "publishing": "LOCAL; no remote repository, posts, or hub consent",
+  "notes": [
+    "Preparation while the initial benchmark finished is included in elapsed time.",
+    "CPU-heavy trial evaluations started after the initial benchmark; all timed runs were sequential.",
+    "Untimed unit tests and certificate checks overlapped only after timing finished.",
+    "SVG and PNG demo visually inspected; regression retained."
+  ]
+}

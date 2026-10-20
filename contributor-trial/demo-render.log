@@ -1,4 +1,12 @@
-Testing Quick Look thumbnails with files:
-	contributor-trial/demo.svg
-* /Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/contributor-trial/demo.svg produced one thumbnail
-Done producing thumbnails
+[36795:317963996:1020/174549.900530:ERROR:ui/display/mac/cv_display_link_mac.mm:188] CVDisplayLinkCreateWithCGDisplay failed. CVReturn: -6670
+[36795:317963996:1020/174549.902208:ERROR:ui/display/mac/cv_display_link_mac.mm:188] CVDisplayLinkCreateWithCGDisplay failed. CVReturn: -6670
+[36795:317963996:1020/174549.902435:ERROR:ui/display/mac/cv_display_link_mac.mm:188] CVDisplayLinkCreateWithCGDisplay failed. CVReturn: -6670
+[36795:317963996:1020/174549.902582:ERROR:ui/display/mac/cv_display_link_mac.mm:188] CVDisplayLinkCreateWithCGDisplay failed. CVReturn: -6670
+[36795:317963996:1020/174549.902752:ERROR:ui/display/mac/cv_display_link_mac.mm:188] CVDisplayLinkCreateWithCGDisplay failed. CVReturn: -6670
+[36795:317963996:1020/174549.902896:ERROR:ui/display/mac/cv_display_link_mac.mm:188] CVDisplayLinkCreateWithCGDisplay failed. CVReturn: -6670
+[36795:317963996:1020/174549.903054:ERROR:ui/display/mac/cv_display_link_mac.mm:188] CVDisplayLinkCreateWithCGDisplay failed. CVReturn: -6670
+Trying to load the allocator multiple times. This is *not* supported.
+53028 bytes written to file /Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/contributor-trial/demo.png
+Teardown watchdog expired; recording dump and terminating.
+[1020/174601.674102:WARNING:third_party/crashpad/crashpad/util/numeric/in_range_cast.h:38] value -634136515 out of range
+[1020/174601.768168:ERROR:third_party/crashpad/crashpad/util/file/directory_reader_posix.cc:43] opendir /Users/colkitt/Library/Application Support/Google/Chrome/Crashpad/attachments/74fef6f7-1b10-4937-9e27-2962f9baf605: No such file or directory (2)

@@ -1,0 +1,36 @@
+box_massless-learned.json {'valid': True, 'family': 'box_massless', 'identities': 62, 'proof_nodes': 226, 'arithmetic': 'exact rational polynomial identities'}
+box_massless-sparse.json {'valid': True, 'family': 'box_massless', 'identities': 62, 'proof_nodes': 492, 'arithmetic': 'exact rational polynomial identities'}
+bubble_equal_mass-learned.json {'valid': True, 'family': 'bubble_equal_mass', 'identities': 7, 'proof_nodes': 21, 'arithmetic': 'exact rational polynomial identities'}
+bubble_equal_mass-sparse.json {'valid': True, 'family': 'bubble_equal_mass', 'identities': 7, 'proof_nodes': 30, 'arithmetic': 'exact rational polynomial identities'}
+bubble_equal_mass-train.json {'valid': True, 'family': 'bubble_equal_mass', 'identities': 7, 'proof_nodes': 21, 'arithmetic': 'exact rational polynomial identities'}
+bubble_massless-learned.json {'valid': True, 'family': 'bubble_massless', 'identities': 5, 'proof_nodes': 19, 'arithmetic': 'exact rational polynomial identities'}
+bubble_massless-sparse.json {'valid': True, 'family': 'bubble_massless', 'identities': 5, 'proof_nodes': 16, 'arithmetic': 'exact rational polynomial identities'}
+bubble_massless-train.json {'valid': True, 'family': 'bubble_massless', 'identities': 5, 'proof_nodes': 19, 'arithmetic': 'exact rational polynomial identities'}
+bubble_unequal_mass-learned.json {'valid': True, 'family': 'bubble_unequal_mass', 'identities': 11, 'proof_nodes': 41, 'arithmetic': 'exact rational polynomial identities'}
+bubble_unequal_mass-sparse.json {'valid': True, 'family': 'bubble_unequal_mass', 'identities': 11, 'proof_nodes': 55, 'arithmetic': 'exact rational polynomial identities'}
+tadpole-learned.json {'valid': True, 'family': 'tadpole', 'identities': 3, 'proof_nodes': 8, 'arithmetic': 'exact rational polynomial identities'}
+tadpole-sparse.json {'valid': True, 'family': 'tadpole', 'identities': 3, 'proof_nodes': 8, 'arithmetic': 'exact rational polynomial identities'}
+triangle_offshell-learned.json {'valid': True, 'family': 'triangle_offshell', 'identities': 18, 'proof_nodes': 62, 'arithmetic': 'exact rational polynomial identities'}
+triangle_offshell-sparse.json {'valid': True, 'family': 'triangle_offshell', 'identities': 18, 'proof_nodes': 78, 'arithmetic': 'exact rational polynomial identities'}
+triangle_one_mass-learned.json {'valid': True, 'family': 'triangle_one_mass', 'identities': 9, 'proof_nodes': 29, 'arithmetic': 'exact rational polynomial identities'}
+triangle_one_mass-sparse.json {'valid': True, 'family': 'triangle_one_mass', 'identities': 9, 'proof_nodes': 57, 'arithmetic': 'exact rational polynomial identities'}
+triangle_one_mass-train.json {'valid': True, 'family': 'triangle_one_mass', 'identities': 9, 'proof_nodes': 29, 'arithmetic': 'exact rational polynomial identities'}
+PASS: 17 exact certificates; sparse/learned deterministic costs reproduced on 7 families.
+       28.21 real        11.88 user         0.33 sys
+            81756160  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+                6114  page reclaims
+                 136  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                 727  voluntary context switches
+               25161  involuntary context switches
+         48501116391  instructions retired
+         23367416150  cycles elapsed
+            69911056  peak memory footprint

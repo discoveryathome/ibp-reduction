@@ -2,7 +2,7 @@
 <title id="title">Same integrals, exact answers, different amounts of work</title>
 <desc id="desc">Three new one-loop families, comparing online elimination with the lowest-operation prior strategy on each case. A lower bar is better. The triangle is a regression, retained in the results.</desc>
 <rect width="960" height="460" fill="#fff"/>
-<g font-family="system-ui,sans-serif" fill="#152536">
+<g font-family="Helvetica" fill="#152536">
 <text x="24" y="34" font-size="23" font-weight="600">Can an agent find a shorter calculation?</text>
 <text x="24" y="59" font-size="14">Exact algebra checked • new one-loop families • this prototype, not production Kira/FIRE</text>
 <line x1="245.0" y1="80" x2="245.0" y2="370" stroke="#d7dde3"/>

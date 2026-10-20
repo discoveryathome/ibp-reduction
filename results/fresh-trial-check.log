@@ -1,0 +1,35 @@
+box_massless cached_sparse 62 exact identities
+box_massless cached_tight 62 exact identities
+box_massless initial_learned 62 exact identities
+box_massless online 62 exact identities
+bubble_one_mass cached_sparse 13 exact identities
+bubble_one_mass cached_tight 13 exact identities
+bubble_one_mass initial_learned 13 exact identities
+bubble_one_mass online 13 exact identities
+triangle_two_mass cached_sparse 14 exact identities
+triangle_two_mass cached_tight 14 exact identities
+triangle_two_mass initial_learned 14 exact identities
+triangle_two_mass online 14 exact identities
+box_one_mass cached_sparse 71 exact identities
+box_one_mass cached_tight 71 exact identities
+box_one_mass initial_learned 71 exact identities
+box_one_mass online 71 exact identities
+PASS: 16 trial certificates; frozen bindings; 85.25 seconds
+       87.40 real        26.88 user         0.77 sys
+            75612160  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+                6720  page reclaims
+                  95  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                 606  voluntary context switches
+               81110  involuntary context switches
+         99481117072  instructions retired
+         54874890800  cycles elapsed
+            64553488  peak memory footprint

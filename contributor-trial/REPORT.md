@@ -1,6 +1,6 @@
 # Timed contributor trial: featured-pilot assessment
 
-**Recommendation: promising as a focused algorithm-research pilot; do not lead the launch with an unqualified scientific-breakthrough claim.** Before making it a headline feature, add a pinned mature-solver baseline, one genuinely multi-loop case, and an independent newcomer/reviewer run. The local experiment provides a credible contribution workflow and a useful demo, but does not yet establish production relevance.
+**Recommendation: keep this as a technical pilot; complete mature-solver, multi-loop, and independent-contributor tests before making it a lead feature.** Before making it a headline feature, add a pinned mature-solver baseline, one genuinely multi-loop case, and an independent newcomer/reviewer run. The local experiment provides a credible contribution workflow and a useful demo, but does not yet establish production relevance.
 
 ## What was tested
 
@@ -10,7 +10,7 @@ Start: `2026-10-20T21:11:10.890496+00:00`. See `receipt.json` for the actual fin
 
 The agent-designed change processes input equations online against known pivots and stops once every target has a dependency chain to the fixed basis. It still generates the full initial seed set. It only back-substitutes the required closure. A small schedule search selected a target-intersection-first ordering, shortest-row tiebreak, and dot-first integral priority. This is a classical elimination variant implemented for the pilot, not a claim of inventing a new algebraic algorithm.
 
-Two attempts to explain away the gain were included: give the old solver the same arithmetic cache; and tighten its seed bound by one layer, while keeping all targets unchanged. The second idea can backfire because a smaller equation set changes pivot choices. All incomplete seed attempts pay for a full-system retry.
+Two attempts to explain away the gain were included: give the old solver the same arithmetic cache; and tighten its seed bound by one layer, while keeping all targets unchanged. The tighter bound was insufficient on the evaluated triangle and box cases, triggering a full-system retry. Those failed attempts are included in the cost; fewer initial seeds did not mean less total work.
 
 ## Complete evaluation
 
