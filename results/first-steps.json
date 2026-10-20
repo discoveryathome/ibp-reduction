@@ -1,0 +1,23 @@
+[
+  {
+    "card": "audit-basis",
+    "exit_code": 0,
+    "expected": "Seven frozen families with targets, equation counts and bases.",
+    "note": "First launcher incorrectly resolved the venv symlink to system Python; rerun with .venv/bin/python succeeded."
+  },
+  {
+    "card": "mature-baseline",
+    "exit_code": 0,
+    "expected": "Sparse baseline metrics for seven cases."
+  },
+  {
+    "card": "new-family-search",
+    "exit_code": 0,
+    "expected": "Frozen policy, train/test separation and search hash."
+  },
+  {
+    "card": "tube-and-online-audit",
+    "exit_code": 0,
+    "expected": "Primary-source literature and claim audit."
+  }
+]

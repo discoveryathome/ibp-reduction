@@ -1,0 +1,7 @@
+tadpole control targets 4 equations 4 basis [(1,)]
+bubble_massless train targets 6 equations 12 basis [(1, 1)]
+bubble_equal_mass train targets 9 equations 30 basis [(1, 0), (1, 1)]
+triangle_one_mass train targets 10 equations 48 basis [(1, 0, 1)]
+bubble_unequal_mass test targets 14 equations 44 basis [(1, 0), (0, 1), (1, 1)]
+triangle_offshell test targets 22 equations 120 basis [(1, 1, 0), (1, 0, 1), (0, 1, 1), (1, 1, 1)]
+box_massless test targets 65 equations 580 basis [(1, 0, 1, 0), (0, 1, 0, 1), (1, 1, 1, 1)]

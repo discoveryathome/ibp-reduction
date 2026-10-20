@@ -1,0 +1,204 @@
+{
+  "schema": "discover-catalog/v0",
+  "priority_revision": 1,
+  "assessed_on": "2026-10-20",
+  "priority_log": "discover/priority-log.md",
+  "status": "Local pilot; public intake paused",
+  "tracks": [
+    {
+      "id": "verification",
+      "weight": 35,
+      "useful_outcome": "An independently checked certificate or a real checker flaw with a regression test.",
+      "tasks": [
+        {
+          "id": "check-exact",
+          "question": "Can a second implementation or reviewer independently verify the algebra and negative controls?",
+          "starting_points": [
+            "ibp/validator.py",
+            "docs/verification.md"
+          ],
+          "methods": [
+            "Exact polynomial arithmetic",
+            "Adversarial certificate mutation"
+          ],
+          "acceptance_gate": "All known controls pass; malformed or false identities fail; document shared dependencies.",
+          "first_step": {
+            "command": [
+              "python",
+              "-m",
+              "unittest",
+              "discover",
+              "-s",
+              "tests",
+              "-v"
+            ],
+            "expected": "All exact and tamper tests pass."
+          },
+          "bottleneck_link": "docs/verification.md",
+          "claim_kind": [
+            "exact",
+            "measured"
+          ],
+          "requires": {
+            "ram_gb": 2,
+            "disk_gb": 1,
+            "gpu": "none"
+          },
+          "first_experiment": "Run the first step, write a scoped result in 30\u201360 minutes, reserve the last 15 minutes for checking and handoff."
+        },
+        {
+          "id": "audit-basis",
+          "question": "Are the prescribed one-loop bases minimal under generic stated kinematics?",
+          "starting_points": [
+            "ibp/families.py",
+            "docs/formulation.md"
+          ],
+          "methods": [
+            "Literature-backed master-count audit",
+            "Maximal-cut or parametric analysis"
+          ],
+          "acceptance_gate": "Source-backed basis justification; any basis change is a new formulation.",
+          "first_step": {
+            "command": [
+              "python",
+              "tools/inspect_task.py",
+              "suite"
+            ],
+            "expected": "Seven frozen families with targets, equation counts and bases."
+          },
+          "bottleneck_link": "docs/formulation.md",
+          "claim_kind": [
+            "exact",
+            "measured"
+          ],
+          "requires": {
+            "ram_gb": 2,
+            "disk_gb": 1,
+            "gpu": "none"
+          },
+          "first_experiment": "Run the first step, write a scoped result in 30\u201360 minutes, reserve the last 15 minutes for checking and handoff."
+        }
+      ]
+    },
+    {
+      "id": "replication",
+      "weight": 30,
+      "useful_outcome": "Pinned production-solver comparison or independently repeated established reduction.",
+      "tasks": [
+        {
+          "id": "mature-baseline",
+          "question": "How does an explicitly pinned Kira 3 or FIRE 7 configuration compare on these targets?",
+          "starting_points": [
+            "docs/literature.md",
+            "results/summary.json"
+          ],
+          "methods": [
+            "Export family and target definitions",
+            "Run an available screened solver",
+            "Compare exact identities"
+          ],
+          "acceptance_gate": "Same conventions and master basis; record version/configuration/resources; exact certificates or cross-multiplied symbolic checks.",
+          "first_step": {
+            "command": [
+              "python",
+              "tools/inspect_task.py",
+              "baseline"
+            ],
+            "expected": "Sparse baseline metrics for seven cases."
+          },
+          "bottleneck_link": "docs/literature.md",
+          "claim_kind": [
+            "exact",
+            "measured"
+          ],
+          "requires": {
+            "ram_gb": 2,
+            "disk_gb": 1,
+            "gpu": "none"
+          },
+          "first_experiment": "Run the first step, write a scoped result in 30\u201360 minutes, reserve the last 15 minutes for checking and handoff."
+        }
+      ]
+    },
+    {
+      "id": "generalization",
+      "weight": 25,
+      "useful_outcome": "A frozen candidate tested on new families, including failures and ablations.",
+      "tasks": [
+        {
+          "id": "new-family-search",
+          "question": "Does a policy transfer to a new one-loop mass pattern or a small two-loop system?",
+          "starting_points": [
+            "ibp/experiment.py",
+            "results/frozen.json"
+          ],
+          "methods": [
+            "Constrained evolutionary search",
+            "Separate train/test generation",
+            "Cache and seeding ablations"
+          ],
+          "acceptance_gate": "Freeze before new tests; exact completeness; report all cases and search cost. Two-loop engine extension may require a follow-up session.",
+          "first_step": {
+            "command": [
+              "python",
+              "tools/inspect_task.py",
+              "search"
+            ],
+            "expected": "Frozen policy, train/test separation and search hash."
+          },
+          "bottleneck_link": "docs/formulation.md",
+          "claim_kind": [
+            "exact",
+            "measured"
+          ],
+          "requires": {
+            "ram_gb": 2,
+            "disk_gb": 1,
+            "gpu": "none"
+          },
+          "first_experiment": "Run the first step, write a scoped result in 30\u201360 minutes, reserve the last 15 minutes for checking and handoff."
+        }
+      ]
+    },
+    {
+      "id": "literature",
+      "weight": 10,
+      "useful_outcome": "An accurate boundary between established methods and candidate novelty.",
+      "tasks": [
+        {
+          "id": "tube-and-online-audit",
+          "question": "Which CPU-scale tube-seeding or online-reduction experiments can be reproduced in a donor session?",
+          "starting_points": [
+            "docs/literature.md",
+            "https://arxiv.org/abs/2606.10698",
+            "https://arxiv.org/abs/2604.05034"
+          ],
+          "methods": [
+            "Read primary paper and inspect public code without executing it",
+            "Identify exact configurations and verifier obligations"
+          ],
+          "acceptance_gate": "Source-backed task with compute estimate and exact acceptance test; no universal claim from a specialized benchmark.",
+          "first_step": {
+            "command": [
+              "python",
+              "tools/inspect_task.py",
+              "sources"
+            ],
+            "expected": "Primary-source literature and claim audit."
+          },
+          "bottleneck_link": "docs/literature.md",
+          "claim_kind": [
+            "exact",
+            "measured"
+          ],
+          "requires": {
+            "ram_gb": 2,
+            "disk_gb": 1,
+            "gpu": "none"
+          },
+          "first_experiment": "Run the first step, write a scoped result in 30\u201360 minutes, reserve the last 15 minutes for checking and handoff."
+        }
+      ]
+    }
+  ]
+}

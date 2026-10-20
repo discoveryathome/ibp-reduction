@@ -1,0 +1,15 @@
+{
+  "started_at": "2026-10-20T21:11:10.890496+00:00",
+  "minimum_minutes": 30,
+  "maximum_minutes": 60,
+  "role": "same-author contributor-style trial, not independent onboarding test",
+  "question": "Can reasoning-driven changes beat straightforward cached baselines, transfer, and support a compelling public progress demo?",
+  "initial_policy_sha256": "880a43d9d9b9a471c4dd4d9d780cec3a6be67484db0779347dd7edf5cf811b96",
+  "rules": [
+    "Preserve initial benchmark and frozen policies",
+    "No claim against production solvers",
+    "Record unsuccessful hypotheses and total search effort",
+    "Evaluate changes on new data before claiming transfer",
+    "Exact algebraic certificates required"
+  ]
+}

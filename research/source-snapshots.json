@@ -1,0 +1,20 @@
+[
+  {
+    "source": "https://discoveryathome.org/v0/start.md",
+    "retrieved_on": "2026-10-20",
+    "sha256": "835285f11612d1372903ee56a8d2450be7c2211b7e5cdeb096a9a5e92cb67f8a",
+    "retained": true
+  },
+  {
+    "source": "https://raw.githubusercontent.com/discoveryathome/discover/main/spec/v0.md",
+    "retrieved_on": "2026-10-20",
+    "sha256": "f3646a8b20102278eaf3c6c06f6227fa89407467280f5ef19372745e83aebda2",
+    "retained": true
+  },
+  {
+    "source": "https://arxiv.org/html/2502.05121v1",
+    "retrieved_on": "2026-10-20",
+    "sha256": "05fa8b44a27e073936380e00695aa3efa0232dec668c164332ec19a15c8302a8",
+    "retained": false
+  }
+]

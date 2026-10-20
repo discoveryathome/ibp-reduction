@@ -1,0 +1,7 @@
+.: conformant: the required files are present and valid
+  warning: frontier suite: no `mature` baseline; the page will say the method wasn't compared with a mature solver
+  conventions followed: weighted task catalogue, priority log, frontier `reproduce` check, review ledger
+  convention not followed: coordination channel: manifest has no `coordination` channel
+  convention not followed: result packages: manifest has no `packages` location
+  Conventions are recommended, not required. The stage comes from a hub assessment of
+  the five properties (spec §3), not from this check.

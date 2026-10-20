@@ -1,0 +1,44 @@
+Waiting for initial benchmark and its certificate pass to finish.
+Initial stage complete. Starting contributor development evaluations.
+cached tight baseline bubble_massless 29
+cached tight baseline bubble_equal_mass 88
+cached tight baseline triangle_one_mass 426
+H1 {'seed': 'rectangular', 'reuse': True, 'schedule': 'seed', 'order': 'sector'} score 0.9999460334591506
+H1 {'seed': 'rectangular', 'reuse': True, 'schedule': 'seed', 'order': 'dots'} score 0.9923125599413776
+H1 {'seed': 'rectangular', 'reuse': True, 'schedule': 'short', 'order': 'sector'} score 0.5443854432518809
+H1 {'seed': 'rectangular', 'reuse': True, 'schedule': 'short', 'order': 'dots'} score 0.5394808032946408
+H1 {'seed': 'rectangular', 'reuse': True, 'schedule': 'simple', 'order': 'sector'} score 0.49772565085243653
+H1 {'seed': 'rectangular', 'reuse': True, 'schedule': 'simple', 'order': 'dots'} score 0.49419556289876126
+H1 {'seed': 'rectangular', 'reuse': True, 'schedule': 'target', 'order': 'sector'} score 0.49202166141432824
+H1 {'seed': 'rectangular', 'reuse': True, 'schedule': 'target', 'order': 'dots'} score 0.4844508933647599
+FROZEN {'seed': 'rectangular', 'reuse': True, 'schedule': 'target', 'order': 'dots'}
+TEST 0 box_massless online
+TEST 0 box_massless cached_sparse
+TEST 0 box_massless initial_learned
+TEST 0 box_massless cached_tight
+TEST 0 bubble_one_mass cached_sparse
+TEST 0 bubble_one_mass initial_learned
+TEST 0 bubble_one_mass online
+TEST 0 bubble_one_mass cached_tight
+TEST 0 triangle_two_mass cached_tight
+TEST 0 triangle_two_mass cached_sparse
+TEST 0 triangle_two_mass initial_learned
+TEST 0 triangle_two_mass online
+TEST 0 box_one_mass initial_learned
+TEST 0 box_one_mass cached_sparse
+TEST 0 box_one_mass online
+TEST 0 box_one_mass cached_tight
+TEST 1 box_massless initial_learned
+TEST 1 box_massless cached_tight
+TEST 1 box_massless online
+TEST 1 box_massless cached_sparse
+TEST 1 bubble_one_mass online
+TEST 1 bubble_one_mass cached_tight
+TEST 1 bubble_one_mass cached_sparse
+TEST 1 bubble_one_mass initial_learned
+TEST 1 triangle_two_mass cached_sparse
+TEST 1 triangle_two_mass initial_learned
+TEST 1 triangle_two_mass online
+TEST 1 triangle_two_mass cached_tight
+TEST 1 box_one_mass cached_sparse
+TEST 1 box_one_mass cached_tight

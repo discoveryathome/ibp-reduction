@@ -1,0 +1,155 @@
+{
+  "schema": "discover-frontier/v0",
+  "statement": "Seven one-loop families are reduced to fixed conventional master bases with exact algebraic certificates. A frozen 40-candidate search lowers field-operation counts on three held-out families relative to this pilot sparse implementation; no production-solver or multi-loop superiority is claimed.",
+  "status": "Local pilot; author-checked, awaiting independent and maintainer review",
+  "evidence_level": [
+    "author-checked"
+  ],
+  "claim_kind": [
+    "exact",
+    "measured"
+  ],
+  "scope": "ibp-one-loop-v1; exact Q(d,s,t,m,u) identities under dimensional-regularization IBP/scaleless axioms; instrumented Python costs on Apple M2, macOS arm64; public family-level held-out tests, not sealed evaluation.",
+  "review": "DISCOVERY.md",
+  "updated_on": "2026-10-20",
+  "formulation": {
+    "id": "ibp-one-loop-v1",
+    "doc": "docs/formulation.md",
+    "since": "2026-10-20"
+  },
+  "sources": [
+    "https://arxiv.org/abs/2502.05121v1",
+    "https://arxiv.org/abs/2505.20197v1",
+    "https://arxiv.org/abs/2510.07150v2",
+    "https://arxiv.org/abs/2606.10698v1",
+    "https://arxiv.org/abs/1712.09215",
+    "results/REPORT.md"
+  ],
+  "assumptions": [
+    {
+      "id": "ibp-axioms",
+      "statement": "Dimensional regularization, scaleless zeros, and change-of-variable invariance; generic kinematics away from poles.",
+      "status": "open",
+      "link": "docs/formulation.md"
+    },
+    {
+      "id": "basis-minimality",
+      "statement": "Certificates prove reduction to the specified basis, not global master minimality; external audit remains open.",
+      "status": "open",
+      "link": "docs/verification.md"
+    },
+    {
+      "id": "mature-comparison",
+      "statement": "No Kira 3/FIRE 7 execution or multi-loop transfer established.",
+      "status": "open",
+      "link": "docs/literature.md"
+    }
+  ],
+  "suite": {
+    "path": "results/runs.json",
+    "format": "json",
+    "objective": "Executed rational-function field operations, including failed seed attempts",
+    "direction": "lower-is-better",
+    "current": "learned",
+    "baselines": [
+      {
+        "method": "sparse",
+        "strength": "starter",
+        "source": "ibp/reducer.py"
+      },
+      {
+        "method": "laporta",
+        "strength": "starter",
+        "source": "https://arxiv.org/abs/hep-ph/0102033"
+      },
+      {
+        "method": "improved",
+        "strength": "starter",
+        "source": "https://arxiv.org/abs/2502.05121v1"
+      }
+    ],
+    "instances": {
+      "draw": "fixed",
+      "count": 7,
+      "dev": "docs/formulation.md",
+      "note": "Three training, three held-out, one analytic control. All are now exposed; future tuning requires fresh test cases."
+    },
+    "budget": {
+      "unit": "candidate policies",
+      "amount": 40,
+      "note": "Training-only evolutionary selection; each timed evaluation has 90s timeout."
+    },
+    "evaluate": [
+      "python",
+      "-m",
+      "ibp.experiment",
+      "reproduce"
+    ],
+    "evaluate_minutes": 5
+  },
+  "reproduce": "python -m ibp.experiment reproduce",
+  "reproduce_full": "python -m ibp.experiment search --out scratch/replay && python -m ibp.experiment benchmark --out scratch/replay",
+  "reproduce_minutes": 5,
+  "prerequisites": [
+    "Python 3.11+ (tested 3.14.6)",
+    "pip install -r requirements.txt",
+    "macOS/Linux for resource-based memory metrics"
+  ],
+  "artifacts": [
+    {
+      "path": "ibp/families.py",
+      "sha256": "b513f971144df66704d57c547e930ac42dee2614f98f5972e4d741addcf2697e",
+      "role": "frozen input, implementation, or evidence"
+    },
+    {
+      "path": "ibp/reducer.py",
+      "sha256": "ea62332375aee0e645ca7bae4a8f7ec343dd9dd5674c214c2f557afc724f8cc0",
+      "role": "frozen input, implementation, or evidence"
+    },
+    {
+      "path": "ibp/validator.py",
+      "sha256": "16be0241963ca67449cf8c91c45c098428c2d99d6db84ce2bb320a56b83a3338",
+      "role": "frozen input, implementation, or evidence"
+    },
+    {
+      "path": "ibp/experiment.py",
+      "sha256": "28d2348a3b884f2f64b487edb7f84965a148a74e38158f3a1d1e6ca0349988e3",
+      "role": "frozen input, implementation, or evidence"
+    },
+    {
+      "path": "results/frozen.json",
+      "sha256": "880a43d9d9b9a471c4dd4d9d780cec3a6be67484db0779347dd7edf5cf811b96",
+      "role": "frozen input, implementation, or evidence"
+    },
+    {
+      "path": "results/search.json",
+      "sha256": "f69d33e4bc730b3be597c0e0c8cca584b2e8f7f248c55e208561215d3d1c9162",
+      "role": "frozen input, implementation, or evidence"
+    },
+    {
+      "path": "results/evaluation-lock.json",
+      "sha256": "a06c27b4e97a215edd424ef96e9a960638aa38a7fbb2764caa137a6dc4ea0d7a",
+      "role": "frozen input, implementation, or evidence"
+    },
+    {
+      "path": "results/runs.json",
+      "sha256": "cc0df58c13e6769d27f3b36072b4277ec5885765bc3ceb6878874930540b133e",
+      "role": "frozen input, implementation, or evidence"
+    },
+    {
+      "path": "results/summary.json",
+      "sha256": "0b67a608c10f199dfe544d263b113e942037fcb907fd0fb994e9f1cc1f3c0652",
+      "role": "frozen input, implementation, or evidence"
+    },
+    {
+      "path": "results/validation.json",
+      "sha256": "ae140c1ee9e221b4a50b0075b164682036be02aac6152a4d1d4bc6238155de56",
+      "role": "frozen input, implementation, or evidence"
+    },
+    {
+      "path": "requirements.txt",
+      "sha256": "a2496caeab755d202a198effedf09faf1d38764d1d9a73fb351579039cb56b10",
+      "role": "frozen input, implementation, or evidence"
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "cases": [
+    "box_massless",
+    "bubble_one_mass",
+    "triangle_two_mass",
+    "box_one_mass"
+  ],
+  "frozen_sha256": "b1ed12f3eb592bdedcf1ebbd5e94f9af454fcb3c8721e82ae5a9b5704490c766",
+  "methods": {
+    "cached_sparse": [
+      "batch",
+      {
+        "order": "sector",
+        "reuse": true,
+        "row": "short",
+        "seed": "rectangular"
+      }
+    ],
+    "cached_tight": [
+      "batch",
+      {
+        "order": "sector",
+        "reuse": true,
+        "row": "short",
+        "seed": "tight"
+      }
+    ],
+    "initial_learned": [
+      "batch",
+      {
+        "order": "dots",
+        "reuse": true,
+        "row": "complexity",
+        "seed": "improved"
+      }
+    ],
+    "online": [
+      "online",
+      {
+        "order": "dots",
+        "reuse": true,
+        "schedule": "target",
+        "seed": "rectangular"
+      }
+    ]
+  },
+  "note": "box_massless is exposed development regression; the other three were not evaluated during trial policy selection.",
+  "repeats": 3
+}

@@ -1,0 +1,49 @@
+{
+  "frozen_sha256": "880a43d9d9b9a471c4dd4d9d780cec3a6be67484db0779347dd7edf5cf811b96",
+  "methods": {
+    "golden": {
+      "order": "sector",
+      "reuse": false,
+      "row": "short",
+      "seed": "golden"
+    },
+    "improved": {
+      "order": "sector",
+      "reuse": false,
+      "row": "short",
+      "seed": "improved"
+    },
+    "laporta": {
+      "order": "sector",
+      "reuse": false,
+      "row": "first",
+      "seed": "rectangular"
+    },
+    "learned": {
+      "order": "dots",
+      "reuse": true,
+      "row": "complexity",
+      "seed": "improved"
+    },
+    "learned_no_reuse": {
+      "order": "dots",
+      "reuse": false,
+      "row": "complexity",
+      "seed": "improved"
+    },
+    "sparse": {
+      "order": "sector",
+      "reuse": false,
+      "row": "short",
+      "seed": "rectangular"
+    },
+    "sparse_AA": {
+      "order": "sector",
+      "reuse": false,
+      "row": "short",
+      "seed": "rectangular"
+    }
+  },
+  "repeats": 3,
+  "timeout": 90
+}

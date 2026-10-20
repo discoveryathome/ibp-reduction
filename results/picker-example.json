@@ -1,0 +1,47 @@
+{
+  "seed": "0123456789abcdef0123456789abcdef",
+  "track": "replication",
+  "card": {
+    "id": "mature-baseline",
+    "question": "How does an explicitly pinned Kira 3 or FIRE 7 configuration compare on these targets?",
+    "starting_points": [
+      "docs/literature.md",
+      "results/summary.json"
+    ],
+    "methods": [
+      "Export family and target definitions",
+      "Run an available screened solver",
+      "Compare exact identities"
+    ],
+    "acceptance_gate": "Same conventions and master basis; record version/configuration/resources; exact certificates or cross-multiplied symbolic checks.",
+    "first_step": {
+      "command": [
+        "python",
+        "tools/inspect_task.py",
+        "baseline"
+      ],
+      "expected": "Sparse baseline metrics for seven cases."
+    },
+    "bottleneck_link": "docs/literature.md",
+    "claim_kind": [
+      "exact",
+      "measured"
+    ],
+    "requires": {
+      "ram_gb": 2,
+      "disk_gb": 1,
+      "gpu": "none"
+    },
+    "first_experiment": "Run the first step, write a scoped result in 30\u201360 minutes, reserve the last 15 minutes for checking and handoff."
+  },
+  "local_ledger": [
+    {
+      "date": "2026-10-20",
+      "task": "initialize-pilot",
+      "status": "local-author-checked",
+      "review": "pending independent review",
+      "scope": "Seven one-loop families; search and exact checking; no production-solver superiority claim"
+    }
+  ],
+  "note": "No remote board; coordinate with maintainer before concurrent donor work"
+}

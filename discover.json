@@ -1,0 +1,74 @@
+{
+  "schema": "discover/v0",
+  "title": "Exact CPU-scale IBP heuristic pilot",
+  "summary": "Cross-family search for cheaper Feynman-integral IBP reductions with exact algebraic certificates.",
+  "domains": [
+    "theoretical-physics",
+    "symbolic-computation",
+    "algorithm-discovery"
+  ],
+  "maintainers": [
+    {
+      "name": "Project owner (consented in initialization conversation, 2026-10-20)"
+    }
+  ],
+  "canonical_repo": "urn:discoveryathome:local:ibp-reduction",
+  "entry": {
+    "agents": "AGENTS.md",
+    "project": "DISCOVERY.md",
+    "contributing": "DISCOVERY.md",
+    "brief": "README.md"
+  },
+  "frontier": "discover/frontier.json",
+  "catalog": "discover/catalog.json",
+  "priority_log": "discover/priority-log.md",
+  "ledger": "discover/ledger.jsonl",
+  "license": "MIT",
+  "verification_profile": "exact-certificate",
+  "session": {
+    "default_minutes": 60,
+    "orient_fraction": 0.2,
+    "verify_fraction": 0.25
+  },
+  "permissions": {
+    "post_messages": false,
+    "open_prs": false,
+    "maintainer_only": [
+      "merge",
+      "change-frontier",
+      "change-verifier"
+    ]
+  },
+  "credit": {
+    "policy": "Credit substantive work and independent verification in CONTRIBUTORS.md; publication authorship by explicit agreement. Documentation CC BY 4.0.",
+    "kinds": [
+      "contributors-file",
+      "acknowledgement",
+      "citation"
+    ]
+  },
+  "review": {
+    "paused": true,
+    "note": "Local unlisted pilot; owner agreed to maintain; capacity undeclared. Public intake awaits coordination and review arrangements."
+  },
+  "hubs": [],
+  "picker": {
+    "command": [
+      "python",
+      "tools/pick_task.py",
+      "--seed",
+      "{seed}"
+    ]
+  },
+  "process_changed_on": "2026-10-20",
+  "requirements": {
+    "ram_gb": 2,
+    "disk_gb": 1,
+    "gpu": "none",
+    "os": [
+      "macos",
+      "linux"
+    ],
+    "note": "Python 3.11+ recommended; tested Python 3.14.6 arm64 macOS. Resource module required for measured runs."
+  }
+}
