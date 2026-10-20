@@ -60,6 +60,9 @@ The box is the medium pilot case (580 equations with full seeding); these system
 are tiny relative to industrial IBP reductions. The unequal-mass bubble and off-shell
 triangle test changed mass/kinematic structure. Only the box has a topology absent
 from training. All families are one loop; there is **no demonstrated multi-loop transfer**.
+Requested targets have nonnegative indices; there is no high-rank numerator target
+benchmark or finite-field reconstruction workload. Those are important omissions
+relative to the hardest cases in the source papers.
 
 ## Baselines and search space
 

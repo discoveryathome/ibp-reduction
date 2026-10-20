@@ -1,5 +1,11 @@
 [
   {
+    "card": "check-exact",
+    "exit_code": 0,
+    "expected": "All exact and tamper tests pass.",
+    "evidence": "results/tests.log: 15 tests passed"
+  },
+  {
     "card": "audit-basis",
     "exit_code": 0,
     "expected": "Seven frozen families with targets, equation counts and bases.",

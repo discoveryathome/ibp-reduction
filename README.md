@@ -18,12 +18,13 @@ Their improvements have specific scopes; see [the literature audit](docs/literat
 ## Run locally
 
 Python 3.11+ on macOS/Linux is recommended (tested: Python 3.14.6, arm64 macOS).
-No GPU, Mathematica, Kira, or FIRE installation is needed. All dependencies are
+No GPU, Mathematica, Kira, or FIRE installation is needed. Windows-native timing
+is not implemented; Windows onboarding needs a tested Linux/WSL setup. All dependencies are
 pinned. Create an isolated environment inside this folder:
 
 ```sh
 python3 -m venv .venv
-.venv/bin/python -m pip install -r requirements.txt
+.venv/bin/python -m pip install --no-cache-dir -r requirements.txt
 .venv/bin/python -m unittest discover -s tests -v
 .venv/bin/python -m ibp.experiment reproduce
 .venv/bin/python tools/check_project.py

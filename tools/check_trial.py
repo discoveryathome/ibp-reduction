@@ -8,6 +8,20 @@ assert hashlib.sha256((p/'frozen.json').read_bytes()).hexdigest()==lock['frozen_
 assert hashlib.sha256((root/'ibp/contributor.py').read_bytes()).hexdigest()==frozen['code_sha256']
 assert hashlib.sha256((p/'exploration.json').read_bytes()).hexdigest()==frozen['exploration_sha256']
 assert set(frozen['dev']).isdisjoint(frozen['new'])
+source_lock=json.loads((p/'source-lock.json').read_text())
+for name,expected in source_lock['files'].items():
+ assert hashlib.sha256((root/name).read_bytes()).hexdigest()==expected,name
+raw=json.loads((p/'runs.json').read_text());summary=json.loads((p/'summary.json').read_text())
+for row in raw:
+ assert row['success'],row
+ assert row['arithmetic_operations']==row['trivial_arithmetic_operations']+row['nontrivial_arithmetic_operations']
+ assert row['attempted_operations']==row['arithmetic_operations']+row['cache_hits']
+for row in summary:
+ matching=[x for x in raw if x['instance']==row['instance'] and x['method']==row['method']]
+ assert len(matching)==lock['repeats']
+ assert all(x['arithmetic_operations']==row['arithmetic_operations'] for x in matching)
+ cert=json.loads((p/'certificates'/f"{row['instance']}-{row['method']}.json").read_text())
+ assert cert['metrics']['arithmetic_operations']==row['arithmetic_operations']
 checks=json.loads((p/'validation.json').read_text())
 assert len(checks)==len(lock['cases'])*len(lock['methods'])
 start=time.perf_counter();n=0

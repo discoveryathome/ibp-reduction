@@ -1,5 +1,7 @@
 {
   "cpu_count": 8,
+  "cpu_model": "Apple M2",
+  "installed_ram_bytes": 25769803776,
   "machine": "arm64",
   "note": "Fresh sequential subprocesses; randomized method order within family/repeat; RSS includes interpreter/imports; no dedicated CPU isolation.",
   "platform": "macOS-26.6.2-arm64-arm-64bit-Mach-O",

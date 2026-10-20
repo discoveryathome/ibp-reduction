@@ -8,7 +8,7 @@ if args.topic=='suite':
     sys.path.insert(0,str(root))
     from ibp.families import NAMES,family,equations,targets
     for name in NAMES:
-        f=family(name);print(name,f['split'],'targets',len(targets(f)),'equations',sum(bool(r) for _,_,r in equations(f)),'basis',f['masters'])
+        f=family(name);print(name,f['split'],'targets',len(targets(f)),'IBP equations (excluding symmetry)',sum(bool(r) for _,_,r in equations(f)),'basis',f['masters'])
 elif args.topic=='search':
     f=json.loads((root/'results/frozen.json').read_text());print(json.dumps(f,indent=2))
 elif args.topic=='sources':

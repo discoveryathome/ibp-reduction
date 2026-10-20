@@ -1,0 +1,4 @@
+{
+  "all_timed_runs_completed_before": "2026-10-20T21:38:14.094011+00:00",
+  "note": "Unit tests and untimed certificate checking may overlap after all timing measurements; timings were sequential."
+}

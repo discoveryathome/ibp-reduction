@@ -3,7 +3,8 @@
 1. Pin and reproduce a Kira 3 or FIRE 7 baseline on the same integrals and basis.
    Provide a prebuilt, screened local/container environment so installation does
    not consume the donor's entire session. The present trial used neither solver.
-2. Add at least one genuinely multi-loop CPU-scale family with exact proof export
+2. Add at least one genuinely multi-loop CPU-scale family, including numerator
+   targets, with exact proof export
    or reconstructed symbolic identities checked by a separate implementation.
    A small two-loop vacuum/sunset or modest propagator family is a candidate;
    actual completion and checking costs must be measured before assigning it.

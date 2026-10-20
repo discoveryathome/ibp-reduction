@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="460" viewBox="0 0 960 460" role="img" aria-labelledby="title desc">
+<title id="title">Same integrals, exact answers, different amounts of work</title>
+<desc id="desc">Three new one-loop families, comparing online elimination with the lowest-operation prior strategy on each case. A lower bar is better. The triangle is a regression, retained in the results.</desc>
+<rect width="960" height="460" fill="#fff"/>
+<g font-family="system-ui,sans-serif" fill="#152536">
+<text x="24" y="34" font-size="23" font-weight="600">Can an agent find a shorter calculation?</text>
+<text x="24" y="59" font-size="14">Exact algebra checked • new one-loop families • this prototype, not production Kira/FIRE</text>
+<line x1="245.0" y1="80" x2="245.0" y2="370" stroke="#d7dde3"/>
+<text x="245.0" y="393" text-anchor="middle" font-size="13">0%</text>
+<line x1="392.5" y1="80" x2="392.5" y2="370" stroke="#d7dde3"/>
+<text x="392.5" y="393" text-anchor="middle" font-size="13">50%</text>
+<line x1="540.0" y1="80" x2="540.0" y2="370" stroke="#d7dde3"/>
+<text x="540.0" y="393" text-anchor="middle" font-size="13">100%</text>
+<line x1="687.5" y1="80" x2="687.5" y2="370" stroke="#d7dde3"/>
+<text x="687.5" y="393" text-anchor="middle" font-size="13">150%</text>
+<line x1="835.0" y1="80" x2="835.0" y2="370" stroke="#d7dde3"/>
+<text x="835.0" y="393" text-anchor="middle" font-size="13">200%</text>
+<text x="24" y="112" font-size="17">One-mass bubble</text>
+<text x="24" y="134" font-size="13">15 integrals → 2 masters</text>
+<rect x="245" y="95" width="295.0" height="17" fill="#b8c1c9"/>
+<text x="547.0" y="108" font-size="12">273 prior</text>
+<rect x="245" y="121" width="122.10622710622712" height="20" fill="#176868"/>
+<text x="374.10622710622715" y="136" font-size="12">113 (-58.6%)</text>
+<text x="24" y="208" font-size="17">Two-mass triangle</text>
+<text x="24" y="230" font-size="13">16 integrals → 2 masters</text>
+<rect x="245" y="191" width="295.0" height="17" fill="#b8c1c9"/>
+<text x="547.0" y="204" font-size="12">203 prior</text>
+<rect x="245" y="217" width="524.6059113300494" height="20" fill="#9d4a29"/>
+<text x="776.6059113300494" y="232" font-size="12">361 (+77.8%)</text>
+<text x="24" y="304" font-size="17">One-mass box</text>
+<text x="24" y="326" font-size="13">75 integrals → 4 masters</text>
+<rect x="245" y="287" width="295.0" height="17" fill="#b8c1c9"/>
+<text x="547.0" y="300" font-size="12">14,878 prior</text>
+<rect x="245" y="313" width="153.28975668772685" height="20" fill="#176868"/>
+<text x="405.2897566877268" y="328" font-size="12">7,731 (-48.0%)</text>
+<text x="540" y="418" text-anchor="middle" font-size="14">Field operations relative to the best prior strategy on each case</text>
+<text x="24" y="446" font-size="12">Gray: best prior strategy on that case (oracle comparison). Color: frozen online method. All regressions shown.</text>
+</g></svg>

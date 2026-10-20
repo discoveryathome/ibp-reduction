@@ -14,7 +14,7 @@ f"Start: `{protocol['started_at']}`. See `receipt.json` for the actual finish ti
 'The agent-designed change processes input equations online against known pivots and stops once every target has a dependency chain to the fixed basis. It still generates the full initial seed set. It only back-substitutes the required closure. A small schedule search selected a target-intersection-first ordering, shortest-row tiebreak, and dot-first integral priority. This is a classical elimination variant implemented for the pilot, not a claim of inventing a new algebraic algorithm.','',
 'Two attempts to explain away the gain were included: give the old solver the same arithmetic cache; and tighten its seed bound by one layer, while keeping all targets unchanged. The second idea can backfire because a smaller equation set changes pivot choices. All incomplete seed attempts pay for a full-system retry.','',
 '## Complete evaluation','',
-'The massless box is an exposed development regression. The other three mass/kinematic settings were specified before evaluation and were not scored during trial policy selection. These remain one-loop problems, so none establishes multi-loop transfer.','',
+'The massless box is an exposed development regression. The other three mass/kinematic settings were specified before evaluation and were not scored during trial policy selection. These remain one-loop problems with nonnegative target indices; they test neither multi-loop transfer, high-rank numerator targets, nor reconstruction costs.','',
 '| Case | Method | Field ops | Nontrivial ops | Median seconds [min, max] | Peak MiB | Max coefficient terms | Fallback |',
 '|---|---|---:|---:|---:|---:|---:|---|']
 for r in rows:

@@ -42,3 +42,38 @@ TEST 1 triangle_two_mass online
 TEST 1 triangle_two_mass cached_tight
 TEST 1 box_one_mass cached_sparse
 TEST 1 box_one_mass cached_tight
+TEST 1 box_one_mass initial_learned
+TEST 1 box_one_mass online
+TEST 2 box_massless initial_learned
+TEST 2 box_massless online
+TEST 2 box_massless cached_tight
+TEST 2 box_massless cached_sparse
+TEST 2 bubble_one_mass cached_sparse
+TEST 2 bubble_one_mass online
+TEST 2 bubble_one_mass initial_learned
+TEST 2 bubble_one_mass cached_tight
+TEST 2 triangle_two_mass cached_sparse
+TEST 2 triangle_two_mass initial_learned
+TEST 2 triangle_two_mass cached_tight
+TEST 2 triangle_two_mass online
+TEST 2 box_one_mass online
+TEST 2 box_one_mass cached_tight
+TEST 2 box_one_mass initial_learned
+TEST 2 box_one_mass cached_sparse
+CHECK box_massless cached_sparse
+CHECK box_massless cached_tight
+CHECK box_massless initial_learned
+CHECK box_massless online
+CHECK bubble_one_mass cached_sparse
+CHECK bubble_one_mass cached_tight
+CHECK bubble_one_mass initial_learned
+CHECK bubble_one_mass online
+CHECK triangle_two_mass cached_sparse
+CHECK triangle_two_mass cached_tight
+CHECK triangle_two_mass initial_learned
+CHECK triangle_two_mass online
+CHECK box_one_mass cached_sparse
+CHECK box_one_mass cached_tight
+CHECK box_one_mass initial_learned
+CHECK box_one_mass online
+EVALUATION COMPLETE

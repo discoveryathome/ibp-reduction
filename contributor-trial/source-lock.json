@@ -1,0 +1,13 @@
+{
+  "recorded_at": "2026-10-20T21:40:26.656221+00:00",
+  "note": "Reproduction snapshot after policy freezing; original policy/implementation freeze remains unchanged in frozen.json. No algorithm source changed during held-out evaluation.",
+  "files": {
+    "ibp/families.py": "b513f971144df66704d57c547e930ac42dee2614f98f5972e4d741addcf2697e",
+    "ibp/reducer.py": "ea62332375aee0e645ca7bae4a8f7ec343dd9dd5674c214c2f557afc724f8cc0",
+    "ibp/validator.py": "16be0241963ca67449cf8c91c45c098428c2d99d6db84ce2bb320a56b83a3338",
+    "ibp/experiment.py": "28d2348a3b884f2f64b487edb7f84965a148a74e38158f3a1d1e6ca0349988e3",
+    "ibp/contributor.py": "f3d863e7073d2c8f5a6ea684768bb6c9a6155c1eeff988f0f6160f55bf36304c",
+    "ibp/trial.py": "3ed4ffff8f0f94098fbd66a7668aeaf5df09cebec922ec514c1e98cfbd03e5f5",
+    "requirements.txt": "a2496caeab755d202a198effedf09faf1d38764d1d9a73fb351579039cb56b10"
+  }
+}

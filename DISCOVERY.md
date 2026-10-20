@@ -3,8 +3,10 @@
 Can a reusable policy for selecting IBP equations, ordering integrals and elimination,
 and sharing intermediate expressions reduce arithmetic cost across multiple families?
 The exact setting and cost model are in `docs/formulation.md`. The local experiment
-and limitations are in `results/REPORT.md`. The authoritative record is
-`discover/frontier.json`, with author-checked evidence only.
+and limitations are in `results/REPORT.md`. The authoritative initial-suite record is
+`discover/frontier.json`, with author-checked evidence only. The subsequent online
+candidate is assessed on a separate suite in `contributor-trial/REPORT.md`; its
+score must not be substituted into the initial suite without full regression coverage.
 
 The literature frontier includes improved Kira seeding/equation selection, FIRE's
 modular and presolve methods, AI-discovered seeding priorities, tube seeding, and
