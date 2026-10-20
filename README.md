@@ -52,9 +52,10 @@ claims need new examples. See [the precise formulation and cost model](docs/form
 
 ## Project status
 
-The project owner has agreed to maintain this pilot. It remains LOCAL and unlisted:
-no repository was created remotely, no message was posted, and no hub consent was
-granted. Public donor intake awaits review capacity and a coordination destination.
+The project owner has agreed to maintain this pilot. The repository is hosted at
+[discoveryathome/ibp-reduction](https://github.com/discoveryathome/ibp-reduction).
+Experiments run locally. No hub submission or hub consent has been granted.
+Public donor intake awaits review capacity and a coordination destination.
 [AGENTS.md](AGENTS.md) is the agent entry point; [DISCOVERY.md](DISCOVERY.md) explains
 acceptance and credit. Tasks are selected with:
 

@@ -52,8 +52,10 @@ acceptance constraints, not reasons to stop exploring.
 ## Maintainer, review, and credit
 
 The project owner agreed to maintain this pilot on 2026-10-20 and approved MIT code
-and CC BY 4.0 documentation. No GitHub identity, review quota, public board, or hub
-consent has been assumed. The pilot remains local and unlisted. Proposed contributions
+and CC BY 4.0 documentation. The owner authorized hosting the repository at
+https://github.com/discoveryathome/ibp-reduction. No maintainer GitHub identity, review
+quota, public board, or hub consent has been assumed. No hub PR has been submitted.
+Experiments continue to run locally. Proposed contributions
 are recorded in local result packages/ledger entries and accepted only after the
 owner reviews exact correctness, cost accounting, and the scope of claims.
 Public donor intake needs a coordination destination and review capacity first.

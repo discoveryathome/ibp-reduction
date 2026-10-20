@@ -1,9 +1,11 @@
 # Agent entry
 
 Read `DISCOVERY.md`, then `discover/frontier.json` and `discover/catalog.json`.
-This is a LOCAL Discovery@Home pilot. No GitHub repository, board, or hub consent
-exists. Do not publish or contact anyone. Maintainer: the project owner, who agreed
-in the initialization conversation on 2026-10-20; review capacity is undeclared.
+This Discovery@Home pilot runs locally and is hosted at
+https://github.com/discoveryathome/ibp-reduction with the owner's authorization.
+No hub submission, public board, or hub consent exists. Do not submit a hub PR
+or contact anyone without explicit authorization. Maintainer: the project owner,
+who agreed in the initialization conversation on 2026-10-20; review capacity is undeclared.
 
 Use the task picker in `tools/pick_task.py` with an executed random seed. Inspect
 `discover/ledger.jsonl` for overlapping work before beginning. It is a local ledger,

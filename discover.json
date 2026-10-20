@@ -12,7 +12,7 @@
       "name": "Project owner (consented in initialization conversation, 2026-10-20)"
     }
   ],
-  "canonical_repo": "urn:discoveryathome:local:ibp-reduction",
+  "canonical_repo": "https://github.com/discoveryathome/ibp-reduction",
   "entry": {
     "agents": "AGENTS.md",
     "project": "DISCOVERY.md",
@@ -49,7 +49,7 @@
   },
   "review": {
     "paused": true,
-    "note": "Local unlisted pilot; owner agreed to maintain; capacity undeclared. Public intake awaits coordination and review arrangements."
+    "note": "Repository hosted on GitHub; no hub submission. Owner agreed to maintain; capacity undeclared. Public intake awaits coordination and review arrangements."
   },
   "hubs": [],
   "picker": {
