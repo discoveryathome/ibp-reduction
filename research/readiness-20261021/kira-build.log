@@ -1,0 +1,719 @@
+The Meson build system
+Version: 1.12.1
+Source dir: /Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-3.0
+Build dir: /Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-3.0/build
+Build type: native build
+Project name: Kira
+Project version: 3.0
+C compiler for the host machine: /opt/homebrew/bin/sccache cc (clang 21.0.0 "Apple clang version 21.0.0 (clang-2100.3.34.2)")
+C linker for the host machine: cc ld64 27037.1
+C++ compiler for the host machine: /opt/homebrew/bin/sccache c++ (clang 21.0.0 "Apple clang version 21.0.0 (clang-2100.3.34.2)")
+C++ linker for the host machine: c++ ld64 27037.1
+Host machine cpu family: aarch64
+Host machine cpu: aarch64
+Compiler for C supports arguments -Wno-maybe-uninitialized: NO 
+Found pkg-config: YES (/opt/homebrew/bin/pkg-config) 3.0.7
+Run-time dependency ginac found: YES 1.8.10
+Run-time dependency threads found: YES
+Run-time dependency zlib found: YES 1.2.12
+Run-time dependency yaml-cpp found: YES 0.7.0
+Library dl found: YES
+Configuring config.h.in using configuration
+Program run.sh found: YES (/Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-3.0/tests/run.sh)
+Build targets in project: 4
+
+Kira 3.0
+
+  User defined options
+    firefly  : false
+    flint    : false
+    prefix   : /Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix
+    wrap_mode: nodownload
+
+Found ninja-1.13.2.git.kitware.jobserver-pipe-1 at /Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/.venv/bin/ninja
+ninja: Entering directory `/Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-3.0/build'
+[1/27] Generating src/pyred/config.h with a custom command
+[2/27] Compiling C++ object src/pyred/libpyred.a.p/keyvaluedb.cpp.o
+[3/27] Compiling C++ object src/pyred/libpyred.a.p/coeff_helper.cpp.o
+[4/27] Compiling C++ object src/pyred/libpyred.a.p/coeff_vec.cpp.o
+[5/27] Compiling C++ object src/pyred/libpyred.a.p/coeff_int.cpp.o
+[6/27] Compiling C++ object src/pyred/libpyred.a.p/parser.cpp.o
+[7/27] Compiling C++ object src/pyred/libpyred.a.p/.._gzstream_gzstream.cpp.o
+[8/27] Compiling C++ object src/kira/kira.p/connect2kira.cpp.o
+In file included from ../src/kira/connect2kira.cpp:39:
+In file included from ../src/kira/connect2kira.h:27:
+In file included from /Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/ginac/ginac.h:30:
+In file included from /Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/ginac/normal.h:28:
+In file included from /Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/ginac/lst.h:25:
+/Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/ginac/container.h:259:63: warning: unused parameter 'level' [-Wunused-parameter]
+  259 | void container<C>::do_print(const print_context & c, unsigned level) const
+      |                                                               ^
+/Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/ginac/container.h:281:69: warning: unused parameter 'level' [-Wunused-parameter]
+  281 | void container<C>::do_print_python(const print_python & c, unsigned level) const
+      |                                                                     ^
+/Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/ginac/container.h:287:79: warning: unused parameter 'level' [-Wunused-parameter]
+  287 | void container<C>::do_print_python_repr(const print_python_repr & c, unsigned level) const
+      |                                                                               ^
+In file included from ../src/kira/connect2kira.cpp:39:
+In file included from ../src/kira/connect2kira.h:27:
+In file included from /Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/ginac/ginac.h:39:
+/Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/ginac/numeric.h:126:30: warning: unused parameter 's' [-Wunused-parameter]
+  126 |         ex derivative(const symbol &s) const override { return 0; }
+      |                                     ^
+In file included from ../src/kira/connect2kira.cpp:39:
+In file included from ../src/kira/connect2kira.h:27:
+In file included from /Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/ginac/ginac.h:42:
+/Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/ginac/structure.h:39:40: warning: unused parameter 't1' [-Wunused-parameter]
+   39 |         static bool struct_is_equal(const T * t1, const T * t2) { return true; }
+      |                                               ^
+/Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/ginac/structure.h:39:54: warning: unused parameter 't2' [-Wunused-parameter]
+   39 |         static bool struct_is_equal(const T * t1, const T * t2) { return true; }
+      |                                                             ^
+/Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/ginac/structure.h:40:38: warning: unused parameter 't1' [-Wunused-parameter]
+   40 |         static int struct_compare(const T * t1, const T * t2) { return 0; }
+      |                                             ^
+/Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/ginac/structure.h:40:52: warning: unused parameter 't2' [-Wunused-parameter]
+   40 |         static int struct_compare(const T * t1, const T * t2) { return 0; }
+      |                                                           ^
+/Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/ginac/structure.h:140:21: warning: unused parameter 'inf' [-Wunused-parameter]
+  140 |         bool info(unsigned inf) const override { return false; }
+      |                            ^
+/Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/ginac/structure.h:155:37: warning: unused parameter 'other' [-Wunused-parameter]
+  155 |         bool match_same_type(const basic & other) const override { return true; }
+      |                                            ^
+/Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/ginac/structure.h:186:26: warning: unused parameter 'xi' [-Wunused-parameter]
+  186 |         ex smod(const numeric & xi) const override { return *this; }
+      |                                 ^
+/Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/ginac/structure.h:193:40: warning: unused parameter 'self' [-Wunused-parameter]
+  193 |         bool contract_with(exvector::iterator self, exvector::iterator other, exvector & v) const override { return false; }
+      |                                               ^
+/Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/ginac/structure.h:193:65: warning: unused parameter 'other' [-Wunused-parameter]
+  193 |         bool contract_with(exvector::iterator self, exvector::iterator other, exvector & v) const override { return false; }
+      |                                                                        ^
+/Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/ginac/structure.h:193:83: warning: unused parameter 'v' [-Wunused-parameter]
+  193 |         bool contract_with(exvector::iterator self, exvector::iterator other, exvector & v) const override { return false; }
+      |                                                                                          ^
+../src/kira/connect2kira.cpp:126:5: warning: 'sprintf' is deprecated: This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead. [-Wdeprecated-declarations]
+  126 |     sprintf(token, "s/(.*)\\*prefactor(.*)/$1/g; s/(.*)\\/\\((.*)/num($1)*den($2/g;");
+      |     ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/_stdio.h:278:1: note: 'sprintf' has been explicitly marked deprecated here
+  278 | __deprecated_msg("This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead.")
+      | ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:227:48: note: expanded from macro '__deprecated_msg'
+  227 |         #define __deprecated_msg(_msg) __attribute__((__deprecated__(_msg)))
+      |                                                       ^
+../src/kira/connect2kira.cpp:130:7: warning: 'sprintf' is deprecated: This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead. [-Wdeprecated-declarations]
+  130 |       sprintf(token, "s/(.*)\\/(?![(])(.*)/num($1)*den($2)/g;");
+      |       ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/_stdio.h:278:1: note: 'sprintf' has been explicitly marked deprecated here
+  278 | __deprecated_msg("This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead.")
+      | ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:227:48: note: expanded from macro '__deprecated_msg'
+  227 |         #define __deprecated_msg(_msg) __attribute__((__deprecated__(_msg)))
+      |                                                       ^
+../src/kira/connect2kira.cpp:135:5: warning: 'sprintf' is deprecated: This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead. [-Wdeprecated-declarations]
+  135 |     sprintf(token, "s/(.*)\\*prefactor\\[(.*)\\]/$2/g;");
+      |     ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/_stdio.h:278:1: note: 'sprintf' has been explicitly marked deprecated here
+  278 | __deprecated_msg("This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead.")
+      | ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:227:48: note: expanded from macro '__deprecated_msg'
+  227 |         #define __deprecated_msg(_msg) __attribute__((__deprecated__(_msg)))
+      |                                                       ^
+../src/kira/connect2kira.cpp:167:5: warning: 'sprintf' is deprecated: This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead. [-Wdeprecated-declarations]
+  167 |     sprintf(token, "s/(?<![a-zA-Z0-9])%s(?![a-zA-Z0-9])/(%s\\/%s^(%i\\/%i))/g;",
+      |     ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/_stdio.h:278:1: note: 'sprintf' has been explicitly marked deprecated here
+  278 | __deprecated_msg("This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead.")
+      | ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:227:48: note: expanded from macro '__deprecated_msg'
+  227 |         #define __deprecated_msg(_msg) __attribute__((__deprecated__(_msg)))
+      |                                                       ^
+18 warnings generated.
+[9/27] Compiling C++ object src/kira/kira.p/main.cpp.o
+In file included from ../src/kira/main.cpp:28:
+In file included from ../src/kira/kira.h:32:
+In file included from ../src/kira/ReadYamlFiles.h:27:
+In file included from /Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/ginac/ginac.h:30:
+In file included from /Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/ginac/normal.h:28:
+In file included from /Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/ginac/lst.h:25:
+/Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/ginac/container.h:259:63: warning: unused parameter 'level' [-Wunused-parameter]
+  259 | void container<C>::do_print(const print_context & c, unsigned level) const
+      |                                                               ^
+/Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/ginac/container.h:281:69: warning: unused parameter 'level' [-Wunused-parameter]
+  281 | void container<C>::do_print_python(const print_python & c, unsigned level) const
+      |                                                                     ^
+/Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/ginac/container.h:287:79: warning: unused parameter 'level' [-Wunused-parameter]
+  287 | void container<C>::do_print_python_repr(const print_python_repr & c, unsigned level) const
+      |                                                                               ^
+In file included from ../src/kira/main.cpp:28:
+In file included from ../src/kira/kira.h:32:
+In file included from ../src/kira/ReadYamlFiles.h:27:
+In file included from /Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/ginac/ginac.h:39:
+/Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/ginac/numeric.h:126:30: warning: unused parameter 's' [-Wunused-parameter]
+  126 |         ex derivative(const symbol &s) const override { return 0; }
+      |                                     ^
+In file included from ../src/kira/main.cpp:28:
+In file included from ../src/kira/kira.h:32:
+In file included from ../src/kira/ReadYamlFiles.h:27:
+In file included from /Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/ginac/ginac.h:42:
+/Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/ginac/structure.h:39:40: warning: unused parameter 't1' [-Wunused-parameter]
+   39 |         static bool struct_is_equal(const T * t1, const T * t2) { return true; }
+      |                                               ^
+/Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/ginac/structure.h:39:54: warning: unused parameter 't2' [-Wunused-parameter]
+   39 |         static bool struct_is_equal(const T * t1, const T * t2) { return true; }
+      |                                                             ^
+/Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/ginac/structure.h:40:38: warning: unused parameter 't1' [-Wunused-parameter]
+   40 |         static int struct_compare(const T * t1, const T * t2) { return 0; }
+      |                                             ^
+/Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/ginac/structure.h:40:52: warning: unused parameter 't2' [-Wunused-parameter]
+   40 |         static int struct_compare(const T * t1, const T * t2) { return 0; }
+      |                                                           ^
+/Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/ginac/structure.h:140:21: warning: unused parameter 'inf' [-Wunused-parameter]
+  140 |         bool info(unsigned inf) const override { return false; }
+      |                            ^
+/Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/ginac/structure.h:155:37: warning: unused parameter 'other' [-Wunused-parameter]
+  155 |         bool match_same_type(const basic & other) const override { return true; }
+      |                                            ^
+/Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/ginac/structure.h:186:26: warning: unused parameter 'xi' [-Wunused-parameter]
+  186 |         ex smod(const numeric & xi) const override { return *this; }
+      |                                 ^
+/Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/ginac/structure.h:193:40: warning: unused parameter 'self' [-Wunused-parameter]
+  193 |         bool contract_with(exvector::iterator self, exvector::iterator other, exvector & v) const override { return false; }
+      |                                               ^
+/Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/ginac/structure.h:193:65: warning: unused parameter 'other' [-Wunused-parameter]
+  193 |         bool contract_with(exvector::iterator self, exvector::iterator other, exvector & v) const override { return false; }
+      |                                                                        ^
+/Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/ginac/structure.h:193:83: warning: unused parameter 'v' [-Wunused-parameter]
+  193 |         bool contract_with(exvector::iterator self, exvector::iterator other, exvector & v) const override { return false; }
+      |                                                                                          ^
+14 warnings generated.
+[10/27] Compiling C++ object src/pyred/libpyred.a.p/integrals.cpp.o
+[11/27] Compiling C++ object src/pyred/libpyred.a.p/relations.cpp.o
+[12/27] Compiling C++ object src/kira/kira.p/dataBase.cpp.o
+In file included from ../src/kira/dataBase.cpp:20:
+In file included from ../src/kira/dataBase.h:26:
+In file included from ../src/kira/integral.h:26:
+In file included from /Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/ginac/ginac.h:30:
+In file included from /Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/ginac/normal.h:28:
+In file included from /Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/ginac/lst.h:25:
+/Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/ginac/container.h:259:63: warning: unused parameter 'level' [-Wunused-parameter]
+  259 | void container<C>::do_print(const print_context & c, unsigned level) const
+      |                                                               ^
+/Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/ginac/container.h:281:69: warning: unused parameter 'level' [-Wunused-parameter]
+  281 | void container<C>::do_print_python(const print_python & c, unsigned level) const
+      |                                                                     ^
+/Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/ginac/container.h:287:79: warning: unused parameter 'level' [-Wunused-parameter]
+  287 | void container<C>::do_print_python_repr(const print_python_repr & c, unsigned level) const
+      |                                                                               ^
+In file included from ../src/kira/dataBase.cpp:20:
+In file included from ../src/kira/dataBase.h:26:
+In file included from ../src/kira/integral.h:26:
+In file included from /Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/ginac/ginac.h:39:
+/Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/ginac/numeric.h:126:30: warning: unused parameter 's' [-Wunused-parameter]
+  126 |         ex derivative(const symbol &s) const override { return 0; }
+      |                                     ^
+In file included from ../src/kira/dataBase.cpp:20:
+In file included from ../src/kira/dataBase.h:26:
+In file included from ../src/kira/integral.h:26:
+In file included from /Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/ginac/ginac.h:42:
+/Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/ginac/structure.h:39:40: warning: unused parameter 't1' [-Wunused-parameter]
+   39 |         static bool struct_is_equal(const T * t1, const T * t2) { return true; }
+      |                                               ^
+/Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/ginac/structure.h:39:54: warning: unused parameter 't2' [-Wunused-parameter]
+   39 |         static bool struct_is_equal(const T * t1, const T * t2) { return true; }
+      |                                                             ^
+/Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/ginac/structure.h:40:38: warning: unused parameter 't1' [-Wunused-parameter]
+   40 |         static int struct_compare(const T * t1, const T * t2) { return 0; }
+      |                                             ^
+/Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/ginac/structure.h:40:52: warning: unused parameter 't2' [-Wunused-parameter]
+   40 |         static int struct_compare(const T * t1, const T * t2) { return 0; }
+      |                                                           ^
+/Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/ginac/structure.h:140:21: warning: unused parameter 'inf' [-Wunused-parameter]
+  140 |         bool info(unsigned inf) const override { return false; }
+      |                            ^
+/Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/ginac/structure.h:155:37: warning: unused parameter 'other' [-Wunused-parameter]
+  155 |         bool match_same_type(const basic & other) const override { return true; }
+      |                                            ^
+/Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/ginac/structure.h:186:26: warning: unused parameter 'xi' [-Wunused-parameter]
+  186 |         ex smod(const numeric & xi) const override { return *this; }
+      |                                 ^
+/Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/ginac/structure.h:193:40: warning: unused parameter 'self' [-Wunused-parameter]
+  193 |         bool contract_with(exvector::iterator self, exvector::iterator other, exvector & v) const override { return false; }
+      |                                               ^
+/Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/ginac/structure.h:193:65: warning: unused parameter 'other' [-Wunused-parameter]
+  193 |         bool contract_with(exvector::iterator self, exvector::iterator other, exvector & v) const override { return false; }
+      |                                                                        ^
+/Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/ginac/structure.h:193:83: warning: unused parameter 'v' [-Wunused-parameter]
+  193 |         bool contract_with(exvector::iterator self, exvector::iterator other, exvector & v) const override { return false; }
+      |                                                                                          ^
+14 warnings generated.
+[13/27] Compiling C++ object src/pyred/libpyred.a.p/interface.cpp.o
+[14/27] Compiling C++ object src/kira/kira.p/ibp.cpp.o
+In file included from ../src/kira/ibp.cpp:20:
+In file included from ../src/kira/kira.h:32:
+In file included from ../src/kira/ReadYamlFiles.h:27:
+In file included from /Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/ginac/ginac.h:30:
+In file included from /Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/ginac/normal.h:28:
+In file included from /Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/ginac/lst.h:25:
+/Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/ginac/container.h:259:63: warning: unused parameter 'level' [-Wunused-parameter]
+  259 | void container<C>::do_print(const print_context & c, unsigned level) const
+      |                                                               ^
+/Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/ginac/container.h:281:69: warning: unused parameter 'level' [-Wunused-parameter]
+  281 | void container<C>::do_print_python(const print_python & c, unsigned level) const
+      |                                                                     ^
+/Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/ginac/container.h:287:79: warning: unused parameter 'level' [-Wunused-parameter]
+  287 | void container<C>::do_print_python_repr(const print_python_repr & c, unsigned level) const
+      |                                                                               ^
+In file included from ../src/kira/ibp.cpp:20:
+In file included from ../src/kira/kira.h:32:
+In file included from ../src/kira/ReadYamlFiles.h:27:
+In file included from /Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/ginac/ginac.h:39:
+/Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/ginac/numeric.h:126:30: warning: unused parameter 's' [-Wunused-parameter]
+  126 |         ex derivative(const symbol &s) const override { return 0; }
+      |                                     ^
+In file included from ../src/kira/ibp.cpp:20:
+In file included from ../src/kira/kira.h:32:
+In file included from ../src/kira/ReadYamlFiles.h:27:
+In file included from /Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/ginac/ginac.h:42:
+/Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/ginac/structure.h:39:40: warning: unused parameter 't1' [-Wunused-parameter]
+   39 |         static bool struct_is_equal(const T * t1, const T * t2) { return true; }
+      |                                               ^
+/Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/ginac/structure.h:39:54: warning: unused parameter 't2' [-Wunused-parameter]
+   39 |         static bool struct_is_equal(const T * t1, const T * t2) { return true; }
+      |                                                             ^
+/Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/ginac/structure.h:40:38: warning: unused parameter 't1' [-Wunused-parameter]
+   40 |         static int struct_compare(const T * t1, const T * t2) { return 0; }
+      |                                             ^
+/Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/ginac/structure.h:40:52: warning: unused parameter 't2' [-Wunused-parameter]
+   40 |         static int struct_compare(const T * t1, const T * t2) { return 0; }
+      |                                                           ^
+/Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/ginac/structure.h:140:21: warning: unused parameter 'inf' [-Wunused-parameter]
+  140 |         bool info(unsigned inf) const override { return false; }
+      |                            ^
+/Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/ginac/structure.h:155:37: warning: unused parameter 'other' [-Wunused-parameter]
+  155 |         bool match_same_type(const basic & other) const override { return true; }
+      |                                            ^
+/Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/ginac/structure.h:186:26: warning: unused parameter 'xi' [-Wunused-parameter]
+  186 |         ex smod(const numeric & xi) const override { return *this; }
+      |                                 ^
+/Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/ginac/structure.h:193:40: warning: unused parameter 'self' [-Wunused-parameter]
+  193 |         bool contract_with(exvector::iterator self, exvector::iterator other, exvector & v) const override { return false; }
+      |                                               ^
+/Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/ginac/structure.h:193:65: warning: unused parameter 'other' [-Wunused-parameter]
+  193 |         bool contract_with(exvector::iterator self, exvector::iterator other, exvector & v) const override { return false; }
+      |                                                                        ^
+/Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/ginac/structure.h:193:83: warning: unused parameter 'v' [-Wunused-parameter]
+  193 |         bool contract_with(exvector::iterator self, exvector::iterator other, exvector & v) const override { return false; }
+      |                                                                                          ^
+14 warnings generated.
+[15/27] Compiling C++ object src/kira/kira.p/integral.cpp.o
+In file included from ../src/kira/integral.cpp:25:
+In file included from ../src/kira/integral.h:26:
+In file included from /Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/ginac/ginac.h:30:
+In file included from /Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/ginac/normal.h:28:
+In file included from /Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/ginac/lst.h:25:
+/Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/ginac/container.h:259:63: warning: unused parameter 'level' [-Wunused-parameter]
+  259 | void container<C>::do_print(const print_context & c, unsigned level) const
+      |                                                               ^
+/Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/ginac/container.h:281:69: warning: unused parameter 'level' [-Wunused-parameter]
+  281 | void container<C>::do_print_python(const print_python & c, unsigned level) const
+      |                                                                     ^
+/Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/ginac/container.h:287:79: warning: unused parameter 'level' [-Wunused-parameter]
+  287 | void container<C>::do_print_python_repr(const print_python_repr & c, unsigned level) const
+      |                                                                               ^
+In file included from ../src/kira/integral.cpp:25:
+In file included from ../src/kira/integral.h:26:
+In file included from /Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/ginac/ginac.h:39:
+/Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/ginac/numeric.h:126:30: warning: unused parameter 's' [-Wunused-parameter]
+  126 |         ex derivative(const symbol &s) const override { return 0; }
+      |                                     ^
+In file included from ../src/kira/integral.cpp:25:
+In file included from ../src/kira/integral.h:26:
+In file included from /Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/ginac/ginac.h:42:
+/Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/ginac/structure.h:39:40: warning: unused parameter 't1' [-Wunused-parameter]
+   39 |         static bool struct_is_equal(const T * t1, const T * t2) { return true; }
+      |                                               ^
+/Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/ginac/structure.h:39:54: warning: unused parameter 't2' [-Wunused-parameter]
+   39 |         static bool struct_is_equal(const T * t1, const T * t2) { return true; }
+      |                                                             ^
+/Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/ginac/structure.h:40:38: warning: unused parameter 't1' [-Wunused-parameter]
+   40 |         static int struct_compare(const T * t1, const T * t2) { return 0; }
+      |                                             ^
+/Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/ginac/structure.h:40:52: warning: unused parameter 't2' [-Wunused-parameter]
+   40 |         static int struct_compare(const T * t1, const T * t2) { return 0; }
+      |                                                           ^
+/Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/ginac/structure.h:140:21: warning: unused parameter 'inf' [-Wunused-parameter]
+  140 |         bool info(unsigned inf) const override { return false; }
+      |                            ^
+/Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/ginac/structure.h:155:37: warning: unused parameter 'other' [-Wunused-parameter]
+  155 |         bool match_same_type(const basic & other) const override { return true; }
+      |                                            ^
+/Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/ginac/structure.h:186:26: warning: unused parameter 'xi' [-Wunused-parameter]
+  186 |         ex smod(const numeric & xi) const override { return *this; }
+      |                                 ^
+/Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/ginac/structure.h:193:40: warning: unused parameter 'self' [-Wunused-parameter]
+  193 |         bool contract_with(exvector::iterator self, exvector::iterator other, exvector & v) const override { return false; }
+      |                                               ^
+/Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/ginac/structure.h:193:65: warning: unused parameter 'other' [-Wunused-parameter]
+  193 |         bool contract_with(exvector::iterator self, exvector::iterator other, exvector & v) const override { return false; }
+      |                                                                        ^
+/Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/ginac/structure.h:193:83: warning: unused parameter 'v' [-Wunused-parameter]
+  193 |         bool contract_with(exvector::iterator self, exvector::iterator other, exvector & v) const override { return false; }
+      |                                                                                          ^
+14 warnings generated.
+[16/27] Compiling C++ object src/kira/kira.p/dgl.cpp.o
+In file included from ../src/kira/dgl.cpp:22:
+In file included from ../src/kira/kira.h:32:
+In file included from ../src/kira/ReadYamlFiles.h:27:
+In file included from /Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/ginac/ginac.h:30:
+In file included from /Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/ginac/normal.h:28:
+In file included from /Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/ginac/lst.h:25:
+/Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/ginac/container.h:259:63: warning: unused parameter 'level' [-Wunused-parameter]
+  259 | void container<C>::do_print(const print_context & c, unsigned level) const
+      |                                                               ^
+/Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/ginac/container.h:281:69: warning: unused parameter 'level' [-Wunused-parameter]
+  281 | void container<C>::do_print_python(const print_python & c, unsigned level) const
+      |                                                                     ^
+/Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/ginac/container.h:287:79: warning: unused parameter 'level' [-Wunused-parameter]
+  287 | void container<C>::do_print_python_repr(const print_python_repr & c, unsigned level) const
+      |                                                                               ^
+In file included from ../src/kira/dgl.cpp:22:
+In file included from ../src/kira/kira.h:32:
+In file included from ../src/kira/ReadYamlFiles.h:27:
+In file included from /Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/ginac/ginac.h:39:
+/Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/ginac/numeric.h:126:30: warning: unused parameter 's' [-Wunused-parameter]
+  126 |         ex derivative(const symbol &s) const override { return 0; }
+      |                                     ^
+In file included from ../src/kira/dgl.cpp:22:
+In file included from ../src/kira/kira.h:32:
+In file included from ../src/kira/ReadYamlFiles.h:27:
+In file included from /Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/ginac/ginac.h:42:
+/Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/ginac/structure.h:39:40: warning: unused parameter 't1' [-Wunused-parameter]
+   39 |         static bool struct_is_equal(const T * t1, const T * t2) { return true; }
+      |                                               ^
+/Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/ginac/structure.h:39:54: warning: unused parameter 't2' [-Wunused-parameter]
+   39 |         static bool struct_is_equal(const T * t1, const T * t2) { return true; }
+      |                                                             ^
+/Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/ginac/structure.h:40:38: warning: unused parameter 't1' [-Wunused-parameter]
+   40 |         static int struct_compare(const T * t1, const T * t2) { return 0; }
+      |                                             ^
+/Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/ginac/structure.h:40:52: warning: unused parameter 't2' [-Wunused-parameter]
+   40 |         static int struct_compare(const T * t1, const T * t2) { return 0; }
+      |                                                           ^
+/Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/ginac/structure.h:140:21: warning: unused parameter 'inf' [-Wunused-parameter]
+  140 |         bool info(unsigned inf) const override { return false; }
+      |                            ^
+/Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/ginac/structure.h:155:37: warning: unused parameter 'other' [-Wunused-parameter]
+  155 |         bool match_same_type(const basic & other) const override { return true; }
+      |                                            ^
+/Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/ginac/structure.h:186:26: warning: unused parameter 'xi' [-Wunused-parameter]
+  186 |         ex smod(const numeric & xi) const override { return *this; }
+      |                                 ^
+/Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/ginac/structure.h:193:40: warning: unused parameter 'self' [-Wunused-parameter]
+  193 |         bool contract_with(exvector::iterator self, exvector::iterator other, exvector & v) const override { return false; }
+      |                                               ^
+/Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/ginac/structure.h:193:65: warning: unused parameter 'other' [-Wunused-parameter]
+  193 |         bool contract_with(exvector::iterator self, exvector::iterator other, exvector & v) const override { return false; }
+      |                                                                        ^
+/Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/ginac/structure.h:193:83: warning: unused parameter 'v' [-Wunused-parameter]
+  193 |         bool contract_with(exvector::iterator self, exvector::iterator other, exvector & v) const override { return false; }
+      |                                                                                          ^
+14 warnings generated.
+[17/27] Compiling C++ object src/kira/kira.p/threadpool.cpp.o
+[18/27] Compiling C++ object src/kira/kira.p/tools.cpp.o
+In file included from ../src/kira/tools.cpp:20:
+In file included from ../src/kira/tools.h:32:
+In file included from /Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/ginac/ginac.h:30:
+In file included from /Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/ginac/normal.h:28:
+In file included from /Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/ginac/lst.h:25:
+/Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/ginac/container.h:259:63: warning: unused parameter 'level' [-Wunused-parameter]
+  259 | void container<C>::do_print(const print_context & c, unsigned level) const
+      |                                                               ^
+/Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/ginac/container.h:281:69: warning: unused parameter 'level' [-Wunused-parameter]
+  281 | void container<C>::do_print_python(const print_python & c, unsigned level) const
+      |                                                                     ^
+/Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/ginac/container.h:287:79: warning: unused parameter 'level' [-Wunused-parameter]
+  287 | void container<C>::do_print_python_repr(const print_python_repr & c, unsigned level) const
+      |                                                                               ^
+In file included from ../src/kira/tools.cpp:20:
+In file included from ../src/kira/tools.h:32:
+In file included from /Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/ginac/ginac.h:39:
+/Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/ginac/numeric.h:126:30: warning: unused parameter 's' [-Wunused-parameter]
+  126 |         ex derivative(const symbol &s) const override { return 0; }
+      |                                     ^
+In file included from ../src/kira/tools.cpp:20:
+In file included from ../src/kira/tools.h:32:
+In file included from /Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/ginac/ginac.h:42:
+/Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/ginac/structure.h:39:40: warning: unused parameter 't1' [-Wunused-parameter]
+   39 |         static bool struct_is_equal(const T * t1, const T * t2) { return true; }
+      |                                               ^
+/Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/ginac/structure.h:39:54: warning: unused parameter 't2' [-Wunused-parameter]
+   39 |         static bool struct_is_equal(const T * t1, const T * t2) { return true; }
+      |                                                             ^
+/Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/ginac/structure.h:40:38: warning: unused parameter 't1' [-Wunused-parameter]
+   40 |         static int struct_compare(const T * t1, const T * t2) { return 0; }
+      |                                             ^
+/Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/ginac/structure.h:40:52: warning: unused parameter 't2' [-Wunused-parameter]
+   40 |         static int struct_compare(const T * t1, const T * t2) { return 0; }
+      |                                                           ^
+/Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/ginac/structure.h:140:21: warning: unused parameter 'inf' [-Wunused-parameter]
+  140 |         bool info(unsigned inf) const override { return false; }
+      |                            ^
+/Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/ginac/structure.h:155:37: warning: unused parameter 'other' [-Wunused-parameter]
+  155 |         bool match_same_type(const basic & other) const override { return true; }
+      |                                            ^
+/Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/ginac/structure.h:186:26: warning: unused parameter 'xi' [-Wunused-parameter]
+  186 |         ex smod(const numeric & xi) const override { return *this; }
+      |                                 ^
+/Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/ginac/structure.h:193:40: warning: unused parameter 'self' [-Wunused-parameter]
+  193 |         bool contract_with(exvector::iterator self, exvector::iterator other, exvector & v) const override { return false; }
+      |                                               ^
+/Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/ginac/structure.h:193:65: warning: unused parameter 'other' [-Wunused-parameter]
+  193 |         bool contract_with(exvector::iterator self, exvector::iterator other, exvector & v) const override { return false; }
+      |                                                                        ^
+/Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/ginac/structure.h:193:83: warning: unused parameter 'v' [-Wunused-parameter]
+  193 |         bool contract_with(exvector::iterator self, exvector::iterator other, exvector & v) const override { return false; }
+      |                                                                                          ^
+14 warnings generated.
+[19/27] Compiling C++ object tests/symcompare.p/symcompare.cpp.o
+[20/27] Compiling C++ object src/kira/kira.p/reduction.cpp.o
+In file included from ../src/kira/reduction.cpp:29:
+In file included from ../src/kira/connect2kira.h:27:
+In file included from /Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/ginac/ginac.h:30:
+In file included from /Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/ginac/normal.h:28:
+In file included from /Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/ginac/lst.h:25:
+/Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/ginac/container.h:259:63: warning: unused parameter 'level' [-Wunused-parameter]
+  259 | void container<C>::do_print(const print_context & c, unsigned level) const
+      |                                                               ^
+/Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/ginac/container.h:281:69: warning: unused parameter 'level' [-Wunused-parameter]
+  281 | void container<C>::do_print_python(const print_python & c, unsigned level) const
+      |                                                                     ^
+/Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/ginac/container.h:287:79: warning: unused parameter 'level' [-Wunused-parameter]
+  287 | void container<C>::do_print_python_repr(const print_python_repr & c, unsigned level) const
+      |                                                                               ^
+In file included from ../src/kira/reduction.cpp:29:
+In file included from ../src/kira/connect2kira.h:27:
+In file included from /Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/ginac/ginac.h:39:
+/Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/ginac/numeric.h:126:30: warning: unused parameter 's' [-Wunused-parameter]
+  126 |         ex derivative(const symbol &s) const override { return 0; }
+      |                                     ^
+In file included from ../src/kira/reduction.cpp:29:
+In file included from ../src/kira/connect2kira.h:27:
+In file included from /Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/ginac/ginac.h:42:
+/Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/ginac/structure.h:39:40: warning: unused parameter 't1' [-Wunused-parameter]
+   39 |         static bool struct_is_equal(const T * t1, const T * t2) { return true; }
+      |                                               ^
+/Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/ginac/structure.h:39:54: warning: unused parameter 't2' [-Wunused-parameter]
+   39 |         static bool struct_is_equal(const T * t1, const T * t2) { return true; }
+      |                                                             ^
+/Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/ginac/structure.h:40:38: warning: unused parameter 't1' [-Wunused-parameter]
+   40 |         static int struct_compare(const T * t1, const T * t2) { return 0; }
+      |                                             ^
+/Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/ginac/structure.h:40:52: warning: unused parameter 't2' [-Wunused-parameter]
+   40 |         static int struct_compare(const T * t1, const T * t2) { return 0; }
+      |                                                           ^
+/Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/ginac/structure.h:140:21: warning: unused parameter 'inf' [-Wunused-parameter]
+  140 |         bool info(unsigned inf) const override { return false; }
+      |                            ^
+/Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/ginac/structure.h:155:37: warning: unused parameter 'other' [-Wunused-parameter]
+  155 |         bool match_same_type(const basic & other) const override { return true; }
+      |                                            ^
+/Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/ginac/structure.h:186:26: warning: unused parameter 'xi' [-Wunused-parameter]
+  186 |         ex smod(const numeric & xi) const override { return *this; }
+      |                                 ^
+/Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/ginac/structure.h:193:40: warning: unused parameter 'self' [-Wunused-parameter]
+  193 |         bool contract_with(exvector::iterator self, exvector::iterator other, exvector & v) const override { return false; }
+      |                                               ^
+/Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/ginac/structure.h:193:65: warning: unused parameter 'other' [-Wunused-parameter]
+  193 |         bool contract_with(exvector::iterator self, exvector::iterator other, exvector & v) const override { return false; }
+      |                                                                        ^
+/Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/ginac/structure.h:193:83: warning: unused parameter 'v' [-Wunused-parameter]
+  193 |         bool contract_with(exvector::iterator self, exvector::iterator other, exvector & v) const override { return false; }
+      |                                                                                          ^
+14 warnings generated.
+[21/27] Compiling C++ object src/kira/kira.p/kira.cpp.o
+In file included from ../src/kira/kira.cpp:31:
+In file included from ../src/kira/kira.h:32:
+In file included from ../src/kira/ReadYamlFiles.h:27:
+In file included from /Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/ginac/ginac.h:30:
+In file included from /Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/ginac/normal.h:28:
+In file included from /Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/ginac/lst.h:25:
+/Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/ginac/container.h:259:63: warning: unused parameter 'level' [-Wunused-parameter]
+  259 | void container<C>::do_print(const print_context & c, unsigned level) const
+      |                                                               ^
+/Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/ginac/container.h:281:69: warning: unused parameter 'level' [-Wunused-parameter]
+  281 | void container<C>::do_print_python(const print_python & c, unsigned level) const
+      |                                                                     ^
+/Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/ginac/container.h:287:79: warning: unused parameter 'level' [-Wunused-parameter]
+  287 | void container<C>::do_print_python_repr(const print_python_repr & c, unsigned level) const
+      |                                                                               ^
+In file included from ../src/kira/kira.cpp:31:
+In file included from ../src/kira/kira.h:32:
+In file included from ../src/kira/ReadYamlFiles.h:27:
+In file included from /Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/ginac/ginac.h:39:
+/Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/ginac/numeric.h:126:30: warning: unused parameter 's' [-Wunused-parameter]
+  126 |         ex derivative(const symbol &s) const override { return 0; }
+      |                                     ^
+In file included from ../src/kira/kira.cpp:31:
+In file included from ../src/kira/kira.h:32:
+In file included from ../src/kira/ReadYamlFiles.h:27:
+In file included from /Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/ginac/ginac.h:42:
+/Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/ginac/structure.h:39:40: warning: unused parameter 't1' [-Wunused-parameter]
+   39 |         static bool struct_is_equal(const T * t1, const T * t2) { return true; }
+      |                                               ^
+/Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/ginac/structure.h:39:54: warning: unused parameter 't2' [-Wunused-parameter]
+   39 |         static bool struct_is_equal(const T * t1, const T * t2) { return true; }
+      |                                                             ^
+/Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/ginac/structure.h:40:38: warning: unused parameter 't1' [-Wunused-parameter]
+   40 |         static int struct_compare(const T * t1, const T * t2) { return 0; }
+      |                                             ^
+/Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/ginac/structure.h:40:52: warning: unused parameter 't2' [-Wunused-parameter]
+   40 |         static int struct_compare(const T * t1, const T * t2) { return 0; }
+      |                                                           ^
+/Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/ginac/structure.h:140:21: warning: unused parameter 'inf' [-Wunused-parameter]
+  140 |         bool info(unsigned inf) const override { return false; }
+      |                            ^
+/Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/ginac/structure.h:155:37: warning: unused parameter 'other' [-Wunused-parameter]
+  155 |         bool match_same_type(const basic & other) const override { return true; }
+      |                                            ^
+/Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/ginac/structure.h:186:26: warning: unused parameter 'xi' [-Wunused-parameter]
+  186 |         ex smod(const numeric & xi) const override { return *this; }
+      |                                 ^
+/Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/ginac/structure.h:193:40: warning: unused parameter 'self' [-Wunused-parameter]
+  193 |         bool contract_with(exvector::iterator self, exvector::iterator other, exvector & v) const override { return false; }
+      |                                               ^
+/Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/ginac/structure.h:193:65: warning: unused parameter 'other' [-Wunused-parameter]
+  193 |         bool contract_with(exvector::iterator self, exvector::iterator other, exvector & v) const override { return false; }
+      |                                                                        ^
+/Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/ginac/structure.h:193:83: warning: unused parameter 'v' [-Wunused-parameter]
+  193 |         bool contract_with(exvector::iterator self, exvector::iterator other, exvector & v) const override { return false; }
+      |                                                                                          ^
+14 warnings generated.
+[22/27] Compiling C object src/pyred/libpyred.a.p/.._sqlite3_sqlite3.c.o
+../src/sqlite3/sqlite3.c:57343:7: warning: variable 'nUri' set but not used [-Wunused-but-set-variable]
+ 57343 |   int nUri = 0;            /* Number of URI parameters */
+       |       ^
+1 warning generated.
+[23/27] Compiling C++ object src/kira/kira.p/trivial_sym.cpp.o
+In file included from ../src/kira/trivial_sym.cpp:30:
+In file included from ../src/kira/kira.h:32:
+In file included from ../src/kira/ReadYamlFiles.h:27:
+In file included from /Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/ginac/ginac.h:30:
+In file included from /Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/ginac/normal.h:28:
+In file included from /Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/ginac/lst.h:25:
+/Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/ginac/container.h:259:63: warning: unused parameter 'level' [-Wunused-parameter]
+  259 | void container<C>::do_print(const print_context & c, unsigned level) const
+      |                                                               ^
+/Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/ginac/container.h:281:69: warning: unused parameter 'level' [-Wunused-parameter]
+  281 | void container<C>::do_print_python(const print_python & c, unsigned level) const
+      |                                                                     ^
+/Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/ginac/container.h:287:79: warning: unused parameter 'level' [-Wunused-parameter]
+  287 | void container<C>::do_print_python_repr(const print_python_repr & c, unsigned level) const
+      |                                                                               ^
+In file included from ../src/kira/trivial_sym.cpp:30:
+In file included from ../src/kira/kira.h:32:
+In file included from ../src/kira/ReadYamlFiles.h:27:
+In file included from /Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/ginac/ginac.h:39:
+/Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/ginac/numeric.h:126:30: warning: unused parameter 's' [-Wunused-parameter]
+  126 |         ex derivative(const symbol &s) const override { return 0; }
+      |                                     ^
+In file included from ../src/kira/trivial_sym.cpp:30:
+In file included from ../src/kira/kira.h:32:
+In file included from ../src/kira/ReadYamlFiles.h:27:
+In file included from /Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/ginac/ginac.h:42:
+/Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/ginac/structure.h:39:40: warning: unused parameter 't1' [-Wunused-parameter]
+   39 |         static bool struct_is_equal(const T * t1, const T * t2) { return true; }
+      |                                               ^
+/Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/ginac/structure.h:39:54: warning: unused parameter 't2' [-Wunused-parameter]
+   39 |         static bool struct_is_equal(const T * t1, const T * t2) { return true; }
+      |                                                             ^
+/Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/ginac/structure.h:40:38: warning: unused parameter 't1' [-Wunused-parameter]
+   40 |         static int struct_compare(const T * t1, const T * t2) { return 0; }
+      |                                             ^
+/Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/ginac/structure.h:40:52: warning: unused parameter 't2' [-Wunused-parameter]
+   40 |         static int struct_compare(const T * t1, const T * t2) { return 0; }
+      |                                                           ^
+/Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/ginac/structure.h:140:21: warning: unused parameter 'inf' [-Wunused-parameter]
+  140 |         bool info(unsigned inf) const override { return false; }
+      |                            ^
+/Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/ginac/structure.h:155:37: warning: unused parameter 'other' [-Wunused-parameter]
+  155 |         bool match_same_type(const basic & other) const override { return true; }
+      |                                            ^
+/Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/ginac/structure.h:186:26: warning: unused parameter 'xi' [-Wunused-parameter]
+  186 |         ex smod(const numeric & xi) const override { return *this; }
+      |                                 ^
+/Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/ginac/structure.h:193:40: warning: unused parameter 'self' [-Wunused-parameter]
+  193 |         bool contract_with(exvector::iterator self, exvector::iterator other, exvector & v) const override { return false; }
+      |                                               ^
+/Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/ginac/structure.h:193:65: warning: unused parameter 'other' [-Wunused-parameter]
+  193 |         bool contract_with(exvector::iterator self, exvector::iterator other, exvector & v) const override { return false; }
+      |                                                                        ^
+/Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/ginac/structure.h:193:83: warning: unused parameter 'v' [-Wunused-parameter]
+  193 |         bool contract_with(exvector::iterator self, exvector::iterator other, exvector & v) const override { return false; }
+      |                                                                                          ^
+14 warnings generated.
+[24/27] Linking static target src/pyred/libpyred.a
+[25/27] Linking target tests/symcompare
+ld: warning: ignoring duplicate libraries: '-lz'
+[26/27] Compiling C++ object src/kira/kira.p/ReadYamlFiles.cpp.o
+In file included from ../src/kira/ReadYamlFiles.cpp:27:
+In file included from ../src/kira/ReadYamlFiles.h:27:
+In file included from /Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/ginac/ginac.h:30:
+In file included from /Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/ginac/normal.h:28:
+In file included from /Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/ginac/lst.h:25:
+/Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/ginac/container.h:259:63: warning: unused parameter 'level' [-Wunused-parameter]
+  259 | void container<C>::do_print(const print_context & c, unsigned level) const
+      |                                                               ^
+/Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/ginac/container.h:281:69: warning: unused parameter 'level' [-Wunused-parameter]
+  281 | void container<C>::do_print_python(const print_python & c, unsigned level) const
+      |                                                                     ^
+/Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/ginac/container.h:287:79: warning: unused parameter 'level' [-Wunused-parameter]
+  287 | void container<C>::do_print_python_repr(const print_python_repr & c, unsigned level) const
+      |                                                                               ^
+In file included from ../src/kira/ReadYamlFiles.cpp:27:
+In file included from ../src/kira/ReadYamlFiles.h:27:
+In file included from /Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/ginac/ginac.h:39:
+/Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/ginac/numeric.h:126:30: warning: unused parameter 's' [-Wunused-parameter]
+  126 |         ex derivative(const symbol &s) const override { return 0; }
+      |                                     ^
+In file included from ../src/kira/ReadYamlFiles.cpp:27:
+In file included from ../src/kira/ReadYamlFiles.h:27:
+In file included from /Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/ginac/ginac.h:42:
+/Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/ginac/structure.h:39:40: warning: unused parameter 't1' [-Wunused-parameter]
+   39 |         static bool struct_is_equal(const T * t1, const T * t2) { return true; }
+      |                                               ^
+/Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/ginac/structure.h:39:54: warning: unused parameter 't2' [-Wunused-parameter]
+   39 |         static bool struct_is_equal(const T * t1, const T * t2) { return true; }
+      |                                                             ^
+/Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/ginac/structure.h:40:38: warning: unused parameter 't1' [-Wunused-parameter]
+   40 |         static int struct_compare(const T * t1, const T * t2) { return 0; }
+      |                                             ^
+/Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/ginac/structure.h:40:52: warning: unused parameter 't2' [-Wunused-parameter]
+   40 |         static int struct_compare(const T * t1, const T * t2) { return 0; }
+      |                                                           ^
+/Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/ginac/structure.h:140:21: warning: unused parameter 'inf' [-Wunused-parameter]
+  140 |         bool info(unsigned inf) const override { return false; }
+      |                            ^
+/Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/ginac/structure.h:155:37: warning: unused parameter 'other' [-Wunused-parameter]
+  155 |         bool match_same_type(const basic & other) const override { return true; }
+      |                                            ^
+/Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/ginac/structure.h:186:26: warning: unused parameter 'xi' [-Wunused-parameter]
+  186 |         ex smod(const numeric & xi) const override { return *this; }
+      |                                 ^
+/Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/ginac/structure.h:193:40: warning: unused parameter 'self' [-Wunused-parameter]
+  193 |         bool contract_with(exvector::iterator self, exvector::iterator other, exvector & v) const override { return false; }
+      |                                               ^
+/Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/ginac/structure.h:193:65: warning: unused parameter 'other' [-Wunused-parameter]
+  193 |         bool contract_with(exvector::iterator self, exvector::iterator other, exvector & v) const override { return false; }
+      |                                                                        ^
+/Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/ginac/structure.h:193:83: warning: unused parameter 'v' [-Wunused-parameter]
+  193 |         bool contract_with(exvector::iterator self, exvector::iterator other, exvector & v) const override { return false; }
+      |                                                                                          ^
+14 warnings generated.
+[27/27] Linking target src/kira/kira
+ld: warning: ignoring duplicate libraries: '-lz'
+ninja: Entering directory `/Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-3.0/build'
+[1/26] Generating src/pyred/config.h with a custom command
+[1/2] Installing files
+Installing src/kira/kira to /Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/bin

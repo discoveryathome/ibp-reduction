@@ -1,0 +1,12 @@
+Collecting meson
+  Using cached meson-1.12.1-py3-none-any.whl.metadata (1.7 kB)
+Collecting ninja
+  Using cached ninja-1.13.2-py3-none-macosx_10_9_universal2.whl.metadata (5.4 kB)
+Using cached meson-1.12.1-py3-none-any.whl (1.1 MB)
+Using cached ninja-1.13.2-py3-none-macosx_10_9_universal2.whl (306 kB)
+Installing collected packages: ninja, meson
+
+Successfully installed meson-1.12.1 ninja-1.13.2
+
+[notice] A new release of pip is available: 26.1.2 -> 26.2.2
+[notice] To update, run: /Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/.venv/bin/python -m pip install --upgrade pip

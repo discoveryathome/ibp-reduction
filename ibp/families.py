@@ -8,6 +8,9 @@ FIELD = QQ.frac_field('d', 's', 't', 'm', 'u')
 d, s, t, m, u = FIELD.gens
 
 def family(name):
+    if name == 'sunset_equal_mass_v1':
+        from .two_loop import specification
+        return specification()
     specs = {
         'tadpole': ([m], [[0]], [(1,)], 4, 'control'),
         'bubble_massless': ([0,0], [[0,s],[s,0]], [(1,1)], 4, 'train'),
@@ -42,6 +45,9 @@ def indices(n,rmax,numerators=0):
             yield a
 
 def targets(f):
+    if f['name'] == 'sunset_equal_mass_v1':
+        from .two_loop import TARGETS
+        return TARGETS
     return [a for a in indices(f['n'],f['rmax']) if not zero(a,f)]
 
 def seeds(f, mode='rectangular'):
@@ -56,6 +62,10 @@ def seeds(f, mode='rectangular'):
         yield a
 
 def equations(f,mode='rectangular'):
+    if f['name'] == 'sunset_equal_mass_v1':
+        from .two_loop import equations as two_loop_equations
+        yield from two_loop_equations(mode)
+        return
     for a in seeds(f,mode):
         for j in range(f['n']):
             row={a:d-sum(a)}

@@ -10,3 +10,7 @@ reduction are moving the frontier; avoid rediscovering established rules.
 Review after the first independent reproduction, first mature-solver comparison,
 or within 30 days, whichever comes first. A maintainer has consented, but public
 coordination and review capacity are not established. Do not open donor intake yet.
+
+## 2026-10-21 second-cohort preparation
+
+Task-specific coordinator authorization. Refreshed cards inherit the preparation portfolio; original catalogue archived in research/readiness-20261021/catalog-before.json. Historical results are unchanged. Scientific review and public intake remain pending.

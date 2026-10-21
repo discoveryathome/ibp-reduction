@@ -1,0 +1,95 @@
+return 0 seconds 4.775676875025965 Generate equations for topology sunset, sector 7 (4 of 4)
+
+Number of selected equations to reduce: 21 equations
+( 0.0 s )
+Algebraic reconstruction is switched off.
+
+***** Select equations recursively ************************
+length of mandatory list: 11
+
+***** Bring system in triangular form *********************
+
+Iterate the system until it is in triangular form: 
+iteration: 0; items left: 3; time: ( 0.0 s )
+iteration: 1; items left: 1; time: ( 0.0 s )
+redundant: 0; insertions 4
+All coefficients will be normalized
+
+Equations out of bounds rmax and smax: 0
+Equations in the bounds rmax and smax: 21
+( 0.0 s )
+
+Write the triangular system to ./tmp/ on hard disk
+(--> ./tmp/sunset/VERconfig, ./tmp/sunset/VER###) 
+
+Triangular form completed after ( 0.0 s )
+FIREFLY table created successfully
+Algebraic reconstruction is switched off.
+Equation table created successfully
+
+***** Run the back substitution ***********************
+
+Load all files from ./tmp/
+Take 21 equations to reduce 21 missing equations
+
+Back substitution: 
+  0.0% []
+  0.0% []
+  0.0% []
+  0.0% []
+  0.0% []
+  9.5% []
+ 14.3% []
+ 14.3% []
+ 19.0% []
+ 23.8% []
+ 23.8% []
+ 23.8% []
+ 23.8% []
+ 28.6% []
+
+Equations reduced: 6 / 21
+Kira committed results ( 0.0 s )
+ 38.1% []
+ 42.9% []
+
+Equations reduced: 9 / 21
+Kira committed results ( 0.0 s )
+ 57.1% []
+ 66.7% []
+
+Equations reduced: 14 / 21
+Kira committed results ( 0.0 s )
+ 81.0% []
+ 90.5% []
+100.0% [=]
+
+Equations reduced: 21 / 21
+Kira committed results ( 0.0 s )
+
+21 equations were reduced
+
+*****Master integrals***********************************
+sunset[1,1,1] # 7
+sunset[1,1,0] # 3
+
+Total number of master integrals: 2
+( 0.0 s )
+One variable is set to 1: {}
+One variable is set to 1: {}
+The input directory is set to:
+./results
+symbol_to_replace_by_one: x in kinematics.yaml is not set. 
+Mass reconstruction is disabled.
+################################################
+kira2file: Reconstruct results for sunset
+################################################
+
+Algebraic reconstruction is switched off.
+This requested integral is a master integral: sunset[1,1,1] # 7
+This requested integral is a master integral: sunset[1,1,0] # 3
+unreduced integrals: 0.
+
+Total time:
+( 4.7 s )
+

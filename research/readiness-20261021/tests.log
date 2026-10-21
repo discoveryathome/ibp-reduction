@@ -1,0 +1,23 @@
+test_certificate (test_exact.ExactTests.test_certificate) ... ok
+test_fallback_costs_include_failed_cache_hits (test_exact.ExactTests.test_fallback_costs_include_failed_cache_hits) ... ok
+test_independent_input_derivation (test_exact.ExactTests.test_independent_input_derivation) ... ok
+test_known_massless_bubble_gamma_ratio (test_exact.ExactTests.test_known_massless_bubble_gamma_ratio) ... ok
+test_known_tadpole_gamma_ratio (test_exact.ExactTests.test_known_tadpole_gamma_ratio) ... ok
+test_online_certificate_and_accounting (test_exact.ExactTests.test_online_certificate_and_accounting) ... ok
+test_reject_changed_output (test_exact.ExactTests.test_reject_changed_output) ... ok
+test_reject_changed_proof (test_exact.ExactTests.test_reject_changed_proof) ... ok
+test_reject_fake_symmetry (test_exact.ExactTests.test_reject_fake_symmetry) ... ok
+test_reject_forward_reference (test_exact.ExactTests.test_reject_forward_reference) ... ok
+test_reject_missing_target (test_exact.ExactTests.test_reject_missing_target) ... ok
+test_reject_polynomial_that_matches_three_dimensions (test_exact.ExactTests.test_reject_polynomial_that_matches_three_dimensions) ... ok
+test_reject_unreduced_master (test_exact.ExactTests.test_reject_unreduced_master) ... ok
+test_reject_zero_denominator (test_exact.ExactTests.test_reject_zero_denominator) ... ok
+test_reuse_preserves_results_and_cost_accounting (test_exact.ExactTests.test_reuse_preserves_results_and_cost_accounting) ... ok
+test_coefficient_parser_rejects_calls (test_kira.KiraTests.test_coefficient_parser_rejects_calls) ... ok
+test_export_positive_and_negative_controls (test_kira.KiraTests.test_export_positive_and_negative_controls) ... ok
+test_saved_certificates_and_numerator_coverage (test_two_loop.TwoLoopTests.test_saved_certificates_and_numerator_coverage) ... ok
+
+----------------------------------------------------------------------
+Ran 18 tests in 3.109s
+
+OK

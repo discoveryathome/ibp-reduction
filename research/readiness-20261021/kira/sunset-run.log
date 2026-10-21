@@ -1,0 +1,109 @@
+1 Fermat/Blackbox instances will be run in parallel.
+The user defined environment variable FERMATPATH for Fermat is set:
+/Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-deps/Ferm7a/fer64
+The directories for the temporary files, result files and the sector mapping files are: 
+./tmp
+./results
+./sectormappings
+One variable is set to 1: {}
+Kira prepares topology: sunset and top level sector: 
+7 
+
+*****Integral ordering*************************************
+VERSION table created successfully
+Kira database version number: 2.1
+WEIGHTBITS table created successfully
+INTEGRALORDERING table created successfully
+Kira will use the integral ordering: 1.
+With topology: sunset use intermediate permutation
+0 1 2 
+Following reductions will be performed for the topology: sunset
+Sector: 7 rmax: 5 smax: 1 
+
+***********************************************************
+Prepare numerical values for the generation of the system
+***********************************************************
+set numerics
+***********************************************************
+Find IBP LI and symmetry relations for the topology: sunset
+***********************************************************
+
+*****Generate IBP identities*******************************
+There are 4 IBP identities
+( 0.001273 s )
+
+*****Generate LI identities********************************
+There are 0 LI identities
+( 8.5e-05 s )
+
+*****Search trivial sectors********************************
+ 12.5% [======]
+ 25.0% [============]
+ 37.5% [==================]
+ 50.0% [=========================]
+ 62.5% [===============================]
+ 75.0% [=====================================]
+ 87.5% [===========================================]
+100.0% [==================================================]
+Non trivial sectors in total: 4
+Trivial sectors in total: 4
+( 0.0 s )
+
+Search symmetry relations: 
+  0.0% []
+ 33.3% [================]
+ 66.7% [=================================]
+100.0% [==================================================]
+( 0.0 s )
+***********************************************************
+Prepare Symmetries for the topology: sunset
+***********************************************************
+Build symmetries for sunset x sunset 
+ 25.0% [============]
+ 50.0% [=========================]
+ 75.0% [=====================================]
+100.0% [==================================================]
+Sector relations: 4
+Sector symmetries: 6
+( 0.0 s )
+***********************************************************
+Prepare numerical values for the generation of the system
+***********************************************************
+set numerics
+
+***********************************************************
+Kira starts the reduction of the topology: sunset
+***********************************************************
+
+***** Select equations recursively ************************
+length of mandatory list: 11
+Algebraic reconstruction is switched off.
+Generate equations for topology sunset, sector 3 (1 of 4)
+Generate equations for topology sunset, sector 5 (2 of 4)
+Generate equations for topology sunset, sector 6 (3 of 4)
+Generate equations for topology sunset, sector 7 (4 of 4)
+372 equations: 220 zero + 152 independent
+solve backward: 0.0
+prepare content for selector: 0.0
+39 independent coefficients
+directory to the masters: sunset
+Number of master integrals: 0
+No integrals to reduce, skipping this family.
+One variable is set to 1: {}
+One variable is set to 1: {}
+The input directory is set to:
+./results
+symbol_to_replace_by_one: x in kinematics.yaml is not set. 
+Mass reconstruction is disabled.
+################################################
+kira2file: Reconstruct results for sunset
+################################################
+
+Algebraic reconstruction is switched off.
+
+No reductions found in ./results/kira.db.
+
+Unable to export results to Kira
+Total time:
+( 2.2 s )
+

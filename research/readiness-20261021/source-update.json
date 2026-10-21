@@ -1,0 +1,15 @@
+{
+  "reason": "Separate readiness suite added; frozen historical result bytes retained and regression checked.",
+  "changes": [
+    {
+      "path": "ibp/families.py",
+      "old_sha256": "b513f971144df66704d57c547e930ac42dee2614f98f5972e4d741addcf2697e",
+      "new_sha256": "400d3ba014a4a1563ec5e4690a0cd959d8bf9ba4029d158c3467d0fa40fe502f"
+    },
+    {
+      "path": "ibp/validator.py",
+      "old_sha256": "16be0241963ca67449cf8c91c45c098428c2d99d6db84ce2bb320a56b83a3338",
+      "new_sha256": "bf4462d50a39ac4e382e431eb6c2007f755c44f1f75c551b94d41ce3215e83d5"
+    }
+  ]
+}

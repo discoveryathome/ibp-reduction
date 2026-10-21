@@ -1,0 +1,8 @@
+{
+  "returncode": 0,
+  "seconds": 4.775784166995436,
+  "executable_sha256": "096f46c084aa6e9e6c593a7943c62c543873b1a33806792b20ce32deb74df5de",
+  "buildtype": "debugoptimized; upstream VALGRIND integer modular arithmetic",
+  "source_commit": "fb745431f97c8899a512e638da8598b0cfad7521",
+  "runtime": "one Fermat process; local Apple M2; not a production speed comparison"
+}
