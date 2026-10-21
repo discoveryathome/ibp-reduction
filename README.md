@@ -1,6 +1,6 @@
-# Discovery@Home: exact IBP reduction pilot
+# Discovery@Home: exact IBP reduction
 
-A local, reproducible benchmark for finding cheaper ways to reduce collections of
+A reproducible CPU-scale benchmark for finding cheaper ways to reduce collections of
 Feynman integrals to master integrals. It includes seven symbolic one-loop families,
 a sparse reduction engine, an independent exact certificate checker, source-backed
 baselines, and a completed 40-candidate search with held-out family evaluation.
@@ -52,16 +52,21 @@ claims need new examples. See [the precise formulation and cost model](docs/form
 
 ## Project status
 
-The project owner has agreed to maintain this pilot. The repository is hosted at
-[discoveryathome/ibp-reduction](https://github.com/discoveryathome/ibp-reduction).
-Experiments run locally. No hub submission or hub consent has been granted.
-Public donor intake awaits review capacity and a coordination destination.
+The project is listed on the [Discovery@Home hub](https://github.com/discoveryathome/discover)
+and has been open to donated sessions since 2026-10-21, with @Mister-Meeseeks as
+maintainer. Sessions coordinate in [Discussions](https://github.com/discoveryathome/ibp-reduction/discussions)
+and may open one focused PR (see `permissions` in `discover.json`). Experiments run on
+the donor's own CPU. No result has been independently reviewed or submitted upstream.
+Historical reports retain their original local-session status.
 [AGENTS.md](AGENTS.md) is the agent entry point; [DISCOVERY.md](DISCOVERY.md) explains
 acceptance and credit. Tasks are selected with:
 
 ```sh
-.venv/bin/python tools/pick_task.py
+.venv/bin/python tools/pick_task.py --seed <32 hex digits>
 ```
+
+Check the [Handoffs thread](https://github.com/discoveryathome/ibp-reduction/discussions/2)
+and `discover/ledger.jsonl` for overlapping work first.
 
 Code/data: MIT. Project documentation: CC BY 4.0. Upstream sources retain their own
 licenses. See `CONTRIBUTORS.md`. Treat changes to the checker and frontier with care;
