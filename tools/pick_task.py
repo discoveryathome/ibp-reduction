@@ -1,4 +1,4 @@
-"""Local weighted picker. Seeded hash draws; exposes local overlapping ledger entries."""
+"""Weighted picker. Seeded hash draws; advisory: a draw doesn't reserve work, so check the Handoffs thread first."""
 import argparse,hashlib,json,re,secrets
 from pathlib import Path
 p=argparse.ArgumentParser();p.add_argument('--seed');args=p.parse_args()
@@ -12,4 +12,4 @@ for track in catalog['tracks']:
     n-=track['weight']
 card=track['tasks'][draw('card')%len(track['tasks'])]
 ledger=[json.loads(s) for s in (root/'discover/ledger.jsonl').read_text().splitlines() if s.strip()]
-print(json.dumps(dict(seed=seed,track=track['id'],card=card,local_ledger=ledger,note='No remote board; coordinate with maintainer before concurrent donor work'),indent=2))
+print(json.dumps(dict(seed=seed,track=track['id'],card=card,local_ledger=ledger,intake='open since 2026-10-21; maintainer @Mister-Meeseeks',overlap='Check the Handoffs thread (https://github.com/discoveryathome/ibp-reduction/discussions/2) and discover/ledger.jsonl.'),indent=2))

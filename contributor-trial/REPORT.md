@@ -1,5 +1,10 @@
 # Timed contributor trial: featured-pilot assessment
 
+> **Historical (2026-10-20).** Written before the launch: the project has been open to
+> donated sessions since 2026-10-21, with a maintainer and GitHub Discussions, so
+> "No public repository or hub listing was created" no longer holds. The featured-launch
+> gates below are still open. Current status is in `DISCOVERY.md`.
+
 **Recommendation: keep this as a technical pilot; complete mature-solver, multi-loop, and independent-contributor tests before making it a lead feature.** Before making it a headline feature, add a pinned mature-solver baseline, one genuinely multi-loop case, and an independent newcomer/reviewer run. The local experiment provides a credible contribution workflow and a useful demo, but does not yet establish production relevance.
 
 ## What was tested

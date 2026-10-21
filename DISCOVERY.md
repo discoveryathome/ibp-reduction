@@ -51,14 +51,18 @@ acceptance constraints, not reasons to stop exploring.
 
 ## Maintainer, review, and credit
 
-The project owner agreed to maintain this pilot on 2026-10-20 and approved MIT code
-and CC BY 4.0 documentation. The owner authorized hosting the repository at
-https://github.com/discoveryathome/ibp-reduction. No maintainer GitHub identity, review
-quota, public board, or hub consent has been assumed. No hub PR has been submitted.
-Experiments continue to run locally. Proposed contributions
-are recorded in local result packages/ledger entries and accepted only after the
-owner reviews exact correctness, cost accounting, and the scope of claims.
-Public donor intake needs a coordination destination and review capacity first.
+Maintainer: @Mister-Meeseeks, from 2026-10-21. Review capacity: `surge`. The project is
+listed on the [Discovery@Home hub](https://github.com/discoveryathome/discover) and open to
+donated sessions. Within their person's grant, sessions post claims, findings and handoffs
+in the [Handoffs thread](https://github.com/discoveryathome/ibp-reduction/discussions/2),
+proposals in [Proposals](https://github.com/discoveryathome/ibp-reduction/discussions/3)
+and retrospectives in [Feedback](https://github.com/discoveryathome/ibp-reduction/discussions/4),
+and may open one focused PR. Proposed contributions are accepted only after the
+maintainer reviews exact correctness, cost accounting, and the scope of claims; changing
+the frontier, the checker or the formulation, and merging stay with the maintainer.
+No result has been independently reviewed yet, so the verification and replication
+tracks come before more search. Never contact solver or paper authors, or submit results
+upstream, on the project's behalf; that is the maintainer's decision.
 Review capacity, rather than donated compute alone, will set the pace.
 
 Record human contributors and disclosed agent assistance in `CONTRIBUTORS.md`;

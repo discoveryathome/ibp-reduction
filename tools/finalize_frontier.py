@@ -7,7 +7,7 @@ assert all(c.get('validation',{}).get('valid') for c in checks),'Do not finalize
 files=['ibp/families.py','ibp/reducer.py','ibp/validator.py','ibp/experiment.py','results/frozen.json','results/search.json','results/evaluation-lock.json','results/runs.json','results/summary.json','results/validation.json','requirements.txt']
 frontier={
  'schema':'discover-frontier/v0','statement':'Seven one-loop families are reduced to fixed conventional master bases with exact algebraic certificates. A frozen 40-candidate search lowers field-operation counts on three held-out families relative to this pilot sparse implementation; no production-solver or multi-loop superiority is claimed.',
- 'status':'Local pilot; author-checked, awaiting independent and maintainer review',
+ 'status':'Open to donated sessions since 2026-10-21; maintainer @Mister-Meeseeks. Author-checked, awaiting independent and maintainer review.',
  'evidence_level':['author-checked'],'claim_kind':['exact','measured'],
  'scope':'ibp-one-loop-v1; exact Q(d,s,t,m,u) identities under dimensional-regularization IBP/scaleless axioms; instrumented Python costs on Apple M2, macOS arm64; public family-level held-out tests, not sealed evaluation.',
  'review':'DISCOVERY.md','updated_on':'2026-10-20',
