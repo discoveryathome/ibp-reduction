@@ -1,0 +1,26 @@
+{
+  "task": "tube-and-online-audit",
+  "track": "literature",
+  "priority_revision": 2,
+  "seed": "735db16f08fc3b299d027fa453589748",
+  "seed_origin": "Python secrets.token_hex(16), executed on user request for a new seed",
+  "base": "9427e928040cd7d71513a443da4a42811720e537",
+  "started_at": "2026-10-22T20:18:09Z",
+  "budget_minutes": 60,
+  "scope_status": "refined",
+  "scope": "Executable local target-versus-seed coverage audit and bounded workload obligations for high-rank tube-seeding claims",
+  "scope_reason": "Another live claim covers the broad primary-paper/public-code audit. This distinct contribution enumerates the local workloads and checks requested coverage, with a narrow primary-source definition and scaling-boundary check.",
+  "nearest_overlap": "https://github.com/discoveryathome/ibp-reduction/discussions/2#discussioncomment-19132014",
+  "claim": "https://github.com/discoveryathome/ibp-reduction/discussions/2#discussioncomment-19132141",
+  "outcome": "bounded-obstruction-and-tooling",
+  "evidence_level": "author-checked",
+  "native_or_author_solver_executed": false,
+  "next_questions": [
+    {
+      "question": "Can a separate fixed-width on-cut seed enumerator reproduce the pinned paper's n=4,5,6 counts?",
+      "first_step": "Freeze the double-pentagon index conventions, cut, width, trivial sectors and exception; implement Eq. (16) without executing upstream code.",
+      "success_test": "358, 589 and 820 unique on-cut seeds, with mutation controls rejecting incorrect geometry or counts.",
+      "blocked_by": "A screened enumerator and pinned sector data; solving additionally requires verified fixtures and an available backend."
+    }
+  ]
+}

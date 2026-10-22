@@ -1,0 +1,220 @@
+{
+  "schema": "ibp-donation-verification/v1",
+  "seed": "735db16f08fc3b299d027fa453589748",
+  "base": "9427e928040cd7d71513a443da4a42811720e537",
+  "evidence_level": "author-checked",
+  "verified_at": "2026-10-22T20:33:00Z",
+  "environment": {
+    "platform": "Linux-6.12.113+deb13-amd64-x86_64-with-glibc2.41",
+    "python": "Python 3.13.5",
+    "working_directory": "ibp-reduction-round2 repository root",
+    "interpreter": "../ibp-reduction/.venv/bin/python",
+    "dependencies": "Existing adjacent checkout-local virtual environment with this base's seven pinned requirements; no global or new upstream-code installation. Reproduce with a local .venv created following README.md and requirements.txt."
+  },
+  "scope": "Enumerate requested targets, rectangular seeds and direct IBP unknowns; compare producer/checker target and master sets. This audit does not perform elimination or replay every saved certificate.",
+  "summary": {
+    "tests_passed": 27,
+    "new_tests": 9,
+    "workloads": 11,
+    "one_loop_targets": 236,
+    "sunset_targets": 11,
+    "one_loop_max_target_s": 0,
+    "sunset_max_target_s": 1,
+    "generated_report_byte_identical": true,
+    "accepted_artifact_hash_check": "PASS via tools/check_project.py"
+  },
+  "checks": [
+    {
+      "argv": [
+        "../ibp-reduction/.venv/bin/python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-v"
+      ],
+      "exit_code": 0,
+      "wall_seconds": 12.303,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "6bd51ddc8b9018f7849bfce8bd1711afb0352be5b999c28f6b531255ae90dfc0",
+      "output": "test_certificate (test_exact.ExactTests.test_certificate) ... ok\ntest_fallback_costs_include_failed_cache_hits (test_exact.ExactTests.test_fallback_costs_include_failed_cache_hits) ... ok\ntest_independent_input_derivation (test_exact.ExactTests.test_independent_input_derivation) ... ok\ntest_known_massless_bubble_gamma_ratio (test_exact.ExactTests.test_known_massless_bubble_gamma_ratio) ... ok\ntest_known_tadpole_gamma_ratio (test_exact.ExactTests.test_known_tadpole_gamma_ratio) ... ok\ntest_online_certificate_and_accounting (test_exact.ExactTests.test_online_certificate_and_accounting) ... ok\ntest_reject_changed_output (test_exact.ExactTests.test_reject_changed_output) ... ok\ntest_reject_changed_proof (test_exact.ExactTests.test_reject_changed_proof) ... ok\ntest_reject_fake_symmetry (test_exact.ExactTests.test_reject_fake_symmetry) ... ok\ntest_reject_forward_reference (test_exact.ExactTests.test_reject_forward_reference) ... ok\ntest_reject_missing_target (test_exact.ExactTests.test_reject_missing_target) ... ok\ntest_reject_polynomial_that_matches_three_dimensions (test_exact.ExactTests.test_reject_polynomial_that_matches_three_dimensions) ... ok\ntest_reject_unreduced_master (test_exact.ExactTests.test_reject_unreduced_master) ... ok\ntest_reject_zero_denominator (test_exact.ExactTests.test_reject_zero_denominator) ... ok\ntest_reuse_preserves_results_and_cost_accounting (test_exact.ExactTests.test_reuse_preserves_results_and_cost_accounting) ... ok\ntest_coefficient_parser_rejects_calls (test_kira.KiraTests.test_coefficient_parser_rejects_calls) ... ok\ntest_export_positive_and_negative_controls (test_kira.KiraTests.test_export_positive_and_negative_controls) ... ok\ntest_all_ten_one_loop_target_sets_have_no_negative_indices (test_target_scope.TargetScopeTests.test_all_ten_one_loop_target_sets_have_no_negative_indices) ... ok\ntest_cli_all_families_requires_every_workload (test_target_scope.TargetScopeTests.test_cli_all_families_requires_every_workload) ... ok\ntest_cli_claim_gate_uses_requested_target_s_only (test_target_scope.TargetScopeTests.test_cli_claim_gate_uses_requested_target_s_only) ... ok\ntest_cli_requires_exact_s_even_when_larger_s_exists (test_target_scope.TargetScopeTests.test_cli_requires_exact_s_even_when_larger_s_exists) ... ok\ntest_dots_and_negative_indices_are_distinct (test_target_scope.TargetScopeTests.test_dots_and_negative_indices_are_distinct) ... ok\ntest_drift_from_checker_target_domain_is_rejected (test_target_scope.TargetScopeTests.test_drift_from_checker_target_domain_is_rejected) ... ok\ntest_generated_negative_indices_do_not_become_targets (test_target_scope.TargetScopeTests.test_generated_negative_indices_do_not_become_targets) ... ok\ntest_master_drift_is_rejected (test_target_scope.TargetScopeTests.test_master_drift_is_rejected) ... ok\ntest_sunset_is_separate_and_only_requests_s_zero_and_one (test_target_scope.TargetScopeTests.test_sunset_is_separate_and_only_requests_s_zero_and_one) ... ok\ntest_saved_certificates_and_numerator_coverage (test_two_loop.TwoLoopTests.test_saved_certificates_and_numerator_coverage) ... ok\n\n----------------------------------------------------------------------\nRan 27 tests in 11.358s\n\nOK\n"
+    },
+    {
+      "argv": [
+        "../ibp-reduction/.venv/bin/python",
+        "tools/check_project.py"
+      ],
+      "exit_code": 0,
+      "wall_seconds": 0.198,
+      "stdout_sha256": "59428aa79b064396c23981aa5d8adf2113e790b72661232a4eb7c03a469e9644",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "output": "PASS: protocol schemas, track weights, artifact hashes, and frozen evaluation binding\n"
+    },
+    {
+      "argv": [
+        "../ibp-reduction/.venv/bin/python",
+        "tools/audit_target_scope.py"
+      ],
+      "exit_code": 0,
+      "wall_seconds": 1.389,
+      "stdout_sha256": "ba44c9face82bc6b94506a8993e7ce25c263e4fd3ae96d55ad12d5865ebb2923",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "families": 11,
+      "missing": [],
+      "saved_report_byte_identical": true
+    },
+    {
+      "argv": [
+        "../ibp-reduction/.venv/bin/python",
+        "tools/audit_target_scope.py",
+        "--family",
+        "bubble_equal_mass",
+        "--require-target-s",
+        "0"
+      ],
+      "exit_code": 0,
+      "wall_seconds": 0.673,
+      "stdout_sha256": "d9bb0a646a36bfdc4cd788ebeddc874c6766e59f84343929cadb8f3a2c7f67df",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "families": 1,
+      "missing": []
+    },
+    {
+      "argv": [
+        "../ibp-reduction/.venv/bin/python",
+        "tools/audit_target_scope.py",
+        "--family",
+        "bubble_equal_mass",
+        "--require-target-s",
+        "1"
+      ],
+      "exit_code": 1,
+      "wall_seconds": 0.693,
+      "stdout_sha256": "bca8c1646efedeadf6e167ce22bebcdad4eb905375feff6cf48e9cd2df0e3408",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "families": 1,
+      "missing": [
+        "bubble_equal_mass"
+      ]
+    },
+    {
+      "argv": [
+        "../ibp-reduction/.venv/bin/python",
+        "tools/audit_target_scope.py",
+        "--family",
+        "sunset_equal_mass_v1",
+        "--require-target-s",
+        "1"
+      ],
+      "exit_code": 0,
+      "wall_seconds": 0.782,
+      "stdout_sha256": "03501404c695234b8abe90a2ae4cfc0f4b8843a8b75b4f24282f590801f4d11b",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "families": 1,
+      "missing": []
+    },
+    {
+      "argv": [
+        "../ibp-reduction/.venv/bin/python",
+        "tools/audit_target_scope.py",
+        "--family",
+        "sunset_equal_mass_v1",
+        "--require-target-s",
+        "2"
+      ],
+      "exit_code": 1,
+      "wall_seconds": 0.707,
+      "stdout_sha256": "81ca2f9d3beab044df5d2fd66b29bc0f6211a7489dd3754dddce711df14ec8ad",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "families": 1,
+      "missing": [
+        "sunset_equal_mass_v1"
+      ]
+    },
+    {
+      "argv": [
+        "../ibp-reduction/.venv/bin/python",
+        "tools/audit_target_scope.py",
+        "--require-target-s",
+        "1"
+      ],
+      "exit_code": 1,
+      "wall_seconds": 1.423,
+      "stdout_sha256": "448b72e0967c470268a654043006a3891fd39d28040d7b8e1dfe48c97a276a77",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "families": 11,
+      "missing": [
+        "tadpole",
+        "bubble_massless",
+        "bubble_equal_mass",
+        "triangle_one_mass",
+        "bubble_unequal_mass",
+        "triangle_offshell",
+        "box_massless",
+        "bubble_one_mass",
+        "triangle_two_mass",
+        "box_one_mass"
+      ]
+    },
+    {
+      "argv": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "exit_code": 0,
+      "wall_seconds": 0.006,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "output": ""
+    }
+  ],
+  "selection_recheck": [
+    {
+      "argv": [
+        "../ibp-reduction/.venv/bin/python",
+        "tools/pick_task.py",
+        "--seed",
+        "735db16f08fc3b299d027fa453589748"
+      ],
+      "exit_code": 0,
+      "wall_seconds": 0.08,
+      "result": "literature/tube-and-online-audit; priority revision 2"
+    },
+    {
+      "argv": [
+        "../ibp-reduction/.venv/bin/python",
+        "tools/inspect_task.py",
+        "sources"
+      ],
+      "exit_code": 0,
+      "wall_seconds": 0.055,
+      "result": "Primary-source literature and claim audit printed from docs/literature.md"
+    }
+  ],
+  "costs": {
+    "final_check_commands_wall_seconds": 18.174,
+    "measurement_scope": "Sequential local final checks only. No throughput, peak-RSS, full-session CPU or solver arithmetic-cost measurement. Earlier focused and full test passes also occurred; costs here are not a benchmark.",
+    "preliminary_checks": "Seven focused new tests and a 25-test full suite passed before the two review-driven tests were added; no failed implementation test was observed in this round.",
+    "upstream_algorithm_runs": 0,
+    "search_candidates": 0
+  },
+  "review": {
+    "code": "Same-author delegated AI review found no blocking defect; requested protection against zip truncation and exact/all-family coverage regressions. Both gaps addressed with explicit workload names and two additional tests.",
+    "local_inventory": "A separately delegated source audit independently reconstructed local target inventories and distinguished seed/support coverage; this is author checking, not independent human acceptance.",
+    "final_source_review": "No actionable issues in the diagnostic, tests, README, TASK and TUBE_SCOPE. Reviewer checked definitions, formulas, cut, width, sector exception and limitations against the pinned paper and author commit, and confirmed the previous test gaps were addressed. Static review only; receipts excluded. Same-author AI review, not independent human acceptance."
+  },
+  "controls": {
+    "expected_exit_1": "Missing exact target degree is a successful rejection, not a reduction failure.",
+    "mutations": "Tests reject missing/duplicate/extra target tuples and master drift; synthetic histogram {0,2} rejects requested s=1; all-family s=1 gate rejects all ten one-loop workloads."
+  },
+  "not_checked": [
+    "Native Kira, FIRE, or author tube-seeding execution",
+    "Double-pentagon seed sets or reductions; proposed 358/589/820 counts are source-derived acceptance criteria only",
+    "High-rank scaling, runtime or memory comparisons",
+    "Complete historical certificate corpus replay and ibp.experiment reproduce",
+    "Independent human or maintainer review, mathematical IBP axioms or master minimality"
+  ],
+  "accepted_results_changed": false
+}
