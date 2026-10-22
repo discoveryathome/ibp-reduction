@@ -1,0 +1,27 @@
+{
+  "task": "mature-baseline",
+  "track": "replication",
+  "priority_revision": 2,
+  "seed": "28ce51467ebdd5ae2467c7ba846f3935",
+  "base": "9427e928040cd7d71513a443da4a42811720e537",
+  "scope_status": "refined",
+  "scope": "Export the seven frozen one-loop families for Kira and support exact same-basis export comparisons.",
+  "scope_reason": "No native Kira or FIRE executable is installed; the card explicitly includes exporting definitions and comparing exact identities. No matching replication handoff was open.",
+  "outcome": "tooling",
+  "evidence_level": "author-checked",
+  "claim": "https://github.com/discoveryathome/ibp-reduction/discussions/2#discussioncomment-19131410",
+  "original_question": "How does an explicitly pinned Kira 3 or FIRE 7 configuration compare on these targets?",
+  "native_solver_executed": false,
+  "budget_minutes": 60,
+  "started_at": "2026-10-22T19:34:30Z",
+  "verification_completed_at": "2026-10-22T19:52:29Z",
+  "next_questions": [
+    {
+      "question": "Do the seven generated Kira projects reduce natively to the fixed prescribed basis?",
+      "why_it_matters": "Synthetic export controls do not validate native solver behavior.",
+      "first_step": "Run the generated tadpole with pinned Kira 3.0, compare its export with tools/check_kira.py, then repeat for all seven families.",
+      "blocked_by": "A screened Kira installation with a working arithmetic backend.",
+      "success_test": "All 115 non-master identities and actual master sets match, with pinned build and output receipts."
+    }
+  ]
+}

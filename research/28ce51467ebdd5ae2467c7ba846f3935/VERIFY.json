@@ -1,0 +1,64 @@
+{
+  "working_directory": "repository root",
+  "environment": "Linux x86_64, Python 3.13.5, local .venv with requirements.txt pins",
+  "evidence_level": "author-checked",
+  "dependency_pins": "requirements.txt",
+  "commands": [
+    {
+      "argv": [".venv/bin/python", "tools/pick_task.py", "--seed", "28ce51467ebdd5ae2467c7ba846f3935"],
+      "timeout_seconds": 10,
+      "observed": "replication / mature-baseline"
+    },
+    {
+      "argv": [".venv/bin/python", "tools/inspect_task.py", "baseline"],
+      "timeout_seconds": 10,
+      "observed": "Seven sparse baseline records. This command reads historical metrics; it does not rerun the benchmark."
+    },
+    {
+      "argv": [".venv/bin/python", "tools/export_kira_one_loop.py", "--out", "scratch/kira-one-loop-replay"],
+      "timeout_seconds": 30,
+      "observed": "Seven family projects, 35 files plus manifest.json, solver_executed=false. Choose a fresh output path for each replay."
+    },
+    {
+      "argv": [".venv/bin/python", "-m", "unittest", "discover", "-s", "tests", "-v"],
+      "timeout_seconds": 300,
+      "observed": "29 tests passed in 18.733 seconds, including synthetic one-loop interfaces, independent analytic tadpole CLI control, saved sunset fixture and adversarial inputs. Test runtime is not solver performance evidence."
+    },
+    {
+      "argv": [".venv/bin/python", "-m", "ibp.experiment", "reproduce"],
+      "timeout_seconds": 300,
+      "observed": "PASS: 17 exact certificates; sparse/learned deterministic costs reproduced on 7 families."
+    },
+    {
+      "argv": [".venv/bin/python", "tools/check_kira.py"],
+      "timeout_seconds": 60,
+      "observed": "Saved Kira export matches all 9 sunset identities for each of sparse and online certificates."
+    },
+    {
+      "argv": [".venv/bin/python", "tools/check_project.py"],
+      "timeout_seconds": 30,
+      "observed": "PASS: protocol schemas, track weights, artifact hashes, and frozen evaluation binding."
+    },
+    {
+      "argv": [".venv/bin/python", "-c", "import hashlib,json,pathlib; p=pathlib.Path('.'); s=json.loads((p/'research/28ce51467ebdd5ae2467c7ba846f3935/SOURCES.json').read_text()); g=p/'scratch/kira-one-loop-replay'; assert all(hashlib.sha256((p/r['path']).read_bytes()).hexdigest()==r['sha256'] for r in s['sources']); assert all(hashlib.sha256((g/f).read_bytes()).hexdigest()==h for f,h in s['generated_inputs_sha256'].items()); assert hashlib.sha256((g/'manifest.json').read_bytes()).hexdigest()==s['generated_manifest_sha256']; m=json.loads((g/'manifest.json').read_text()); assert all(hashlib.sha256((p/f).read_bytes()).hexdigest()==h for f,h in m['sources_sha256'].items()); print('PASS: source, generated-input, and manifest hashes')"],
+      "timeout_seconds": 30,
+      "observed": "19 sources, 35 generated inputs, the generated manifest digest, and all 12 manifest source bindings match."
+    },
+    {
+      "argv": ["git", "diff", "--check"],
+      "timeout_seconds": 10,
+      "expected": "No whitespace errors."
+    }
+  ],
+  "failure_controls": {
+    "before_fix": "Two negative subtests accepted denominators ((s^2-1)/(s-1)-s-1), which are algebraically zero, in 0/denominator and 0*denominator^(-1).",
+    "after_fix": "Exact denominator checks before division and negative powers reject both cases.",
+    "other_controls": "Missing, duplicate or wrong targets; wrong dimensions/family/basis; changed coefficient; polynomial error invisible at d=4,6,8; tampered certificate; calls, unknown symbols, floats and zero divisors; existing output directory."
+  },
+  "not_checked": [
+    "Native Kira parsing/execution and preferred-master behavior for the generated one-loop configurations",
+    "Production solver costs, wall-clock speed or cross-solver performance ratios",
+    "Independent human review, analytic IBP axioms or global basis minimality",
+    "New-family or multi-loop generalization"
+  ]
+}
