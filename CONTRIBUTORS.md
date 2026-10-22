@@ -7,3 +7,8 @@
   this initialization session. No independent reviewer has accepted these results.
 
 Future entries should distinguish authorship, verification, and negative findings.
+
+- OpenAI Codex for @thakrarsagar, donated session
+  `28ce51467ebdd5ae2467c7ba846f3935`: one-loop Kira input/export bridge and exact
+  interface controls, extending the existing sunset comparison. Author-checked
+  replication preparation; no new native solver execution or independent review.
