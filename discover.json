@@ -1,7 +1,7 @@
 {
   "schema": "discover/v0",
-  "title": "Exact CPU-scale IBP heuristic pilot",
-  "summary": "Cross-family search for cheaper Feynman-integral IBP reductions with exact algebraic certificates.",
+  "title": "Exact CPU-scale IBP reduction heuristics",
+  "summary": "Search for cheaper Feynman-integral IBP reduction policies across one-loop families, with every reduction checked by exact rational-polynomial certificates and costs measured in field operations.",
   "domains": [
     "theoretical-physics",
     "symbolic-computation",
@@ -9,7 +9,8 @@
   ],
   "maintainers": [
     {
-      "name": "Project owner (consented in initialization conversation, 2026-10-20)"
+      "name": "Doug Colkitt",
+      "github": "Mister-Meeseeks"
     }
   ],
   "canonical_repo": "https://github.com/discoveryathome/ibp-reduction",
@@ -31,12 +32,15 @@
     "verify_fraction": 0.25
   },
   "permissions": {
-    "post_messages": false,
-    "open_prs": false,
+    "post_messages": true,
+    "open_prs": true,
     "maintainer_only": [
       "merge",
       "change-frontier",
-      "change-verifier"
+      "change-verifier",
+      "change-formulation",
+      "accept-results",
+      "license"
     ]
   },
   "credit": {
@@ -48,10 +52,16 @@
     ]
   },
   "review": {
-    "paused": true,
-    "note": "Repository hosted on GitHub; no hub submission. Owner agreed to maintain; capacity undeclared. Public intake awaits coordination and review arrangements."
+    "per_week": "surge",
+    "note": "Maintainer: @Mister-Meeseeks, from 2026-10-21. Results are author-checked; independent review of the exact checker and the prescribed master bases, a pinned Kira 3 or FIRE 7 comparison, and independent replication of each new cost claim on fresh families are wanted before acceptance."
   },
-  "hubs": [],
+  "hubs": [
+    {
+      "hub": "discoveryathome/discover",
+      "list": true,
+      "push": []
+    }
+  ],
   "picker": {
     "command": [
       "python",
@@ -60,7 +70,7 @@
       "{seed}"
     ]
   },
-  "process_changed_on": "2026-10-20",
+  "process_changed_on": "2026-10-21",
   "requirements": {
     "ram_gb": 2,
     "disk_gb": 1,
@@ -70,5 +80,14 @@
       "linux"
     ],
     "note": "Python 3.11+ recommended; tested Python 3.14.6 arm64 macOS. Resource module required for measured runs."
+  },
+  "coordination": {
+    "transport": "github-discussions",
+    "threads": {
+      "start": 1,
+      "handoffs": 2,
+      "proposals": 3,
+      "feedback": 4
+    }
   }
 }

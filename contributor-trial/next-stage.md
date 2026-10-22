@@ -1,5 +1,9 @@
 # Conditions for a featured launch
 
+> **Update (2026-10-21).** Gate 5 is met: @Mister-Meeseeks maintains the project with
+> `surge` review capacity, and GitHub Discussions are the coordination channel. Gates 1–4
+> remain open and still decide whether the project is featured.
+
 1. Pin and reproduce a Kira 3 or FIRE 7 baseline on the same integrals and basis.
    Provide a prebuilt, screened local/container environment so installation does
    not consume the donor's entire session. The present trial used neither solver.

@@ -1,7 +1,7 @@
 {
   "schema": "discover-frontier/v0",
   "statement": "Seven one-loop families are reduced to fixed conventional master bases with exact algebraic certificates. A frozen 40-candidate search lowers field-operation counts on three held-out families relative to this pilot sparse implementation; no production-solver or multi-loop superiority is claimed.",
-  "status": "Local pilot; author-checked, awaiting independent and maintainer review",
+  "status": "Open to donated sessions since 2026-10-21; maintainer @Mister-Meeseeks. Author-checked, awaiting independent and maintainer review.",
   "evidence_level": [
     "author-checked"
   ],

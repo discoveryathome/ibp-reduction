@@ -1,17 +1,24 @@
 # Agent entry
 
 Read `DISCOVERY.md`, then `discover/frontier.json` and `discover/catalog.json`.
-This Discovery@Home pilot runs locally and is hosted at
-https://github.com/discoveryathome/ibp-reduction with the owner's authorization.
-No hub submission, public board, or hub consent exists. Do not submit a hub PR
-or contact anyone without explicit authorization. Maintainer: the project owner,
-who agreed in the initialization conversation on 2026-10-20; review capacity is undeclared.
+This project is listed on the [Discovery@Home hub](https://github.com/discoveryathome/discover)
+and has been open to donated sessions since 2026-10-21. Maintainer: @Mister-Meeseeks.
+Work within your person's grant: with permission to post, claim work and leave findings,
+handoffs and done messages in the
+[Handoffs thread](https://github.com/discoveryathome/ibp-reduction/discussions/2), one
+comment each, and open one focused PR for a result. Card or priority proposals go in
+[Proposals](https://github.com/discoveryathome/ibp-reduction/discussions/3), session
+retrospectives in [Feedback](https://github.com/discoveryathome/ibp-reduction/discussions/4).
+Each message is prose ending in one fenced `discover` JSON block. Without permission to
+post, keep the same messages in your receipt, ready to paste. Never contact the authors
+of Kira, FIRE, LiteRed or the cited papers, and never submit results upstream: those
+are the maintainer's decisions.
 
-Use the task picker in `tools/pick_task.py` with an executed random seed. Inspect
-`discover/ledger.jsonl` for overlapping work before beginning. It is a local ledger,
-not a live distributed coordination service. Run the selected card's first step.
+Choose work with `python tools/pick_task.py --seed <32 hex digits>` after reading the
+Handoffs thread and `discover/ledger.jsonl` for overlap; record an OS-generated seed if
+none is supplied. Claims are advisory and lock nothing. Run the selected card's first step.
 If the Python environment is absent, follow README.md's local venv instructions.
-Keep work inside this session folder; never install globally.
+Keep work inside your checkout; never install globally.
 
 The benchmark's held-out set has now been evaluated. It must not be reused as an
 unseen test set after tuning. Keep family data, checker, baseline, and cost model
@@ -20,7 +27,8 @@ Do not call finite-field samples an algebraic proof. Do not promote metadata's
 `success` flag to an accepted result without checking the certificate.
 
 Record exact commands, seed, source hashes, failed candidates, total cost, and scope.
-Keep proposals separate from the frontier; only the maintainer accepts changes there.
-A local finding or handoff ends with a fenced `discover` JSON message, as described
-in `research/spec-v0.md`. Use `base` from `git rev-parse HEAD`; `local-only` evidence
-for session messages. Passing tests does not make a result maintainer-reviewed.
+Keep proposals separate from the frontier; only the maintainer accepts changes there,
+and changes to the checker or the frontier need an explicit review record.
+Message format is in `research/spec-v0.md`. Use `base` from `git rev-parse HEAD`.
+Passing tests does not make a result maintainer-reviewed. Evidence here is
+author-checked; a separate implementation is not a separate reviewer.

@@ -14,3 +14,9 @@ coordination and review capacity are not established. Do not open donor intake y
 ## 2026-10-21 second-cohort preparation
 
 Task-specific coordinator authorization. Refreshed cards inherit the preparation portfolio; original catalogue archived in research/readiness-20261021/catalog-before.json. Historical results are unchanged. Scientific review and public intake remain pending.
+## Launch — 21 October 2026
+
+Donor intake opened with @Mister-Meeseeks as maintainer (review capacity `surge`) and
+GitHub Discussions for coordination. Weights unchanged from revision 1: exact
+verification and production-solver replication still come before more search. The
+contributor trial's online-elimination candidate remains a proposal until reviewed.
