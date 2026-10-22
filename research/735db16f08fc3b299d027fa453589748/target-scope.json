@@ -1,0 +1,703 @@
+{
+  "schema": "ibp-target-scope/v1",
+  "definition": "s(a)=sum_i max(-a_i,0); dots(a)=sum_i max(a_i-1,0).",
+  "scope": "Live local target/seed/IBP-index enumeration, not certificate replay or a tube-seeding performance experiment.",
+  "seed_policy": "rectangular; actual family equation generator, before elimination and any fallback",
+  "generated_ibp_note": "Only direct IBP rows, excluding separately inserted symmetry equations; unknowns are not requested targets.",
+  "source_sha256": {
+    "ibp/families.py": "400d3ba014a4a1563ec5e4690a0cd959d8bf9ba4029d158c3467d0fa40fe502f",
+    "ibp/trial.py": "3ed4ffff8f0f94098fbd66a7668aeaf5df09cebec922ec514c1e98cfbd03e5f5",
+    "ibp/two_loop.py": "65211279a7c0c1e03941596c762d19883e0ed3aeb3bb339fe42838d8f66cd4a1",
+    "ibp/validator.py": "bf4462d50a39ac4e382e431eb6c2007f755c44f1f75c551b94d41ce3215e83d5",
+    "ibp/two_loop_check.py": "fa69647b52be1458ce6dde6994c27211ba6db7e1bdb2ffbdfb075840709cbbde",
+    "tools/audit_target_scope.py": "aaeacf15c656893d8fad19785df71936e88e54ae381f5490e624176389ab51f6"
+  },
+  "families": [
+    {
+      "family": "tadpole",
+      "suite": "initial",
+      "split": "control",
+      "targets_including_masters": {
+        "unique_integrals": 4,
+        "s_histogram": {
+          "0": 4
+        },
+        "max_s": 0,
+        "max_dots": 3,
+        "max_positive_sum": 4
+      },
+      "non_master_targets": {
+        "unique_integrals": 3,
+        "s_histogram": {
+          "0": 3
+        },
+        "max_s": 0,
+        "max_dots": 3,
+        "max_positive_sum": 4
+      },
+      "masters": [
+        [
+          1
+        ]
+      ],
+      "negative_index_targets": [],
+      "rectangular_seed_indices": {
+        "unique_integrals": 4,
+        "s_histogram": {
+          "0": 4
+        },
+        "max_s": 0,
+        "max_dots": 3,
+        "max_positive_sum": 4
+      },
+      "generated_ibp_unknowns": {
+        "unique_integrals": 5,
+        "s_histogram": {
+          "0": 5
+        },
+        "max_s": 0,
+        "max_dots": 4,
+        "max_positive_sum": 5
+      },
+      "generated_ibp_rows": 4,
+      "nonempty_generated_ibp_rows": 4,
+      "checker_target_and_master_sets_match": true
+    },
+    {
+      "family": "bubble_massless",
+      "suite": "initial",
+      "split": "train",
+      "targets_including_masters": {
+        "unique_integrals": 6,
+        "s_histogram": {
+          "0": 6
+        },
+        "max_s": 0,
+        "max_dots": 2,
+        "max_positive_sum": 4
+      },
+      "non_master_targets": {
+        "unique_integrals": 5,
+        "s_histogram": {
+          "0": 5
+        },
+        "max_s": 0,
+        "max_dots": 2,
+        "max_positive_sum": 4
+      },
+      "masters": [
+        [
+          1,
+          1
+        ]
+      ],
+      "negative_index_targets": [],
+      "rectangular_seed_indices": {
+        "unique_integrals": 6,
+        "s_histogram": {
+          "0": 6
+        },
+        "max_s": 0,
+        "max_dots": 2,
+        "max_positive_sum": 4
+      },
+      "generated_ibp_unknowns": {
+        "unique_integrals": 10,
+        "s_histogram": {
+          "0": 10
+        },
+        "max_s": 0,
+        "max_dots": 3,
+        "max_positive_sum": 5
+      },
+      "generated_ibp_rows": 12,
+      "nonempty_generated_ibp_rows": 12,
+      "checker_target_and_master_sets_match": true
+    },
+    {
+      "family": "bubble_equal_mass",
+      "suite": "initial",
+      "split": "train",
+      "targets_including_masters": {
+        "unique_integrals": 9,
+        "s_histogram": {
+          "0": 9
+        },
+        "max_s": 0,
+        "max_dots": 2,
+        "max_positive_sum": 3
+      },
+      "non_master_targets": {
+        "unique_integrals": 7,
+        "s_histogram": {
+          "0": 7
+        },
+        "max_s": 0,
+        "max_dots": 2,
+        "max_positive_sum": 3
+      },
+      "masters": [
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "negative_index_targets": [],
+      "rectangular_seed_indices": {
+        "unique_integrals": 15,
+        "s_histogram": {
+          "0": 9,
+          "1": 6
+        },
+        "max_s": 1,
+        "max_dots": 2,
+        "max_positive_sum": 3
+      },
+      "generated_ibp_unknowns": {
+        "unique_integrals": 28,
+        "s_histogram": {
+          "0": 14,
+          "1": 8,
+          "2": 6
+        },
+        "max_s": 2,
+        "max_dots": 3,
+        "max_positive_sum": 4
+      },
+      "generated_ibp_rows": 30,
+      "nonempty_generated_ibp_rows": 30,
+      "checker_target_and_master_sets_match": true
+    },
+    {
+      "family": "triangle_one_mass",
+      "suite": "initial",
+      "split": "train",
+      "targets_including_masters": {
+        "unique_integrals": 10,
+        "s_histogram": {
+          "0": 10
+        },
+        "max_s": 0,
+        "max_dots": 2,
+        "max_positive_sum": 4
+      },
+      "non_master_targets": {
+        "unique_integrals": 9,
+        "s_histogram": {
+          "0": 9
+        },
+        "max_s": 0,
+        "max_dots": 2,
+        "max_positive_sum": 4
+      },
+      "masters": [
+        [
+          1,
+          0,
+          1
+        ]
+      ],
+      "negative_index_targets": [],
+      "rectangular_seed_indices": {
+        "unique_integrals": 16,
+        "s_histogram": {
+          "0": 10,
+          "1": 6
+        },
+        "max_s": 1,
+        "max_dots": 2,
+        "max_positive_sum": 4
+      },
+      "generated_ibp_unknowns": {
+        "unique_integrals": 38,
+        "s_histogram": {
+          "0": 19,
+          "1": 10,
+          "2": 9
+        },
+        "max_s": 2,
+        "max_dots": 3,
+        "max_positive_sum": 5
+      },
+      "generated_ibp_rows": 48,
+      "nonempty_generated_ibp_rows": 48,
+      "checker_target_and_master_sets_match": true
+    },
+    {
+      "family": "bubble_unequal_mass",
+      "suite": "initial",
+      "split": "test",
+      "targets_including_masters": {
+        "unique_integrals": 14,
+        "s_histogram": {
+          "0": 14
+        },
+        "max_s": 0,
+        "max_dots": 3,
+        "max_positive_sum": 4
+      },
+      "non_master_targets": {
+        "unique_integrals": 11,
+        "s_histogram": {
+          "0": 11
+        },
+        "max_s": 0,
+        "max_dots": 3,
+        "max_positive_sum": 4
+      },
+      "masters": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "negative_index_targets": [],
+      "rectangular_seed_indices": {
+        "unique_integrals": 22,
+        "s_histogram": {
+          "0": 14,
+          "1": 8
+        },
+        "max_s": 1,
+        "max_dots": 3,
+        "max_positive_sum": 4
+      },
+      "generated_ibp_unknowns": {
+        "unique_integrals": 38,
+        "s_histogram": {
+          "0": 20,
+          "1": 10,
+          "2": 8
+        },
+        "max_s": 2,
+        "max_dots": 4,
+        "max_positive_sum": 5
+      },
+      "generated_ibp_rows": 44,
+      "nonempty_generated_ibp_rows": 44,
+      "checker_target_and_master_sets_match": true
+    },
+    {
+      "family": "triangle_offshell",
+      "suite": "initial",
+      "split": "test",
+      "targets_including_masters": {
+        "unique_integrals": 22,
+        "s_histogram": {
+          "0": 22
+        },
+        "max_s": 0,
+        "max_dots": 2,
+        "max_positive_sum": 4
+      },
+      "non_master_targets": {
+        "unique_integrals": 18,
+        "s_histogram": {
+          "0": 18
+        },
+        "max_s": 0,
+        "max_dots": 2,
+        "max_positive_sum": 4
+      },
+      "masters": [
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          0,
+          1
+        ],
+        [
+          1,
+          1,
+          0
+        ],
+        [
+          1,
+          1,
+          1
+        ]
+      ],
+      "negative_index_targets": [],
+      "rectangular_seed_indices": {
+        "unique_integrals": 40,
+        "s_histogram": {
+          "0": 22,
+          "1": 18
+        },
+        "max_s": 1,
+        "max_dots": 2,
+        "max_positive_sum": 4
+      },
+      "generated_ibp_unknowns": {
+        "unique_integrals": 97,
+        "s_histogram": {
+          "0": 40,
+          "1": 30,
+          "2": 27
+        },
+        "max_s": 2,
+        "max_dots": 3,
+        "max_positive_sum": 5
+      },
+      "generated_ibp_rows": 120,
+      "nonempty_generated_ibp_rows": 120,
+      "checker_target_and_master_sets_match": true
+    },
+    {
+      "family": "box_massless",
+      "suite": "initial",
+      "split": "test",
+      "targets_including_masters": {
+        "unique_integrals": 65,
+        "s_histogram": {
+          "0": 65
+        },
+        "max_s": 0,
+        "max_dots": 3,
+        "max_positive_sum": 5
+      },
+      "non_master_targets": {
+        "unique_integrals": 62,
+        "s_histogram": {
+          "0": 62
+        },
+        "max_s": 0,
+        "max_dots": 3,
+        "max_positive_sum": 5
+      },
+      "masters": [
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          1,
+          0
+        ],
+        [
+          1,
+          1,
+          1,
+          1
+        ]
+      ],
+      "negative_index_targets": [],
+      "rectangular_seed_indices": {
+        "unique_integrals": 145,
+        "s_histogram": {
+          "0": 65,
+          "1": 80
+        },
+        "max_s": 1,
+        "max_dots": 3,
+        "max_positive_sum": 5
+      },
+      "generated_ibp_unknowns": {
+        "unique_integrals": 425,
+        "s_histogram": {
+          "0": 125,
+          "1": 140,
+          "2": 160
+        },
+        "max_s": 2,
+        "max_dots": 4,
+        "max_positive_sum": 6
+      },
+      "generated_ibp_rows": 580,
+      "nonempty_generated_ibp_rows": 580,
+      "checker_target_and_master_sets_match": true
+    },
+    {
+      "family": "bubble_one_mass",
+      "suite": "contributor-trial",
+      "split": "trial-test",
+      "targets_including_masters": {
+        "unique_integrals": 15,
+        "s_histogram": {
+          "0": 15
+        },
+        "max_s": 0,
+        "max_dots": 4,
+        "max_positive_sum": 5
+      },
+      "non_master_targets": {
+        "unique_integrals": 13,
+        "s_histogram": {
+          "0": 13
+        },
+        "max_s": 0,
+        "max_dots": 4,
+        "max_positive_sum": 5
+      },
+      "masters": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "negative_index_targets": [],
+      "rectangular_seed_indices": {
+        "unique_integrals": 20,
+        "s_histogram": {
+          "0": 15,
+          "1": 5
+        },
+        "max_s": 1,
+        "max_dots": 4,
+        "max_positive_sum": 5
+      },
+      "generated_ibp_unknowns": {
+        "unique_integrals": 32,
+        "s_histogram": {
+          "0": 21,
+          "1": 6,
+          "2": 5
+        },
+        "max_s": 2,
+        "max_dots": 5,
+        "max_positive_sum": 6
+      },
+      "generated_ibp_rows": 40,
+      "nonempty_generated_ibp_rows": 40,
+      "checker_target_and_master_sets_match": true
+    },
+    {
+      "family": "triangle_two_mass",
+      "suite": "contributor-trial",
+      "split": "trial-test",
+      "targets_including_masters": {
+        "unique_integrals": 16,
+        "s_histogram": {
+          "0": 16
+        },
+        "max_s": 0,
+        "max_dots": 2,
+        "max_positive_sum": 4
+      },
+      "non_master_targets": {
+        "unique_integrals": 14,
+        "s_histogram": {
+          "0": 14
+        },
+        "max_s": 0,
+        "max_dots": 2,
+        "max_positive_sum": 4
+      },
+      "masters": [
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          0,
+          1
+        ]
+      ],
+      "negative_index_targets": [],
+      "rectangular_seed_indices": {
+        "unique_integrals": 28,
+        "s_histogram": {
+          "0": 16,
+          "1": 12
+        },
+        "max_s": 1,
+        "max_dots": 2,
+        "max_positive_sum": 4
+      },
+      "generated_ibp_unknowns": {
+        "unique_integrals": 68,
+        "s_histogram": {
+          "0": 30,
+          "1": 20,
+          "2": 18
+        },
+        "max_s": 2,
+        "max_dots": 3,
+        "max_positive_sum": 5
+      },
+      "generated_ibp_rows": 84,
+      "nonempty_generated_ibp_rows": 84,
+      "checker_target_and_master_sets_match": true
+    },
+    {
+      "family": "box_one_mass",
+      "suite": "contributor-trial",
+      "split": "trial-test",
+      "targets_including_masters": {
+        "unique_integrals": 75,
+        "s_histogram": {
+          "0": 75
+        },
+        "max_s": 0,
+        "max_dots": 3,
+        "max_positive_sum": 5
+      },
+      "non_master_targets": {
+        "unique_integrals": 71,
+        "s_histogram": {
+          "0": 71
+        },
+        "max_s": 0,
+        "max_dots": 3,
+        "max_positive_sum": 5
+      },
+      "masters": [
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          1,
+          0
+        ],
+        [
+          1,
+          1,
+          1,
+          1
+        ]
+      ],
+      "negative_index_targets": [],
+      "rectangular_seed_indices": {
+        "unique_integrals": 175,
+        "s_histogram": {
+          "0": 75,
+          "1": 100
+        },
+        "max_s": 1,
+        "max_dots": 3,
+        "max_positive_sum": 5
+      },
+      "generated_ibp_unknowns": {
+        "unique_integrals": 512,
+        "s_histogram": {
+          "0": 140,
+          "1": 170,
+          "2": 202
+        },
+        "max_s": 2,
+        "max_dots": 4,
+        "max_positive_sum": 6
+      },
+      "generated_ibp_rows": 700,
+      "nonempty_generated_ibp_rows": 700,
+      "checker_target_and_master_sets_match": true
+    },
+    {
+      "family": "sunset_equal_mass_v1",
+      "suite": "sunset-v1",
+      "split": "new-development",
+      "targets_including_masters": {
+        "unique_integrals": 11,
+        "s_histogram": {
+          "0": 8,
+          "1": 3
+        },
+        "max_s": 1,
+        "max_dots": 2,
+        "max_positive_sum": 5
+      },
+      "non_master_targets": {
+        "unique_integrals": 9,
+        "s_histogram": {
+          "0": 6,
+          "1": 3
+        },
+        "max_s": 1,
+        "max_dots": 2,
+        "max_positive_sum": 5
+      },
+      "masters": [
+        [
+          1,
+          1,
+          0
+        ],
+        [
+          1,
+          1,
+          1
+        ]
+      ],
+      "negative_index_targets": [
+        [
+          1,
+          1,
+          -1
+        ],
+        [
+          2,
+          1,
+          -1
+        ],
+        [
+          2,
+          2,
+          -1
+        ]
+      ],
+      "rectangular_seed_indices": {
+        "unique_integrals": 16,
+        "s_histogram": {
+          "0": 10,
+          "1": 6
+        },
+        "max_s": 1,
+        "max_dots": 3,
+        "max_positive_sum": 5
+      },
+      "generated_ibp_unknowns": {
+        "unique_integrals": 33,
+        "s_histogram": {
+          "0": 16,
+          "1": 9,
+          "2": 8
+        },
+        "max_s": 2,
+        "max_dots": 4,
+        "max_positive_sum": 6
+      },
+      "generated_ibp_rows": 64,
+      "nonempty_generated_ibp_rows": 60,
+      "checker_target_and_master_sets_match": true
+    }
+  ],
+  "required_target_s": null,
+  "families_missing_required_target_s": []
+}

@@ -1,0 +1,63 @@
+{
+  "schema": "ibp-donation-sources/v1",
+  "seed": "735db16f08fc3b299d027fa453589748",
+  "repository": "https://github.com/discoveryathome/ibp-reduction",
+  "base": "9427e928040cd7d71513a443da4a42811720e537",
+  "hash_algorithm": "sha256",
+  "path_base": "repository root",
+  "files": {
+    "AGENTS.md": "a75e8533dffecc4990534fac18323662a2d66272a749c2af45e3f75738393a83",
+    "DISCOVERY.md": "e47aed3514332bd2b97db2b118b5c6e01e33f0c2bc737486ab2ebdf5b5169fe4",
+    "discover/catalog.json": "4e2b6155b93c9f9c25e6462a1e19b2d10dce599e1c95ba7c79f779167a0cafeb",
+    "discover/frontier.json": "1ea5aa55483937092ae46f7a4ec4b548f21fea54e7a6e4612941591341e41760",
+    "discover/ledger.jsonl": "326e57bc93b945bd26e9d3abf58d43ae5bd853cd4483bc499dbee95fbc8fc734",
+    "discover/priority-log.md": "349c39ded0c0d9dc0ec1b56b4d8c0871c5cce4728eaeef94a30775bcd76ee27b",
+    "research/spec-v0.md": "f3646a8b20102278eaf3c6c06f6227fa89407467280f5ef19372745e83aebda2",
+    "requirements.txt": "a2496caeab755d202a198effedf09faf1d38764d1d9a73fb351579039cb56b10",
+    "docs/literature.md": "60adbc1cbd1f9b9826357460878f991107528a24a3acf460c3e1a09bfec2ff6c",
+    "docs/formulation.md": "b12ccad445829bd59444b6f4d57319a621f2cbdcc88b525302b603aa06ab7b95",
+    "ibp/families.py": "400d3ba014a4a1563ec5e4690a0cd959d8bf9ba4029d158c3467d0fa40fe502f",
+    "ibp/reducer.py": "ea62332375aee0e645ca7bae4a8f7ec343dd9dd5674c214c2f557afc724f8cc0",
+    "ibp/trial.py": "3ed4ffff8f0f94098fbd66a7668aeaf5df09cebec922ec514c1e98cfbd03e5f5",
+    "ibp/two_loop.py": "65211279a7c0c1e03941596c762d19883e0ed3aeb3bb339fe42838d8f66cd4a1",
+    "ibp/validator.py": "bf4462d50a39ac4e382e431eb6c2007f755c44f1f75c551b94d41ce3215e83d5",
+    "ibp/two_loop_check.py": "fa69647b52be1458ce6dde6994c27211ba6db7e1bdb2ffbdfb075840709cbbde",
+    "tools/pick_task.py": "746b867249c41f83635dc92d7ad707f5d53b9754bf75e6216b66a9161d294f6a",
+    "tools/inspect_task.py": "dd641310f8471c647290e882ec492b8f953c4ca784813dd5bd10faccb4ba940e",
+    "tools/audit_target_scope.py": "aaeacf15c656893d8fad19785df71936e88e54ae381f5490e624176389ab51f6",
+    "tests/test_target_scope.py": "06ecbe8ee50f902c83fdfc74c7498a23b12377b76b1b414b6933d1df1043ec7f",
+    "CONTRIBUTORS.md": "14caaae1764fd4f58bb79e83bd19c04d6b2c16a3fc2b454fdecace0c360c7a48",
+    "research/735db16f08fc3b299d027fa453589748/README.md": "b04253df7a343523645ce1f9a8d106fc265661e447e4bfdc79b65916e58857e0",
+    "research/735db16f08fc3b299d027fa453589748/TASK.json": "9d5c905763f5252a0400a98a28a6ff745baff7f8a21ecbb434055bca44d0bb0c",
+    "research/735db16f08fc3b299d027fa453589748/TUBE_SCOPE.md": "8af7c1eb6e954092865aae61e8d430dfd037d7f01491d6848e19488b8a298e1a",
+    "research/735db16f08fc3b299d027fa453589748/target-scope.json": "ba44c9face82bc6b94506a8993e7ce25c263e4fd3ae96d55ad12d5865ebb2923",
+    "research/735db16f08fc3b299d027fa453589748/VERIFY.json": "c55579692b1875c2a280fe50df38f204cb111a58fdbd11de2ff0a390711055bc"
+  },
+  "external_sources": [
+    {
+      "kind": "primary-paper",
+      "url": "https://arxiv.org/abs/2606.10698v1",
+      "full_text": "https://arxiv.org/html/2606.10698v1",
+      "pin": "2606.10698v1",
+      "use": "Integral-index definitions, fixed-width on-cut seed construction and conditional scaling claims; source facts separated from proposed checks in TUBE_SCOPE.md."
+    },
+    {
+      "kind": "author-code",
+      "url": "https://github.com/andreslunagodoy/tube_seeding/tree/ec955d46f26ef497ca5ee7053f6f0286efb7971b",
+      "pin": "ec955d46f26ef497ca5ee7053f6f0286efb7971b",
+      "inspection": "Read-only source inspection; never installed or executed.",
+      "paths": [
+        "FeynGym/pyfeyngym/src/pyfeyngym/__init__.py",
+        "doublePentagon/benchmarks/scan_n_feyngym_metrics.py",
+        "doublePentagon/kira_equation_template_generation/config/integralfamilies.yaml",
+        "doublePentagon/rank20/high_rank.ipynb",
+        "doublePentagon/rank10/path_coverage_rank10.py"
+      ]
+    }
+  ],
+  "coordination": {
+    "claim": "https://github.com/discoveryathome/ibp-reduction/discussions/2#discussioncomment-19132141",
+    "nearest_overlap": "https://github.com/discoveryathome/ibp-reduction/discussions/2#discussioncomment-19132014"
+  },
+  "integrity_scope": "Hashes bind the local source and result files, not scientific correctness. SOURCES.json excludes its own hash. External sources are pinned by arXiv version/Git commit, not mirrored. Accepted project records are read-only inputs."
+}
