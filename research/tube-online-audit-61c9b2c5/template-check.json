@@ -1,0 +1,26 @@
+{
+  "source_commit": "e3470aab47e5abe0a0f0aff889dd0d1e1d0c7c0a",
+  "sympy": "1.14.0",
+  "identities_checked": 9,
+  "template_term_counts": [
+    7,
+    7,
+    12,
+    12,
+    14,
+    14,
+    14,
+    16,
+    13
+  ],
+  "coefficient_mutations_rejected": 9,
+  "domain": "Polynomial identity in a0,...,a6,d,m2,m3 over Q, with m1=1",
+  "kinematics": "p3=p1+p2; m2=p2^2, m3=p3^2",
+  "method": "Independent scalar-product differentiation; restricted parsing of upstream formula data",
+  "limitations": [
+    "Checks identity templates, not all solver paths, master minimality or benchmark correctness.",
+    "Dimensional-regularization IBP and Lorentz-invariance assumptions remain trusted.",
+    "Same authoring AI session; SymPy is a shared arithmetic dependency, not a formal proof kernel."
+  ],
+  "script_sha256": "4826258cb87a7caa4127965e4e2ec0eb5159618436a1c1927153fffa80dfeef7"
+}
