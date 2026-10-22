@@ -1,0 +1,17 @@
+{
+  "valid": true,
+  "export_sha256": "239b2f6a4714d0b31fbcc703b05252214e57646332313c583d56d51d953007c7",
+  "rows": [
+    {
+      "method": "sparse",
+      "exact_identities": 9,
+      "certificate_sha256": "c6053d947b303ba9be8dad17ffc9599deca3d8d5b9d6120fa5fe106bc48d4572"
+    },
+    {
+      "method": "online",
+      "exact_identities": 9,
+      "certificate_sha256": "081e0cf4bdb9c74015581a6d865de4c446ac5ad78946002ee94733b086cba035"
+    }
+  ],
+  "scope": "Exact rational identities in d and nonzero squared mass m; same nine targets and two masters, not a production speed comparison."
+}

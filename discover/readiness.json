@@ -1,0 +1,16 @@
+{
+  "version": 1,
+  "date": "2026-10-21",
+  "status": "local-preparation; scientific review pending",
+  "package": "research/readiness-20261021/README.md",
+  "portfolio": "research/readiness-20261021/two-loop-results.json",
+  "first_step": "python -m ibp.validator research/readiness-20261021/two-loop-online.json",
+  "external_gates": [
+    "Independent physics/checker review",
+    "Representative multi-loop problem selection",
+    "Independent contributor trial; production-solver comparison status in Kira report"
+  ],
+  "preparation_status": "complete for scoped external review",
+  "independent_review": "pending",
+  "integrity_check": "python research/readiness-20261021/check_manifest.py"
+}

@@ -1,0 +1,104 @@
+CMake Warning (deprecated) at CMakeLists.txt:2 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+This warning is for project developers.  Use -Wno-author or -Wno-deprecated
+to suppress it.
+
+-- The CXX compiler identification is AppleClang 21.0.0.21000334
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Configuring done (3.4s)
+-- Generating done (0.0s)
+-- Build files have been written to: /Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-deps/yaml-cpp-yaml-cpp-0.7.0/build
+[0/2] Re-checking globbed directories...
+[1/34] Building CXX object CMakeFiles/yaml-cpp.dir/src/contrib/graphbuilder.cpp.o
+[2/34] Building CXX object CMakeFiles/yaml-cpp.dir/src/contrib/graphbuilderadapter.cpp.o
+[3/34] Building CXX object CMakeFiles/yaml-cpp.dir/src/binary.cpp.o
+[4/34] Building CXX object CMakeFiles/yaml-cpp.dir/src/convert.cpp.o
+[5/34] Building CXX object CMakeFiles/yaml-cpp.dir/src/depthguard.cpp.o
+[6/34] Building CXX object CMakeFiles/yaml-cpp.dir/src/directives.cpp.o
+[7/34] Building CXX object CMakeFiles/yaml-cpp.dir/src/emit.cpp.o
+[8/34] Building CXX object CMakeFiles/yaml-cpp.dir/src/emitfromevents.cpp.o
+[9/34] Building CXX object CMakeFiles/yaml-cpp.dir/src/emitter.cpp.o
+[10/34] Building CXX object CMakeFiles/yaml-cpp.dir/src/emitterstate.cpp.o
+[11/34] Building CXX object CMakeFiles/yaml-cpp.dir/src/emitterutils.cpp.o
+[12/34] Building CXX object CMakeFiles/yaml-cpp.dir/src/exceptions.cpp.o
+[13/34] Building CXX object CMakeFiles/yaml-cpp.dir/src/exp.cpp.o
+[14/34] Building CXX object CMakeFiles/yaml-cpp.dir/src/memory.cpp.o
+[15/34] Building CXX object CMakeFiles/yaml-cpp.dir/src/node.cpp.o
+[16/34] Building CXX object CMakeFiles/yaml-cpp.dir/src/node_data.cpp.o
+[17/34] Building CXX object CMakeFiles/yaml-cpp.dir/src/nodebuilder.cpp.o
+[18/34] Building CXX object CMakeFiles/yaml-cpp.dir/src/nodeevents.cpp.o
+[19/34] Building CXX object CMakeFiles/yaml-cpp.dir/src/null.cpp.o
+[20/34] Building CXX object CMakeFiles/yaml-cpp.dir/src/ostream_wrapper.cpp.o
+[21/34] Building CXX object CMakeFiles/yaml-cpp.dir/src/parse.cpp.o
+[22/34] Building CXX object CMakeFiles/yaml-cpp.dir/src/parser.cpp.o
+[23/34] Building CXX object CMakeFiles/yaml-cpp.dir/src/regex_yaml.cpp.o
+[24/34] Building CXX object CMakeFiles/yaml-cpp.dir/src/scanscalar.cpp.o
+[25/34] Building CXX object CMakeFiles/yaml-cpp.dir/src/scanner.cpp.o
+[26/34] Building CXX object CMakeFiles/yaml-cpp.dir/src/scantag.cpp.o
+[27/34] Building CXX object CMakeFiles/yaml-cpp.dir/src/scantoken.cpp.o
+[28/34] Building CXX object CMakeFiles/yaml-cpp.dir/src/simplekey.cpp.o
+[29/34] Building CXX object CMakeFiles/yaml-cpp.dir/src/singledocparser.cpp.o
+[30/34] Building CXX object CMakeFiles/yaml-cpp.dir/src/stream.cpp.o
+[31/34] Building CXX object CMakeFiles/yaml-cpp.dir/src/tag.cpp.o
+[32/34] Linking CXX shared library libyaml-cpp.0.7.0.dylib
+[33/34] Creating library symlink libyaml-cpp.0.7.dylib libyaml-cpp.dylib
+-- Install configuration: ""
+-- Installing: /Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/lib/libyaml-cpp.0.7.0.dylib
+-- Installing: /Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/lib/libyaml-cpp.0.7.dylib
+-- Installing: /Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/lib/libyaml-cpp.dylib
+-- Up-to-date: /Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include
+-- Installing: /Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/yaml-cpp
+-- Installing: /Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/yaml-cpp/traits.h
+-- Installing: /Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/yaml-cpp/eventhandler.h
+-- Installing: /Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/yaml-cpp/emitter.h
+-- Installing: /Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/yaml-cpp/anchor.h
+-- Installing: /Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/yaml-cpp/mark.h
+-- Installing: /Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/yaml-cpp/emitterdef.h
+-- Installing: /Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/yaml-cpp/parser.h
+-- Installing: /Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/yaml-cpp/null.h
+-- Installing: /Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/yaml-cpp/exceptions.h
+-- Installing: /Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/yaml-cpp/emitterstyle.h
+-- Installing: /Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/yaml-cpp/noexcept.h
+-- Installing: /Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/yaml-cpp/emittermanip.h
+-- Installing: /Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/yaml-cpp/emitfromevents.h
+-- Installing: /Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/yaml-cpp/dll.h
+-- Installing: /Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/yaml-cpp/contrib
+-- Installing: /Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/yaml-cpp/contrib/graphbuilder.h
+-- Installing: /Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/yaml-cpp/contrib/anchordict.h
+-- Installing: /Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/yaml-cpp/yaml.h
+-- Installing: /Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/yaml-cpp/node
+-- Installing: /Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/yaml-cpp/node/type.h
+-- Installing: /Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/yaml-cpp/node/parse.h
+-- Installing: /Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/yaml-cpp/node/node.h
+-- Installing: /Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/yaml-cpp/node/detail
+-- Installing: /Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/yaml-cpp/node/detail/node_data.h
+-- Installing: /Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/yaml-cpp/node/detail/node_ref.h
+-- Installing: /Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/yaml-cpp/node/detail/node.h
+-- Installing: /Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/yaml-cpp/node/detail/memory.h
+-- Installing: /Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/yaml-cpp/node/detail/node_iterator.h
+-- Installing: /Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/yaml-cpp/node/detail/impl.h
+-- Installing: /Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/yaml-cpp/node/detail/iterator_fwd.h
+-- Installing: /Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/yaml-cpp/node/detail/iterator.h
+-- Installing: /Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/yaml-cpp/node/ptr.h
+-- Installing: /Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/yaml-cpp/node/convert.h
+-- Installing: /Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/yaml-cpp/node/impl.h
+-- Installing: /Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/yaml-cpp/node/emit.h
+-- Installing: /Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/yaml-cpp/node/iterator.h
+-- Installing: /Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/yaml-cpp/ostream_wrapper.h
+-- Installing: /Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/yaml-cpp/stlemitter.h
+-- Installing: /Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/yaml-cpp/binary.h
+-- Installing: /Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/include/yaml-cpp/depthguard.h
+-- Installing: /Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/share/cmake/yaml-cpp/yaml-cpp-targets.cmake
+-- Installing: /Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/share/cmake/yaml-cpp/yaml-cpp-targets-noconfig.cmake
+-- Installing: /Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/share/cmake/yaml-cpp/yaml-cpp-config.cmake
+-- Installing: /Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/share/cmake/yaml-cpp/yaml-cpp-config-version.cmake
+-- Installing: /Users/colkitt/discover-work/incubatedPilots/feyman-integral/start-ibp-reduction/scratch/kira-prefix/share/pkgconfig/yaml-cpp.pc

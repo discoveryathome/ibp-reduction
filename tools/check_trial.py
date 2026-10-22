@@ -10,7 +10,8 @@ assert hashlib.sha256((p/'exploration.json').read_bytes()).hexdigest()==frozen['
 assert set(frozen['dev']).isdisjoint(frozen['new'])
 source_lock=json.loads((p/'source-lock.json').read_text())
 for name,expected in source_lock['files'].items():
- assert hashlib.sha256((root/name).read_bytes()).hexdigest()==expected,name
+ # Historical timings belong to the frozen source, not the evolving checkout.
+ assert hashlib.sha256((p/'source-snapshot'/name).read_bytes()).hexdigest()==expected,name
 raw=json.loads((p/'runs.json').read_text());summary=json.loads((p/'summary.json').read_text())
 for row in raw:
  assert row['success'],row

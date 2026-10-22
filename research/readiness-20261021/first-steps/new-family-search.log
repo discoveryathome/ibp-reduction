@@ -1,0 +1,47 @@
+{
+  "budget": 40,
+  "held_out": [
+    "bubble_unequal_mass",
+    "triangle_offshell",
+    "box_massless"
+  ],
+  "note": "Frozen before held-out policy evaluation; benchmark-development baseline runs are disclosed in report. No family name enters policy.",
+  "policy": {
+    "order": "dots",
+    "reuse": true,
+    "row": "complexity",
+    "seed": "improved"
+  },
+  "search_sha256": "f69d33e4bc730b3be597c0e0c8cca584b2e8f7f248c55e208561215d3d1c9162",
+  "seed": 20261020,
+  "training": [
+    "bubble_massless",
+    "bubble_equal_mass",
+    "triangle_one_mass"
+  ],
+  "training_score": 0.356721789553968,
+  "training_validation": [
+    {
+      "arithmetic": "exact rational polynomial identities",
+      "family": "bubble_massless",
+      "identities": 5,
+      "proof_nodes": 19,
+      "valid": true
+    },
+    {
+      "arithmetic": "exact rational polynomial identities",
+      "family": "bubble_equal_mass",
+      "identities": 7,
+      "proof_nodes": 21,
+      "valid": true
+    },
+    {
+      "arithmetic": "exact rational polynomial identities",
+      "family": "triangle_one_mass",
+      "identities": 9,
+      "proof_nodes": 29,
+      "valid": true
+    }
+  ]
+}
+

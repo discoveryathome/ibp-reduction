@@ -1,0 +1,85 @@
+[
+  {
+    "project": "ibp",
+    "task": "check-exact",
+    "command": [
+      "python",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "tests",
+      "-v"
+    ],
+    "returncode": 0,
+    "seconds": 9.097332541947253,
+    "log": "research/readiness-20261021/first-steps/check-exact.log",
+    "log_sha256": "7f58ff574d51b78bced1bb1cc02030000214ecfd83b0adf54fc8b3b97b2270bc"
+  },
+  {
+    "project": "ibp",
+    "task": "audit-basis",
+    "command": [
+      "python",
+      "tools/inspect_task.py",
+      "suite"
+    ],
+    "returncode": 0,
+    "seconds": 1.553075167001225,
+    "log": "research/readiness-20261021/first-steps/audit-basis.log",
+    "log_sha256": "1f7d72c23c18dcc4a06146ff4d996aaf7271204c971839c78f552069fd0cbb65"
+  },
+  {
+    "project": "ibp",
+    "task": "mature-baseline",
+    "command": [
+      "python",
+      "tools/inspect_task.py",
+      "baseline"
+    ],
+    "returncode": 0,
+    "seconds": 0.10774233308620751,
+    "log": "research/readiness-20261021/first-steps/mature-baseline.log",
+    "log_sha256": "53d00222155514bed76003c8377fcebc7b24e2c326009803e1f2fbd8e5a05a09"
+  },
+  {
+    "project": "ibp",
+    "task": "new-family-search",
+    "command": [
+      "python",
+      "tools/inspect_task.py",
+      "search"
+    ],
+    "returncode": 0,
+    "seconds": 0.12078579096123576,
+    "log": "research/readiness-20261021/first-steps/new-family-search.log",
+    "log_sha256": "8362ca4cbc25ee64df3ade66e1a06221c4451354103b5b8c8ecbd50686307691"
+  },
+  {
+    "project": "ibp",
+    "task": "two-loop-sunset-v1",
+    "command": [
+      "python",
+      "-m",
+      "ibp.validator",
+      "research/readiness-20261021/two-loop-online.json"
+    ],
+    "returncode": 0,
+    "seconds": 1.5624695000005886,
+    "log": "research/readiness-20261021/first-steps/two-loop-sunset-v1.log",
+    "log_sha256": "6e60de77c2b21124d8a178c051b19c465fb1ec754abb2c7e72d9bee343644cd6"
+  },
+  {
+    "project": "ibp",
+    "task": "tube-and-online-audit",
+    "command": [
+      "python",
+      "tools/inspect_task.py",
+      "sources"
+    ],
+    "returncode": 0,
+    "seconds": 0.16566554200835526,
+    "log": "research/readiness-20261021/first-steps/tube-and-online-audit.log",
+    "log_sha256": "6519f4f42cd45739608c512e07151741a9c2d382fc9c46278c5796f038248c9c"
+  }
+]

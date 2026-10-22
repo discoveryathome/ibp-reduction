@@ -1,0 +1,32 @@
+[
+  {
+    "file": "ginac-home.html",
+    "sha256": "9fb6a1c7c4e2c02f7faac5976c143362f806bed5e1118157d5a1f7ef887a07d3",
+    "bytes": 5250
+  },
+  {
+    "file": "ginac.tar.bz2",
+    "sha256": "6cac1973a5325de0b9bcb8e392988ae95fbc37aa66c0f1f1d3b8e64c08cec1b9",
+    "bytes": 1517978
+  },
+  {
+    "file": "cln.tar.bz2",
+    "sha256": "7c7ed8474958337e4df5bb57ea5176ad0365004cbb98b621765bc4606a10d86b",
+    "bytes": 1337235
+  },
+  {
+    "file": "Ferm7a.tar.gz",
+    "sha256": "ae6d4f62513a75b4b69bff4b6108f0e277bdeb40c8dc924a072f925a43a993e4",
+    "bytes": 3305432
+  },
+  {
+    "file": "yaml-cpp.tar.gz",
+    "sha256": "43e6a9fcb146ad871515f0d0873947e5d497a1c9c60c58cb102a97b47208b7c3",
+    "bytes": 1033237
+  },
+  {
+    "file": "ginac-download.html",
+    "sha256": "37ea14f530d3c6adc43a66a4373514c2ee862f972b3a36f36f62d54be418dcb8",
+    "bytes": 2370
+  }
+]

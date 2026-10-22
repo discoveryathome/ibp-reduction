@@ -1,0 +1,71 @@
+# Literature and claim audit (accessed 2026-10-20)
+
+There is no verified, universally best IBP heuristic across all topologies, target
+sets, basis choices, and cost models. The frontier is a set of conditional results.
+This pilot establishes infrastructure and a local comparison, not a new state of the art.
+
+| Primary source | What is established/reported | Relevance and limitation |
+|---|---|---|
+| [Laporta, hep-ph/0102033](https://arxiv.org/abs/hep-ph/0102033) | Systematic reduction and master-integral algorithms using IBP systems | Source of the elimination baseline; our small implementation is not the original program |
+| [von Hippel & Wilhelm, 2502.05121v1](https://arxiv.org/abs/2502.05121v1) | FunSearch and typed genetic programming rediscover useful seeding rules | Read in detail; see below |
+| [Song et al., 2502.09544v1](https://arxiv.org/abs/2502.09544v1) | FunSearch-derived priorities tested on several integral settings; author-reported large seed-count reductions | Seed count, runtime, and memory must be separated; their reported factor 3058 is conditional, not a universal runtime gain |
+| [Lange, Usovitsch & Wu, Kira 3, 2505.20197v1](https://arxiv.org/abs/2505.20197v1) | Improved seeding and equation selection; large gains over Kira 2.3 on selected multi-loop cases | A serious future baseline must use Kira 3, not only the older rectangular strategy |
+| [Smirnov & Zeng, FIRE 7, 2510.07150v2](https://arxiv.org/abs/2510.07150v2) | Modular reconstruction, rational-polynomial improvements, and symbolic presolve | Production comparator; not installed or timed here |
+| [Lee, LiteRed 1.4, 1310.1145v1](https://arxiv.org/abs/1310.1145v1) | Mathematica package for multiloop reduction | Symbolic rules and symmetry analysis are relevant; package paper identified, not locally reproduced |
+| [von Manteuffel & Studerus, Reduze 2, 1201.4330](https://arxiv.org/abs/1201.4330) | Distributed Laporta variant and topology equivalence detection | Scheduling and equivalent integral reuse are established directions |
+| [Peraro, FiniteFlow, 1905.08019](https://arxiv.org/abs/1905.08019) | Finite-field functional reconstruction with dataflow graphs | Avoiding expression swell and sharing calculations are established; sampled values alone are not our certificate |
+| [Wu et al., NeatIBP 1.1 + Kira, 2502.20778v1](https://arxiv.org/abs/2502.20778v1) | Syzygy-system reduction, Kira interface, spanning cuts, module simplification | A different route to compact systems, outside this one-loop engine |
+| [Berman et al., tube seeding, 2606.10698v1](https://arxiv.org/abs/2606.10698v1) | Sparse paths between targets and masters; linear seed growth with numerator rank in described construction | More recent frontier: demonstrated high-rank nonplanar two-loop reductions over a finite field; does not establish our symbolic identities |
+| [Shih, SAILIR, 2604.05034v1](https://arxiv.org/abs/2604.05034v1) | Self-supervised classifier with beam search on triangle-box reductions | Author reports a memory/runtime tradeoff; training and parallel-worker budgets must be counted |
+| [Bitoun et al., 1712.09215](https://arxiv.org/abs/1712.09215) | Parametric annihilators and master counts; explicit massless propagator example | Source for the independently reproduced analytic bubble ratio |
+
+## The requested paper, with scope intact
+
+Section 2 compares rectangular seeds, a dot cap (the golden rule), and a
+sector-dependent numerator cap. For its triangle-box setup the listed seed counts
+are 14,588, 2,148, and 92. These choices differ in bounds, so they are not an isolated
+ablation of one feature. The later 88-seed rule omits additional three-line seeds.
+The authors explicitly leave open whether that last gain is peculiar to the example.
+Their fitness rewards successful master-basis reduction with fewer seeds; it is a
+proxy for computational cost, rather than a direct runtime objective. They use Kira
+for the reduction test.
+
+The direct binary subset genetic search was slow in their reported experiment.
+Typed genetic programming benefited from the structure found during FunSearch.
+This motivates a constrained policy grammar, strong completeness checks, accounting
+for failed trials, and evaluation on new families. The paper's results do not prove
+that a donated 30–60 minute session can reproduce its entire search. We have not
+reproduced the triangle-box 88-seed result in this pilot.
+
+## Current frontier and settled questions
+
+Kira 3 and FIRE 7 are newer production references than the requested February 2025
+paper. The June 2026 tube-seeding work is especially relevant to donated searches
+for seed paths, and provides [public proof-of-principle code](https://github.com/andreslunagodoy/tube_seeding).
+No source-backed claim here says that our winner beats any of these implementations.
+
+A few numerical checks cannot establish a rational identity: a nonzero polynomial
+can vanish on every tested point. A smaller seed set is not useful if targets remain
+unreduced, or if it changes the designated basis to extra apparent masters. A
+single-instance improvement does not settle cross-family generalization. These are
+acceptance requirements, not alleged impossibility results for heuristic search.
+Random subset search was slow in the requested paper's setting; that is not proof
+that every subset search is ineffective. Kira's discussion of random equation
+reordering likewise has an implementation- and case-dependent scope.
+
+## Audit of the user's premises
+
+- IBP reduction is an important computational bottleneck: supported by the solver
+  and AI papers above; severity depends on the calculation.
+- More efficient selection or elimination can improve it: supported by published
+  algorithms and authors' case studies; general superiority remains an open question.
+- Ordinary CPUs can complete useful small cases: now locally tested by this pilot;
+  large multi-loop/high-rank cases are not implied.
+- AI-assisted heuristic discovery has precedent: confirmed by the requested paper,
+  Song et al., and newer tube-seeding/SAILIR work. Novelty of any local winner is
+  unverified until compared with these methods and reviewed by a domain expert.
+
+Only primary papers and their identified software repositories inform this audit.
+Web search snippets and third-party AI reviews are not treated as evidence.
+
+

@@ -1,0 +1,86 @@
+[
+  {
+    "method": "sparse",
+    "metrics": {
+      "input_rows": 60,
+      "input_nnz": 219,
+      "pivots": 31,
+      "targets": 11,
+      "reduced": 9,
+      "masters": 2,
+      "success": true,
+      "unresolved": [],
+      "residual_master_constraints": 0,
+      "arithmetic_operations": 425,
+      "operation_counts": {
+        "div": 54,
+        "mul": 214,
+        "add": 157
+      },
+      "attempted_operations": 657,
+      "cache_hits": 232,
+      "cache_entries": 425,
+      "peak_live_nnz": 219,
+      "max_row_nnz": 7,
+      "initial_max_coefficient_terms": 3,
+      "max_coefficient_terms": 5,
+      "max_polynomial_degree": 3,
+      "max_coefficient_bits": 6,
+      "expression_growth_ratio": 1.6666666666666667,
+      "reduction_seconds": 0.11148091708309948
+    },
+    "check": {
+      "valid": true,
+      "family": "sunset_equal_mass_v1",
+      "identities": 9,
+      "proof_nodes": 207,
+      "arithmetic": "exact rational polynomial identities"
+    },
+    "generation_seconds": 0.11149608402047306,
+    "verification_seconds": 3.0850723329931498,
+    "negative_controls": 3
+  },
+  {
+    "method": "online",
+    "metrics": {
+      "input_rows": 60,
+      "processed_rows": 27,
+      "input_nnz": 219,
+      "pivots": 16,
+      "targets": 11,
+      "masters": 2,
+      "reduced": 9,
+      "success": true,
+      "unresolved": [],
+      "residual_master_constraints": 0,
+      "arithmetic_operations": 139,
+      "operation_counts": {
+        "div": 26,
+        "mul": 68,
+        "add": 45
+      },
+      "attempted_operations": 185,
+      "cache_hits": 46,
+      "cache_entries": 139,
+      "peak_live_nnz": 282,
+      "max_row_nnz": 4,
+      "initial_max_coefficient_terms": 3,
+      "max_coefficient_terms": 4,
+      "max_polynomial_degree": 3,
+      "max_coefficient_bits": 6,
+      "expression_growth_ratio": 1.3333333333333333,
+      "reduction_seconds": 0.13952662504743785,
+      "fallback": false
+    },
+    "check": {
+      "valid": true,
+      "family": "sunset_equal_mass_v1",
+      "identities": 9,
+      "proof_nodes": 76,
+      "arithmetic": "exact rational polynomial identities"
+    },
+    "generation_seconds": 0.1399150419747457,
+    "verification_seconds": 0.7895399169065058,
+    "negative_controls": 3
+  }
+]

@@ -1,0 +1,8 @@
+{
+  "valid": true,
+  "family": "sunset_equal_mass_v1",
+  "identities": 9,
+  "proof_nodes": 76,
+  "arithmetic": "exact rational polynomial identities"
+}
+

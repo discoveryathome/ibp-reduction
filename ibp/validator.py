@@ -53,6 +53,9 @@ def scaleless(a,masses,dist):
     return all(masses[i]==0 for i in active) and all(dist[i][j]==0 for i in active for j in active)
 
 def input_row(name,a,j):
+    if name == 'sunset_equal_mass_v1':
+        from .two_loop_check import input_row as two_loop_input
+        return two_loop_input(a,j)
     masses,dist,_,_=SPECS[name];n=len(masses)
     if len(a)!=n or any(type(v)!=int for v in a) or type(j)!=int or not 0<=j<n:raise ValueError('Bad seed')
     # k^2=x, k.r_i=y_i, r_0=0. Differentiate with vector k+r_j:
@@ -72,9 +75,14 @@ def input_row(name,a,j):
     return {b:normal(c) for b,c in row.items() if not exact_zero(c) and not scaleless(b,masses,dist)}
 
 def check(cert):
-    if cert.get('version')!=1 or cert.get('family') not in SPECS:raise ValueError('Unknown certificate')
-    name=cert['family'];masses,dist,masters,rmax=SPECS[name];masters=set(masters);n=len(masses)
-    required={a for a in product(range(rmax+1),repeat=n) if 0<sum(a)<=rmax and not scaleless(a,masses,dist)}-masters
+    if cert.get('version')!=1 or cert.get('family') not in set(SPECS)|{'sunset_equal_mass_v1'}:raise ValueError('Unknown certificate')
+    name=cert['family']
+    if name == 'sunset_equal_mass_v1':
+        from .two_loop_check import MASTERS, REQUIRED
+        masters=set(MASTERS);required=set(REQUIRED)
+    else:
+        masses,dist,masters,rmax=SPECS[name];masters=set(masters);n=len(masses)
+        required={a for a in product(range(rmax+1),repeat=n) if 0<sum(a)<=rmax and not scaleless(a,masses,dist)}-masters
     outputs=cert['outputs']
     if len(outputs)!=len(required) or {tuple(o['target']) for o in outputs}!=required:raise ValueError('Incomplete/duplicate targets')
     nodes=cert['nodes'];live={};refs=[0]*len(nodes)

@@ -1,7 +1,7 @@
 {
   "schema": "discover-catalog/v0",
-  "priority_revision": 1,
-  "assessed_on": "2026-10-20",
+  "priority_revision": 2,
+  "assessed_on": "2026-10-21",
   "priority_log": "discover/priority-log.md",
   "status": "Open to donated sessions since 2026-10-21; maintainer @Mister-Meeseeks. Verification and replication come before more search; acceptance stays with the maintainer.",
   "tracks": [
@@ -157,6 +157,35 @@
             "gpu": "none"
           },
           "first_experiment": "Run the first step, write a scoped result in 30\u201360 minutes, reserve the last 15 minutes for checking and handoff."
+        },
+        {
+          "id": "two-loop-sunset-v1",
+          "question": "Can the online policy reduce cost on the pinned two-loop targets while preserving all exact identities?",
+          "starting_points": [
+            "research/readiness-20261021/README.md",
+            "ibp/two_loop.py",
+            "ibp/two_loop_check.py",
+            "research/readiness-20261021/two-loop-results.json"
+          ],
+          "methods": [
+            "Bounded experiment from inherited witness; retain all results and exact provenance"
+          ],
+          "acceptance_gate": "All nine targets, including numerator insertions, replay exactly. Compare to inherited sparse/online policies, retain failed attempts; no general multi-loop superiority claim.",
+          "first_step": {
+            "command": [
+              "python",
+              "-m",
+              "ibp.validator",
+              "research/readiness-20261021/two-loop-online.json"
+            ],
+            "expected": "Positive control passes; independent scientific review remains pending."
+          },
+          "bottleneck_link": "research/readiness-20261021/REVIEW.md",
+          "claim_kind": [
+            "exact",
+            "measured"
+          ],
+          "first_experiment": "Spend at most 30 minutes on one scoped experiment; reserve the final 10 minutes for checking and a reproducible local handoff."
         }
       ]
     },

@@ -1,0 +1,17 @@
+box_massless cached_sparse 62 exact identities
+box_massless cached_tight 62 exact identities
+box_massless initial_learned 62 exact identities
+box_massless online 62 exact identities
+bubble_one_mass cached_sparse 13 exact identities
+bubble_one_mass cached_tight 13 exact identities
+bubble_one_mass initial_learned 13 exact identities
+bubble_one_mass online 13 exact identities
+triangle_two_mass cached_sparse 14 exact identities
+triangle_two_mass cached_tight 14 exact identities
+triangle_two_mass initial_learned 14 exact identities
+triangle_two_mass online 14 exact identities
+box_one_mass cached_sparse 71 exact identities
+box_one_mass cached_tight 71 exact identities
+box_one_mass initial_learned 71 exact identities
+box_one_mass online 71 exact identities
+PASS: 16 trial certificates; frozen bindings; 43.68 seconds

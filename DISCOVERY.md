@@ -71,3 +71,7 @@ Publication authorship is decided by substantive contribution and explicit agree
 not promised by running a session. Retain source attribution and commit history.
 Code is MIT; project-authored documentation is CC BY 4.0. External source snapshots
 retain their upstream licenses and are not relicensed.
+
+## Second-cohort preparation (2026-10-21)
+
+For the refreshed task pool, read [the preparation package](research/readiness-20261021/README.md) and `discover/readiness.json`. These versioned portfolios provide the starting witnesses for the new catalogue cards. They do not retroactively change historical experiments or grant public donor intake.
