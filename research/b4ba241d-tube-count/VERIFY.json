@@ -1,0 +1,17 @@
+{
+  "evidence_level": "author-checked",
+  "scope": "Seed-count replication only; no equations, reduction or performance reproduction.",
+  "python_used": "3.13.5",
+  "dependencies": "Python standard library only for generation and tests. The project-integrity checker uses the existing pinned project environment.",
+  "commands": [
+    {"argv": ["python3", "research/b4ba241d-tube-count/count_seeds.py", "--check", "research/b4ba241d-tube-count/data"], "observed": "valid=true; counts 358,589,820; all tuple membership and sector cardinality obligations pass."},
+    {"argv": ["python3", "-m", "unittest", "discover", "-s", "research/b4ba241d-tube-count", "-p", "test_counts.py", "-v"], "observed": "7 tests passed in 0.055 seconds; rejecting mutation subcases included.", "log": "logs/tests.log"},
+    {"argv": ["python3", "research/b4ba241d-tube-count/count_seeds.py", "--out", "scratch/tube-count-replay"], "observed": "Three tuple sets reproduce byte-for-byte; existing output directories are refused.", "log": "logs/generation.log"},
+    {"argv": ["../ibp-reduction/.venv/bin/python", "tools/check_project.py"], "observed": "PASS: protocol schemas, track weights, artifact hashes, frozen evaluation binding."},
+    {"argv": ["git", "diff", "--check"], "expected": "No whitespace errors."}
+  ],
+  "hash_check": "From the package directory: python3 -c 'import hashlib,json,pathlib; h=json.loads(pathlib.Path(\"HASHES.json\").read_text()); assert all(hashlib.sha256(pathlib.Path(p).read_bytes()).hexdigest()==v for p,v in h.items()); print(\"PASS\",len(h))'",
+  "controls": ["published per-sector and total counts", "overlap deduplication", "negative absent-propagator indices", "duplicate/missing tuple", "extra/missing shift endpoint", "wrong cut", "dot/positive ISP", "rank/dimension/type", "rank-floor omission", "sector-167 exception omission"],
+  "source_bindings": "SOURCES.json pins the primary paper, author source/data, predecessor and copied fixture; data/counts.json binds generating source and actual tuple-file hashes.",
+  "not_checked": ["IBP/LI templates or target reduction completeness", "master conventions, primes, kinematics or reconstruction", "other cuts, multi-ISP paths or high-rank solves", "author timing/memory results or native backend execution", "independent scientific/maintainer review", "RSS reporting on other platforms"]
+}

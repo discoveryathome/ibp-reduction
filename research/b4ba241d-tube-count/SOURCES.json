@@ -1,0 +1,41 @@
+{
+  "base": "9427e928040cd7d71513a443da4a42811720e537",
+  "seed": "b4ba241d49ae3adec57309d131c13f06",
+  "predecessor": {
+    "pr": "https://github.com/discoveryathome/ibp-reduction/pull/9",
+    "commit": "6ea993589a6dc4416636bec87b4f25554993dde9",
+    "scope_path": "research/735db16f08fc3b299d027fa453589748/TUBE_SCOPE.md",
+    "scope_sha256": "8af7c1eb6e954092865aae61e8d430dfd037d7f01491d6848e19488b8a298e1a"
+  },
+  "paper": {
+    "url": "https://arxiv.org/html/2606.10698v1",
+    "version": "2606.10698v1",
+    "download_sha256": "f05e6d8aa8fc54b40fd43e93d3a6557bd20f7367d67d29e51c2629f0ceb30fe2",
+    "equations": [
+      12,
+      16,
+      17,
+      18
+    ]
+  },
+  "author_source": {
+    "url": "https://github.com/andreslunagodoy/tube_seeding",
+    "commit": "ec955d46f26ef497ca5ee7053f6f0286efb7971b",
+    "tree": "1f72831836e257ab387401877d9129ec0f1cf101",
+    "tracked_source_clean": true,
+    "files_sha256": {
+      "doublePentagon/benchmarks/scan_n_feyngym_metrics.py": "f5dbde26203b82223ff75b77a2229e4a35a837ee55eb39e930a22ed83de53f23",
+      "FeynGym/pyfeyngym/src/pyfeyngym/__init__.py": "67fb9dde55319fe350690993c5091afb18a19ded854089fd7ebfd2294b60ac14",
+      "doublePentagon/trivialsector": "36a0b7e133584d892301d8b2e167ec81c565d6ab9129cbcabc1f0514e4bbc57f",
+      "doublePentagon/kira_equation_template_generation/config/integralfamilies.yaml": "3404fdc16283fc74ef7fb5a71ad7bb4382fc0a16c08749b88c8ddaed83bba59e",
+      "LICENSE": "23483acae1be150fc6cb4026b1ad8f794b40c6e131d2b6a9fb34090d4a1930c3"
+    },
+    "executed": false
+  },
+  "fixture": {
+    "path": "fixtures/trivialsector",
+    "source_path": "doublePentagon/trivialsector",
+    "sha256": "36a0b7e133584d892301d8b2e167ec81c565d6ab9129cbcabc1f0514e4bbc57f",
+    "license": "MIT; original notice in fixtures/TUBE-SEEDING-LICENSE"
+  }
+}
