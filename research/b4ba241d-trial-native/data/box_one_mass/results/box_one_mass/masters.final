@@ -1,0 +1,4 @@
+box_one_mass[1,0,1,0] #  5
+box_one_mass[0,1,0,1] # 10
+box_one_mass[1,0,0,1] #  9
+box_one_mass[1,1,1,1] # 15

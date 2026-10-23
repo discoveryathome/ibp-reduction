@@ -1,0 +1,3 @@
+# Preserve native solver receipt bytes for exact source/output hash replay.
+*.log -whitespace
+*.kira -whitespace
