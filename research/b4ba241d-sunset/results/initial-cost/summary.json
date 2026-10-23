@@ -1,0 +1,87 @@
+{
+  "candidate_sha256": "399ddfacbdc7cef2d93771b03abb5a5e9bc3e928ce65df55b73589b2e3501212",
+  "runs": [
+    {
+      "engine": "batch",
+      "method": "cached-sparse",
+      "operation_audit": {
+        "arithmetic_operations": 425,
+        "attempted_by_kind": {
+          "add": 261,
+          "div": 86,
+          "mul": 310
+        },
+        "attempted_operations": 657,
+        "cache_entries": 425,
+        "cache_hits": 232,
+        "operation_counts": {
+          "add": 157,
+          "div": 54,
+          "mul": 214
+        },
+        "valid": true
+      },
+      "policy": {
+        "order": "sector",
+        "reuse": true,
+        "row": "short",
+        "seed": "rectangular"
+      },
+      "producer_seconds": 0.15107558900490403,
+      "proof_sha256": "28f139e6f4ddda04c5afe1661c7b0ead1a9b61c2c66f2a4b49eaf1e25128574f",
+      "rejected_controls": [
+        "arithmetic-result",
+        "cache-flag",
+        "operation-count"
+      ],
+      "validation": {
+        "arithmetic": "exact rational polynomial identities",
+        "family": "sunset_equal_mass_v1",
+        "identities": 9,
+        "proof_nodes": 207,
+        "valid": true
+      }
+    },
+    {
+      "engine": "online",
+      "method": "inherited-online",
+      "operation_audit": {
+        "arithmetic_operations": 139,
+        "attempted_by_kind": {
+          "add": 67,
+          "div": 36,
+          "mul": 82
+        },
+        "attempted_operations": 185,
+        "cache_entries": 139,
+        "cache_hits": 46,
+        "operation_counts": {
+          "add": 45,
+          "div": 26,
+          "mul": 68
+        },
+        "valid": true
+      },
+      "policy": {
+        "order": "dots",
+        "reuse": true,
+        "schedule": "target",
+        "seed": "rectangular"
+      },
+      "producer_seconds": 0.06008038198342547,
+      "proof_sha256": "e061744c7918b06080db42a09c2a1915931494aef2fd5d1a05e27d73ef138d7e",
+      "rejected_controls": [
+        "arithmetic-result",
+        "cache-flag",
+        "operation-count"
+      ],
+      "validation": {
+        "arithmetic": "exact rational polynomial identities",
+        "family": "sunset_equal_mass_v1",
+        "identities": 9,
+        "proof_nodes": 76,
+        "valid": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,3 @@
+# Preserve original executable log and text export bytes for their hashes.
+*.log -whitespace
+*.kira -whitespace
