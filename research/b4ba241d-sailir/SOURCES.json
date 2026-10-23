@@ -1,0 +1,135 @@
+{
+  "base": "9427e928040cd7d71513a443da4a42811720e537",
+  "predecessor": {
+    "pr": "https://github.com/discoveryathome/ibp-reduction/pull/8",
+    "commit": "7e7ab86fa43481ba731e29b6bf104cde18bb4925",
+    "package": "research/tube-online-audit-61c9b2c5",
+    "README_sha256": "3e967af086ec81b4599701b576bb3fdc77662313a24fc473b13ee8b6416b195a",
+    "manifest_sha256": "60ccaca01355d336c9402cfd7603f7db19ae607c3a7b1a4c207b058bb590a767",
+    "credit": "Prior donated SAILIR source/template/episode audit;reused calculation scripts,not independent-person review"
+  },
+  "paper": {
+    "url": "https://arxiv.org/html/2604.05034v1",
+    "version": "2604.05034v1",
+    "credit": "David Shih and SAILIR contributors;paper not redistributed"
+  },
+  "author_source": {
+    "repository": "https://github.com/davidshih17/RL_IBPreduction_claude",
+    "commit": "e3470aab47e5abe0a0f0aff889dd0d1e1d0c7c0a",
+    "files_sha256": {
+      "README.md": "03621da6fef0566166522b39bc410ea6fe6912c6a7007ff8663ecd59b058aa48",
+      "results/kira_benchmark.csv": "72c009f545c4d0e141b354b2a4e39bc4a6aad491654489e6ef2c74f4f7cb0967",
+      "results/sailir_benchmark.csv": "3d721a486dafcf05fcb87d3fc9ddc1f85e34b3f6724dab4b60b99cba3c544c7c",
+      "results/training_log/train.log": "0e3f367483fd9843a5087c8d4d69aed52f07b167ffee061d91c5cb8ca06b49e9",
+      "sailir/classifier.py": "7c57e8880d6269ca47d310e7649d2af6d881b5158b7cead58ff64fc04da4b2e2",
+      "sailir/ibp_env.py": "53adc3d388c92dd8b84510d898695f46eac4d21323ef65132f50f14312e0c5c1",
+      "scripts/data_gen/IBP": "865b5fb14318b250234481db3415f5cdbb11e142e330f5f87e4c9bb7dabf0b32",
+      "scripts/data_gen/LI": "423bf34b0d667757387cf1f901483fc7a3d003fb09f5c5ed7213480b663b1c0e",
+      "scripts/eval/beam_search.py": "f004bde1e1bc4d4ff14bd8f16a4ad3dd0964096a0de4bdc3e696dd29383db74f",
+      "scripts/eval/beam_search_utils.py": "a6c95d796593a87b3af8603a0246b8a31676217491a044c3f720249f413314d6",
+      "scripts/eval/collect_benchmark_results.py": "4da43b6b6074c0df52c6abc71794233b1ce54171ae4570d4942f90dfee5c4fa3",
+      "scripts/eval/hierarchical_reduction.py": "bdde5eaac00318d2c38f2009fc3f94e898db75031f34aa8f5dfb1971b19db507",
+      "scripts/eval/onestep_worker.py": "17705bfae484a3df575a01932cebab407f010bdac9a8acba7eee321a9040c08c",
+      "scripts/eval/replay_reduction_path.py": "141105d4c0b115b12175740a8bf43fc23bbc4f859f847b46b4fe8d81a9e2ce0e",
+      "scripts/kira/config/integralfamilies.yaml": "dc34f0fa1f8a36422e464439458dcdb6a823eb49589bb503b645a8d28d9c9134",
+      "scripts/kira/config/kinematics.yaml": "018b41681f6da3f961b0e10afa51e15900eaaef60ef10295c03771be8dc72b30",
+      "scripts/kira/integrals-10.4.4": "e74ff7a43f4bbefca78d0b1a6e751e35cd16241bdd72f3ec70d6c0a50ccd1480",
+      "scripts/kira/integrals-10.5.4": "bfe6bb383082af7284cff5bd530b41d197e5f7ffed4b8a38d81a007dc76f2fa1",
+      "scripts/kira/integrals-10.6.4": "15be8a8a19df1c3b38947a90894da7b67aac982eaf5fbeb5dba05e20a74d7bb4",
+      "scripts/kira/integrals-10.7.4": "72ce39cf468542b65c7e2319c2e33fb663d42351ba023b0319f33be4b1a1e9ef",
+      "scripts/kira/integrals-11.4.5": "7914c9d651a0abd2ab7d17a484953fdf64b030af95be447fea67caed6f834a2a",
+      "scripts/kira/integrals-11.5.5": "124e28b736d6d3d33302a051bdce989d174952488f2879147b3ba1d2df1337e4",
+      "scripts/kira/integrals-11.6.5": "ee48fd45d3637b566f92592c32ddc05dd0336d9235b6d819fef67c28b86cefe0",
+      "scripts/kira/integrals-11.7.5": "6df86c6ee077fa1220b8c3cf5a8652d64077e43c2cd15daa9f002a9ce82a519b",
+      "scripts/kira/integrals-12.4.6": "5e6f1422a98b282d10c0a33fbc0f0e9b23d98463544a5800917dd3e0582aa4ce",
+      "scripts/kira/integrals-12.5.6": "25ccd1992e863eed35f172556245af5f3fa8d510385358be179c2a5ad775303d",
+      "scripts/kira/integrals-12.6.6": "b736d1c3a0e76e0e2a5301c7e5c54ae40aa5b01d8eaffda882ab902e73602352",
+      "scripts/kira/integrals-12.7.6": "5fcf8928b07a618fedd63049c2edef8ae8ee346535b651f61e69e5588da840dc",
+      "scripts/kira/integrals-13.4.7": "493c6593e66ace16c6336b26e070b1a730d84c01ae33269520477a44d68ec1f3",
+      "scripts/kira/integrals-13.5.7": "11262b74912806966c79caecbaf9a7df4d5d52c2091d22a7f9193d7a304daee3",
+      "scripts/kira/integrals-13.6.7": "a033984ac8774d9c52ba3e17a2eca64d29e651be7a3993cb86bc6dabf6a36e55",
+      "scripts/kira/integrals-13.7.7": "35754cbbfdd02158fb1ee4eb927404ada29b973059d23e2a55b0e330bc618fa1",
+      "scripts/kira/integrals-15.8.0": "728dd167958a78d7a7a476ae98a50023916eadf8dcd3b7c1fbd15570f06a68b5",
+      "scripts/kira/integrals-7.4.0": "68a8c0b38f03f3df5bdf267b9c428d299d677de03d5c4a79a17f6fbbe2bb1f9e",
+      "scripts/kira/integrals-7.4.1": "7edb8833e316f549c3dc4c12dc8c57fa27ae56b0fc95ebfce17939c4482678a0",
+      "scripts/kira/integrals-8.4.2": "4a26a811fdefb5a459f37b4b0dc07f3b408350aeae4b238318c44ecb614a5d41",
+      "scripts/kira/integrals-9.4.3": "0a95b847437ba61377bb9791675775aa5010145ece0c48a8b87b83fd72d68d0a",
+      "scripts/kira/jobs_111111m3.yaml": "d22815d8e80a8407f8e77ec5a249c06ef66ca20f55ea86f3dd18f6740398c281",
+      "scripts/kira/jobs_benchmark.yaml": "1823cdb8a1735ec48e8c1b1ac3fe61179691cf5041b1ef17a241be3c7a5657cb",
+      "scripts/kira/run_benchmark_s7.sh": "3d4bbfa9cf3c8fbacccc9eed87b6bbdce4f7efe319a531f49bf79be00ecc99cc",
+      "scripts/train/train_classifier.py": "80d02a4ff79ef6bded36075a08c654ea6fd2eeba947a51e4ff47632f2240bfb3"
+    },
+    "sparse_source_clean": true,
+    "excluded_from_download": [
+      "checkpoints/best_model.pt"
+    ],
+    "upstream_sailir_code_executed": false,
+    "upstream_source_snapshot_redistributed": false
+  },
+  "predecessor_replays": {
+    "worked-episode.json": {
+      "predecessor_script": "worked_episode.py",
+      "script_sha256": "d1bb334a7ec3ea4871de6e8a888973097d89b9fdbdbf599f41bf470f6fb85c8c",
+      "output_sha256": "0546849a2606bc89b01ea26bee4e5a526c0e63a2dbf59e5436b36f53076dc5bd",
+      "byte_identical_to_predecessor": true
+    },
+    "source-check.json": {
+      "predecessor_script": "audit_sources.py",
+      "script_sha256": "993a3a2c453c1bfa4a807e72e416446b4694830fb0f981e77312f60f683f8345",
+      "output_sha256": "91d195ac0852f23166540b374df8687691c091f8077e40c01e5bf31011ccdb4a",
+      "byte_identical_to_predecessor": true
+    },
+    "template-check.json": {
+      "predecessor_script": "check_templates.py",
+      "script_sha256": "4826258cb87a7caa4127965e4e2ec0eb5159618436a1c1927153fffa80dfeef7",
+      "output_sha256": "1c7c3e38cf54df21639682695ba4619f6d210ed2144439d293da6b04316d30cb",
+      "byte_identical_to_predecessor": true
+    }
+  },
+  "native": {
+    "source_commit": "fb745431f97c8899a512e638da8598b0cfad7521",
+    "version": "3.0",
+    "paper_reference_version": "3.1,not executed",
+    "binary_sha256": "9d49f623f144ee90c3eb2f50290b180b93c5c85e9ca1272092cecb065eb47066",
+    "fermat_sha256": "cca7f136820e21be0b9f8a23a0efe9289ce62e59d0e88702150809d9815dfc2d",
+    "input_sha256": {
+      "config/integralfamilies.yaml": "2124da41a0e3987ceae2bf73a4f6f2ceecb1d85b609655800d99d327393c89a6",
+      "config/kinematics.yaml": "44c216509840d7af336ba2e852eeae885e153df257aec6e21969897ec1a37cfe",
+      "jobs.yaml": "30b08dc9a5be8a616dad14e799549c740fa4b750a03b2b49b211b8daec37bdf6",
+      "masters": "68791b0c077018d8c00934d67841944b051d2d9e48681d8b85a1918ba3396be9",
+      "targets": "66c7d5e44b6c6a95bb75e07ab948e6b0780ee18b086d486e6c502d0c1495a200"
+    },
+    "executed_driver_sha256": "d4b8bf8ee5de0d29c0a03e023423fc4b86867b7918ba3e07bf5219bf4627de99",
+    "published_helper_sha256": "4f69a85998fe2ab98a24a1a2c7c7008e5ac0f49acc0df55813df0f723696dfc5",
+    "helper_adjustment": "After the fresh successful run,the public helper gained an early rejection for any existing output directory;executed driver snapshot and unchanged scientific inputs/argv retained."
+  },
+  "build": {
+    "pr": "https://github.com/discoveryathome/ibp-reduction/pull/10",
+    "commit": "00efa9b24a290ae577da514b0efc6360f106dafe",
+    "receipt_sha256": "d5fad6b8df36ddf103b5ee2c968f5b78c566148027f8e5d4d081b091e579f323",
+    "runtime_library_hashes_rechecked": 10
+  },
+  "master_relation": {
+    "source": [
+      1,
+      0,
+      1,
+      0,
+      0,
+      1,
+      0
+    ],
+    "destination": [
+      0,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0
+    ],
+    "map": "k1=-q2,k2=-q1",
+    "domain": "Generic d and external kinematics,under invariant loop-integration axiom;remaining15 minimality unproved",
+    "post_native_explanatory_check": true
+  }
+}

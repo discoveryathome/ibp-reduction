@@ -1,0 +1,21 @@
+{
+  "evidence_level":"author-checked",
+  "scope":"One native rational specialization verifies18 images and one SAILIR episode modulo1009;one exact generic loop-variable relation reconciles16 designated entries with15 actual native entries",
+  "environment":{"python":"3.13.5","sympy":"1.14.0","platform":"Linux x86_64"},
+  "commands":[
+    {"script":"PR8 worked_episode.py --output FRESH.json","observed":"Byte-identical original episode;10/6/17terms,17 coefficient and3 omission controls reject","output":"data/worked-episode.json"},
+    {"script":"PR8 audit_sources.py --sailir-source PINNED-SOURCE --output FRESH.json","observed":"All41 source hashes/static findings reproduce byte-for-byte","output":"data/source-check.json"},
+    {"script":"PR8 check_templates.py --sailir-source PINNED-SOURCE --output FRESH.json","observed":"All9 exact templates/9 coefficient mutations reproduce byte-for-byte","output":"data/template-check.json"},
+    {"argv":["python","research/b4ba241d-sailir/run_native.py","--source","PINNED-SOURCE","--episode","research/b4ba241d-sailir/data/worked-episode.json","--out","FRESH-DIRECTORY","--kira","PINNED-KIRA"],"observed":"Return0 in14.050s,18 explicit images,zero unreduced;both actual15-master lists agree","receipt":"native/receipt.json"},
+    {"argv":["python","research/b4ba241d-sailir/verify_saved.py"],"observed":"All18 images close on native basis;one episode identity modulo1009;10 changed/missing/malformed controls reject","output":"data/native-comparison.json"},
+    {"argv":["python","research/b4ba241d-sailir/basis_relation.py"],"observed":"Exact k1=-q2,k2=-q1 signed momentum-form match,absoluteJacobian1;full16-to15 map;3 altered geometry/matrix controls reject","output":"data/basis-relation.json"},
+    {"argv":["python","-m","unittest","discover","-s","research/b4ba241d-sailir","-p","test_parsers.py","-v"],"observed":"3 tests pass","log":"logs/sailir-parser-tests.log"},
+    {"argv":["python","tools/check_project.py"],"expected":"PASS project integrity"},
+    {"argv":["git","diff","--check"],"expected":"No whitespace errors outside raw-artifact attributes"}
+  ],
+  "proof_boundary":"The episode comparison is only at one fixed field point. The designated-master relation is an exact generic change of variables under invariant loop integration. Neither establishes independence/minimality of all15 native masters or published benchmark performance.",
+  "all_attempts":"Three screened predecessor script replays,one successful capped native job,one native image comparison,post-run exact basis reconciliation and rejecting/parser controls. No native failure,retry,learned-policy run or tuning. Published native helper later gained an early existing-directory guard;the exact executed driver is preserved.",
+  "source_bindings":"SOURCES.json pins41 author files,PR8 scripts/original outputs,the copied byte-identical replays,all5 generated native inputs,pre-run manifest,executed/current helper versions and PR10 native build. HASHES.json seals every other package file.",
+  "shared_dependencies":["Predecessor mathematical derivation code and source data","SymPy for predecessor templates","Fixed dimensional-regularization IBP/Lorentz and loop-change axioms"],
+  "not_checked":["Kira3.1 workflow or upstream numerical-point file","generic episode/native coefficient reconstruction","remaining15-master minimality or independence","learned policy,checkpoint or full reduction paths","other targets,points,primes or benchmark cases","training/data-generation/cluster budgets","published runtime/memory comparisons","aggregate descendant RSS","independent-person physics or maintainer review"]
+}

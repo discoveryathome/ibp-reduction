@@ -1,0 +1,27 @@
+{
+  "valid": true,
+  "prime": 1009,
+  "point": {
+    "d": 41,
+    "m1": 1,
+    "m2": 31,
+    "m3": 47
+  },
+  "requested_images": 18,
+  "explicit_images": 18,
+  "actual_master_count": 15,
+  "preferred_paper_basis_equal": false,
+  "rejected_controls": [
+    "empty-export",
+    "duplicate-target",
+    "target-normalization",
+    "executable-coefficient",
+    "missing-image",
+    "changed-target-image",
+    "changed-residual-image",
+    "modular-denominator-pole",
+    "changed-prime",
+    "undeclared-master"
+  ],
+  "scope": "One native rational specialization checks one17-term episode identity modulo1009;no learned-policy,generic reconstruction or benchmark claim."
+}

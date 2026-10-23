@@ -1,0 +1,3 @@
+# Preserve raw native log/export bytes for source and output hashes.
+*.log -whitespace
+*.kira -whitespace

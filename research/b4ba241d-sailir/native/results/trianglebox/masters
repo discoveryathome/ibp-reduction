@@ -1,0 +1,15 @@
+trianglebox[-1,1,1,1,1,0,0] # 30
+trianglebox[0,0,1,1,1,0,0]  # 28
+trianglebox[0,1,1,1,0,0,0]  # 14
+trianglebox[0,1,1,1,1,0,0]  # 30
+trianglebox[1,-1,1,0,1,1,0] # 53
+trianglebox[1,-1,1,1,1,0,0] # 29
+trianglebox[1,0,0,1,1,1,0]  # 57
+trianglebox[1,0,1,0,1,0,0]  # 21
+trianglebox[1,0,1,0,1,1,0]  # 53
+trianglebox[1,0,1,1,1,0,0]  # 29
+trianglebox[1,0,1,1,1,1,0]  # 61
+trianglebox[1,1,0,1,0,1,0]  # 43
+trianglebox[1,1,0,1,1,0,0]  # 27
+trianglebox[1,1,0,1,1,1,0]  # 59
+trianglebox[1,1,1,1,1,0,0]  # 31
