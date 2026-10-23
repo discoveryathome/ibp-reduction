@@ -1,0 +1,47 @@
+{
+  "argv": [
+    "/usr/bin/timeout",
+    "--kill-after=5",
+    "180",
+    "/root/.t3/scratch/2026-10-23-fetch-https-discoveryathome-org-v0-08cd4afb/kira-prefix/bin/kira",
+    "--parallel=1",
+    "--prime=1009",
+    "--set_value=d=41",
+    "--set_value=m2=31",
+    "--set_value=m3=47",
+    "jobs.yaml"
+  ],
+  "input_sha256": {
+    "config/integralfamilies.yaml": "2124da41a0e3987ceae2bf73a4f6f2ceecb1d85b609655800d99d327393c89a6",
+    "config/kinematics.yaml": "44c216509840d7af336ba2e852eeae885e153df257aec6e21969897ec1a37cfe",
+    "jobs.yaml": "30b08dc9a5be8a616dad14e799549c740fa4b750a03b2b49b211b8daec37bdf6",
+    "masters": "68791b0c077018d8c00934d67841944b051d2d9e48681d8b85a1918ba3396be9",
+    "targets": "66c7d5e44b6c6a95bb75e07ab948e6b0780ee18b086d486e6c502d0c1495a200"
+  },
+  "source_sha256": {
+    "scripts/kira/config/integralfamilies.yaml": "dc34f0fa1f8a36422e464439458dcdb6a823eb49589bb503b645a8d28d9c9134",
+    "scripts/kira/config/kinematics.yaml": "018b41681f6da3f961b0e10afa51e15900eaaef60ef10295c03771be8dc72b30",
+    "sailir/ibp_env.py": "53adc3d388c92dd8b84510d898695f46eac4d21323ef65132f50f14312e0c5c1"
+  },
+  "episode_sha256": "0546849a2606bc89b01ea26bee4e5a526c0e63a2dbf59e5436b36f53076dc5bd",
+  "driver_sha256": "d4b8bf8ee5de0d29c0a03e023423fc4b86867b7918ba3e07bf5219bf4627de99",
+  "kira_sha256": "9d49f623f144ee90c3eb2f50290b180b93c5c85e9ca1272092cecb065eb47066",
+  "requests": 18,
+  "paper_preferred_masters": 16,
+  "point": {
+    "d": 41,
+    "m1": 1,
+    "m2": 31,
+    "m3": 47
+  },
+  "comparison_prime": 1009,
+  "native_coefficient_domain": "Exact rational specialization; coefficients compared modulo1009 separately.",
+  "timeout_seconds": 180,
+  "address_space_limit_per_process": 2147483648,
+  "returncode": 0,
+  "elapsed_seconds": 14.050446395005565,
+  "user_seconds": 8.412103,
+  "system_seconds": 4.362248,
+  "max_individual_process_rss_bytes": 57020416,
+  "binary_unchanged": true
+}

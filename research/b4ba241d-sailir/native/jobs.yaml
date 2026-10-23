@@ -1,0 +1,42 @@
+{
+  "jobs": [
+    {
+      "reduce_sectors": {
+        "reduce": [
+          {
+            "topologies": [
+              "trianglebox"
+            ],
+            "sectors": [
+              63
+            ],
+            "r": 7,
+            "s": 3
+          }
+        ],
+        "select_integrals": {
+          "select_mandatory_list": [
+            [
+              "trianglebox",
+              "targets"
+            ]
+          ]
+        },
+        "preferred_masters": "masters",
+        "run_initiate": true,
+        "run_triangular": true,
+        "run_back_substitution": true
+      }
+    },
+    {
+      "kira2file": {
+        "target": [
+          [
+            "trianglebox",
+            "targets"
+          ]
+        ]
+      }
+    }
+  ]
+}
