@@ -1,0 +1,30 @@
+{
+  "seed": "b4ba241d49ae3adec57309d131c13f06",
+  "base": "9427e928040cd7d71513a443da4a42811720e537",
+  "track": "replication",
+  "task": "mature-baseline",
+  "priority_revision": 2,
+  "scope_status": "unchanged",
+  "scope": "Native pinned Kira execution of the seven frozen one-loop configurations and exact same-basis export checks",
+  "question": "Do all seven generated one-loop Kira projects reduce completely to the prescribed master bases and match all 115 non-master identities?",
+  "responds_to": "https://github.com/discoveryathome/ibp-reduction/discussions/2#discussioncomment-19131728",
+  "claim": "https://github.com/discoveryathome/ibp-reduction/discussions/2#discussioncomment-19139253",
+  "predecessor_pr": "https://github.com/discoveryathome/ibp-reduction/pull/7",
+  "predecessor_commit": "d051133ed7c01652e21b53e34fcd5610051705a8",
+  "kira_commit": "fb745431f97c8899a512e638da8598b0cfad7521",
+  "frontier_sha256": "1ea5aa55483937092ae46f7a4ec4b548f21fea54e7a6e4612941591341e41760",
+  "catalog_sha256": "4e2b6155b93c9f9c25e6462a1e19b2d10dce599e1c95ba7c79f779167a0cafeb",
+  "new_contribution": "Native execution and exact replication evidence; the predecessor provided exporter/importer tooling and synthetic controls only.",
+  "first_step": {
+    "argv": ["python3", "tools/inspect_task.py", "baseline"],
+    "result": "Seven saved sparse baseline rows printed; no new timing measurement."
+  },
+  "success_test": "Run the analytic tadpole first and all seven families. Check native masters and masters.final against the prescribed sets and exact exports against all 115 non-master certificate identities. Retain source/build/executable/input/output receipts and all failures.",
+  "falsifier": "A failed tadpole control, missing/empty/duplicate target or master output, changed master set, or nonzero exact coefficient difference.",
+  "budget_minutes": 480,
+  "started_at": "2026-10-23T06:02:00Z",
+  "new_work_deadline": "2026-10-23T12:02:00Z",
+  "verification_deadline": "2026-10-23T14:02:00Z",
+  "performance_claim": false,
+  "evidence_level": "author-checked"
+}

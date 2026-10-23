@@ -1,0 +1,23 @@
+Traceback (most recent call last):
+  File "/root/.t3/scratch/2026-10-23-fetch-https-discoveryathome-org-v0-08cd4afb/ibp-reduction/research/b4ba241d49ae3adec57309d131c13f06/run_native.py", line 123, in <module>
+    main()
+    ~~~~^^
+  File "/root/.t3/scratch/2026-10-23-fetch-https-discoveryathome-org-v0-08cd4afb/ibp-reduction/research/b4ba241d49ae3adec57309d131c13f06/run_native.py", line 105, in main
+    result = subprocess.run(argv, cwd=directory, stdout=log, stderr=subprocess.STDOUT,
+                            preexec_fn=limit_memory)
+  File "/usr/lib/python3.13/subprocess.py", line 554, in run
+    with Popen(*popenargs, **kwargs) as process:
+         ~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/subprocess.py", line 1039, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                        pass_fds, cwd, env,
+                        ^^^^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+                        gid, gids, uid, umask,
+                        ^^^^^^^^^^^^^^^^^^^^^^
+                        start_new_session, process_group)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/subprocess.py", line 1972, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: '/usr/bin/time'

@@ -1,0 +1,23 @@
+{
+  "integralfamilies": [
+    {
+      "name": "bubble_equal_mass",
+      "loop_momenta": [
+        "k"
+      ],
+      "top_level_sectors": [
+        3
+      ],
+      "propagators": [
+        [
+          "k",
+          "-m"
+        ],
+        [
+          "k+p1",
+          "-m"
+        ]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,118 @@
+ninja: Entering directory `kira-source/build'
+[1/27] Generating src/pyred/config.h with a custom command
+[2/27] Compiling C++ object src/pyred/libpyred.a.p/coeff_helper.cpp.o
+[3/27] Compiling C++ object src/pyred/libpyred.a.p/coeff_vec.cpp.o
+[4/27] Compiling C++ object src/pyred/libpyred.a.p/keyvaluedb.cpp.o
+[5/27] Compiling C++ object src/pyred/libpyred.a.p/parser.cpp.o
+[6/27] Compiling C++ object src/pyred/libpyred.a.p/coeff_int.cpp.o
+[7/27] Compiling C++ object src/pyred/libpyred.a.p/integrals.cpp.o
+[8/27] Compiling C++ object src/pyred/libpyred.a.p/.._gzstream_gzstream.cpp.o
+[9/27] Compiling C++ object src/pyred/libpyred.a.p/relations.cpp.o
+[10/27] Compiling C++ object src/pyred/libpyred.a.p/interface.cpp.o
+[11/27] Compiling C++ object src/kira/kira.p/connect2kira.cpp.o
+In file included from /root/.t3/scratch/2026-10-23-fetch-https-discoveryathome-org-v0-08cd4afb/kira-prefix/include/ginac/ginac.h:39,
+                 from ../src/kira/connect2kira.h:27,
+                 from ../src/kira/connect2kira.cpp:39:
+/root/.t3/scratch/2026-10-23-fetch-https-discoveryathome-org-v0-08cd4afb/kira-prefix/include/ginac/numeric.h: In member function ‘virtual GiNaC::ex GiNaC::numeric::derivative(const GiNaC::symbol&) const’:
+/root/.t3/scratch/2026-10-23-fetch-https-discoveryathome-org-v0-08cd4afb/kira-prefix/include/ginac/numeric.h:126:37: warning: unused parameter ‘s’ [-Wunused-parameter]
+  126 |         ex derivative(const symbol &s) const override { return 0; }
+      |                       ~~~~~~~~~~~~~~^
+[12/27] Compiling C++ object src/kira/kira.p/main.cpp.o
+In file included from /root/.t3/scratch/2026-10-23-fetch-https-discoveryathome-org-v0-08cd4afb/kira-prefix/include/ginac/ginac.h:39,
+                 from ../src/kira/ReadYamlFiles.h:27,
+                 from ../src/kira/kira.h:32,
+                 from ../src/kira/main.cpp:28:
+/root/.t3/scratch/2026-10-23-fetch-https-discoveryathome-org-v0-08cd4afb/kira-prefix/include/ginac/numeric.h: In member function ‘virtual GiNaC::ex GiNaC::numeric::derivative(const GiNaC::symbol&) const’:
+/root/.t3/scratch/2026-10-23-fetch-https-discoveryathome-org-v0-08cd4afb/kira-prefix/include/ginac/numeric.h:126:37: warning: unused parameter ‘s’ [-Wunused-parameter]
+  126 |         ex derivative(const symbol &s) const override { return 0; }
+      |                       ~~~~~~~~~~~~~~^
+[13/27] Compiling C++ object src/kira/kira.p/dataBase.cpp.o
+In file included from /root/.t3/scratch/2026-10-23-fetch-https-discoveryathome-org-v0-08cd4afb/kira-prefix/include/ginac/ginac.h:39,
+                 from ../src/kira/integral.h:26,
+                 from ../src/kira/dataBase.h:26,
+                 from ../src/kira/dataBase.cpp:20:
+/root/.t3/scratch/2026-10-23-fetch-https-discoveryathome-org-v0-08cd4afb/kira-prefix/include/ginac/numeric.h: In member function ‘virtual GiNaC::ex GiNaC::numeric::derivative(const GiNaC::symbol&) const’:
+/root/.t3/scratch/2026-10-23-fetch-https-discoveryathome-org-v0-08cd4afb/kira-prefix/include/ginac/numeric.h:126:37: warning: unused parameter ‘s’ [-Wunused-parameter]
+  126 |         ex derivative(const symbol &s) const override { return 0; }
+      |                       ~~~~~~~~~~~~~~^
+[14/27] Compiling C++ object src/kira/kira.p/ibp.cpp.o
+In file included from /root/.t3/scratch/2026-10-23-fetch-https-discoveryathome-org-v0-08cd4afb/kira-prefix/include/ginac/ginac.h:39,
+                 from ../src/kira/ReadYamlFiles.h:27,
+                 from ../src/kira/kira.h:32,
+                 from ../src/kira/ibp.cpp:20:
+/root/.t3/scratch/2026-10-23-fetch-https-discoveryathome-org-v0-08cd4afb/kira-prefix/include/ginac/numeric.h: In member function ‘virtual GiNaC::ex GiNaC::numeric::derivative(const GiNaC::symbol&) const’:
+/root/.t3/scratch/2026-10-23-fetch-https-discoveryathome-org-v0-08cd4afb/kira-prefix/include/ginac/numeric.h:126:37: warning: unused parameter ‘s’ [-Wunused-parameter]
+  126 |         ex derivative(const symbol &s) const override { return 0; }
+      |                       ~~~~~~~~~~~~~~^
+[15/27] Compiling C++ object src/kira/kira.p/dgl.cpp.o
+In file included from /root/.t3/scratch/2026-10-23-fetch-https-discoveryathome-org-v0-08cd4afb/kira-prefix/include/ginac/ginac.h:39,
+                 from ../src/kira/ReadYamlFiles.h:27,
+                 from ../src/kira/kira.h:32,
+                 from ../src/kira/dgl.cpp:22:
+/root/.t3/scratch/2026-10-23-fetch-https-discoveryathome-org-v0-08cd4afb/kira-prefix/include/ginac/numeric.h: In member function ‘virtual GiNaC::ex GiNaC::numeric::derivative(const GiNaC::symbol&) const’:
+/root/.t3/scratch/2026-10-23-fetch-https-discoveryathome-org-v0-08cd4afb/kira-prefix/include/ginac/numeric.h:126:37: warning: unused parameter ‘s’ [-Wunused-parameter]
+  126 |         ex derivative(const symbol &s) const override { return 0; }
+      |                       ~~~~~~~~~~~~~~^
+[16/27] Compiling C++ object src/kira/kira.p/integral.cpp.o
+In file included from /root/.t3/scratch/2026-10-23-fetch-https-discoveryathome-org-v0-08cd4afb/kira-prefix/include/ginac/ginac.h:39,
+                 from ../src/kira/integral.h:26,
+                 from ../src/kira/integral.cpp:25:
+/root/.t3/scratch/2026-10-23-fetch-https-discoveryathome-org-v0-08cd4afb/kira-prefix/include/ginac/numeric.h: In member function ‘virtual GiNaC::ex GiNaC::numeric::derivative(const GiNaC::symbol&) const’:
+/root/.t3/scratch/2026-10-23-fetch-https-discoveryathome-org-v0-08cd4afb/kira-prefix/include/ginac/numeric.h:126:37: warning: unused parameter ‘s’ [-Wunused-parameter]
+  126 |         ex derivative(const symbol &s) const override { return 0; }
+      |                       ~~~~~~~~~~~~~~^
+[17/27] Compiling C++ object src/kira/kira.p/reduction.cpp.o
+In file included from /root/.t3/scratch/2026-10-23-fetch-https-discoveryathome-org-v0-08cd4afb/kira-prefix/include/ginac/ginac.h:39,
+                 from ../src/kira/connect2kira.h:27,
+                 from ../src/kira/reduction.cpp:29:
+/root/.t3/scratch/2026-10-23-fetch-https-discoveryathome-org-v0-08cd4afb/kira-prefix/include/ginac/numeric.h: In member function ‘virtual GiNaC::ex GiNaC::numeric::derivative(const GiNaC::symbol&) const’:
+/root/.t3/scratch/2026-10-23-fetch-https-discoveryathome-org-v0-08cd4afb/kira-prefix/include/ginac/numeric.h:126:37: warning: unused parameter ‘s’ [-Wunused-parameter]
+  126 |         ex derivative(const symbol &s) const override { return 0; }
+      |                       ~~~~~~~~~~~~~~^
+[18/27] Compiling C++ object src/kira/kira.p/threadpool.cpp.o
+[19/27] Compiling C++ object src/kira/kira.p/tools.cpp.o
+In file included from /root/.t3/scratch/2026-10-23-fetch-https-discoveryathome-org-v0-08cd4afb/kira-prefix/include/ginac/ginac.h:39,
+                 from ../src/kira/tools.h:32,
+                 from ../src/kira/tools.cpp:20:
+/root/.t3/scratch/2026-10-23-fetch-https-discoveryathome-org-v0-08cd4afb/kira-prefix/include/ginac/numeric.h: In member function ‘virtual GiNaC::ex GiNaC::numeric::derivative(const GiNaC::symbol&) const’:
+/root/.t3/scratch/2026-10-23-fetch-https-discoveryathome-org-v0-08cd4afb/kira-prefix/include/ginac/numeric.h:126:37: warning: unused parameter ‘s’ [-Wunused-parameter]
+  126 |         ex derivative(const symbol &s) const override { return 0; }
+      |                       ~~~~~~~~~~~~~~^
+[20/27] Compiling C++ object src/kira/kira.p/kira.cpp.o
+In file included from /root/.t3/scratch/2026-10-23-fetch-https-discoveryathome-org-v0-08cd4afb/kira-prefix/include/ginac/ginac.h:39,
+                 from ../src/kira/ReadYamlFiles.h:27,
+                 from ../src/kira/kira.h:32,
+                 from ../src/kira/kira.cpp:31:
+/root/.t3/scratch/2026-10-23-fetch-https-discoveryathome-org-v0-08cd4afb/kira-prefix/include/ginac/numeric.h: In member function ‘virtual GiNaC::ex GiNaC::numeric::derivative(const GiNaC::symbol&) const’:
+/root/.t3/scratch/2026-10-23-fetch-https-discoveryathome-org-v0-08cd4afb/kira-prefix/include/ginac/numeric.h:126:37: warning: unused parameter ‘s’ [-Wunused-parameter]
+  126 |         ex derivative(const symbol &s) const override { return 0; }
+      |                       ~~~~~~~~~~~~~~^
+[21/27] Compiling C++ object tests/symcompare.p/symcompare.cpp.o
+[22/27] Compiling C++ object src/kira/kira.p/trivial_sym.cpp.o
+In file included from /root/.t3/scratch/2026-10-23-fetch-https-discoveryathome-org-v0-08cd4afb/kira-prefix/include/ginac/ginac.h:39,
+                 from ../src/kira/ReadYamlFiles.h:27,
+                 from ../src/kira/kira.h:32,
+                 from ../src/kira/trivial_sym.cpp:30:
+/root/.t3/scratch/2026-10-23-fetch-https-discoveryathome-org-v0-08cd4afb/kira-prefix/include/ginac/numeric.h: In member function ‘virtual GiNaC::ex GiNaC::numeric::derivative(const GiNaC::symbol&) const’:
+/root/.t3/scratch/2026-10-23-fetch-https-discoveryathome-org-v0-08cd4afb/kira-prefix/include/ginac/numeric.h:126:37: warning: unused parameter ‘s’ [-Wunused-parameter]
+  126 |         ex derivative(const symbol &s) const override { return 0; }
+      |                       ~~~~~~~~~~~~~~^
+[23/27] Compiling C object src/pyred/libpyred.a.p/.._sqlite3_sqlite3.c.o
+In function ‘sqlite3Strlen30’,
+    inlined from ‘sqlite3ColumnSetColl’ at ../src/sqlite3/sqlite3.c:113783:10:
+../src/sqlite3/sqlite3.c:32107:28: warning: ‘strlen’ reading 1 or more bytes from a region of size 0 [-Wstringop-overread]
+32107 |   return 0x3fffffff & (int)strlen(z);
+      |                            ^~~~~~~~~
+In function ‘sqlite3ColumnSetColl’:
+cc1: note: source object is likely at address zero
+[24/27] Linking static target src/pyred/libpyred.a
+[25/27] Linking target tests/symcompare
+[26/27] Compiling C++ object src/kira/kira.p/ReadYamlFiles.cpp.o
+In file included from /root/.t3/scratch/2026-10-23-fetch-https-discoveryathome-org-v0-08cd4afb/kira-prefix/include/ginac/ginac.h:39,
+                 from ../src/kira/ReadYamlFiles.h:27,
+                 from ../src/kira/ReadYamlFiles.cpp:27:
+/root/.t3/scratch/2026-10-23-fetch-https-discoveryathome-org-v0-08cd4afb/kira-prefix/include/ginac/numeric.h: In member function ‘virtual GiNaC::ex GiNaC::numeric::derivative(const GiNaC::symbol&) const’:
+/root/.t3/scratch/2026-10-23-fetch-https-discoveryathome-org-v0-08cd4afb/kira-prefix/include/ginac/numeric.h:126:37: warning: unused parameter ‘s’ [-Wunused-parameter]
+  126 |         ex derivative(const symbol &s) const override { return 0; }
+      |                       ~~~~~~~~~~~~~~^
+[27/27] Linking target src/kira/kira

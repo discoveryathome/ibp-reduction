@@ -1,0 +1,15 @@
+bubble_massless[1,2]*(-1)
+bubble_massless[1,1]*((-d+3)/s)
+
+bubble_massless[1,3]*(-1)
+bubble_massless[1,1]*((d^2-7*d+12)/(2*s^2))
+
+bubble_massless[2,1]*(-1)
+bubble_massless[1,1]*((-d+3)/s)
+
+bubble_massless[2,2]*(-1)
+bubble_massless[1,1]*((d^2-9*d+18)/s^2)
+
+bubble_massless[3,1]*(-1)
+bubble_massless[1,1]*((d^2-7*d+12)/(2*s^2))
+

@@ -1,0 +1,23 @@
+{
+  "integralfamilies": [
+    {
+      "name": "bubble_massless",
+      "loop_momenta": [
+        "k"
+      ],
+      "top_level_sectors": [
+        3
+      ],
+      "propagators": [
+        [
+          "k",
+          "0"
+        ],
+        [
+          "k+p1",
+          "0"
+        ]
+      ]
+    }
+  ]
+}

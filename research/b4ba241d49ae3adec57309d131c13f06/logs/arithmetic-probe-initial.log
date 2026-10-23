@@ -1,0 +1,20 @@
+/root/.t3/scratch/2026-10-23-fetch-https-discoveryathome-org-v0-08cd4afb/ibp-reduction/research/b4ba241d49ae3adec57309d131c13f06/tmpiyh3nkuh/probe.cpp: In function ‘int main()’:
+/root/.t3/scratch/2026-10-23-fetch-https-discoveryathome-org-v0-08cd4afb/ibp-reduction/research/b4ba241d49ae3adec57309d131c13f06/tmpiyh3nkuh/probe.cpp:16:28: error: unable to deduce ‘std::initializer_list<auto>&&’ from ‘{0, 1, (m - 1)}’
+   16 |   for(auto a:{0ULL,1ULL,m-1}) for(auto b:{0ULL,1ULL,m-1})
+      |                            ^
+/root/.t3/scratch/2026-10-23-fetch-https-discoveryathome-org-v0-08cd4afb/ibp-reduction/research/b4ba241d49ae3adec57309d131c13f06/tmpiyh3nkuh/probe.cpp:16:28: note:   deduced conflicting types for parameter ‘auto’ (‘long long unsigned int’ and ‘long unsigned int’)
+/root/.t3/scratch/2026-10-23-fetch-https-discoveryathome-org-v0-08cd4afb/ibp-reduction/research/b4ba241d49ae3adec57309d131c13f06/tmpiyh3nkuh/probe.cpp:16:56: error: unable to deduce ‘std::initializer_list<auto>&&’ from ‘{0, 1, (m - 1)}’
+   16 |   for(auto a:{0ULL,1ULL,m-1}) for(auto b:{0ULL,1ULL,m-1})
+      |                                                        ^
+/root/.t3/scratch/2026-10-23-fetch-https-discoveryathome-org-v0-08cd4afb/ibp-reduction/research/b4ba241d49ae3adec57309d131c13f06/tmpiyh3nkuh/probe.cpp:16:56: note:   deduced conflicting types for parameter ‘auto’ (‘long long unsigned int’ and ‘long unsigned int’)
+Traceback (most recent call last):
+  File "/root/.t3/scratch/2026-10-23-fetch-https-discoveryathome-org-v0-08cd4afb/ibp-reduction/research/b4ba241d49ae3adec57309d131c13f06/probe_arithmetic.py", line 63, in <module>
+    main()
+    ~~~~^^
+  File "/root/.t3/scratch/2026-10-23-fetch-https-discoveryathome-org-v0-08cd4afb/ibp-reduction/research/b4ba241d49ae3adec57309d131c13f06/probe_arithmetic.py", line 48, in main
+    subprocess.run(argv, check=True)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/subprocess.py", line 577, in run
+    raise CalledProcessError(retcode, process.args,
+                             output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command '['c++', '-std=c++17', '-O2', '-I/root/.t3/scratch/2026-10-23-fetch-https-discoveryathome-org-v0-08cd4afb/ibp-reduction/research/b4ba241d49ae3adec57309d131c13f06/tmpiyh3nkuh', '-I/root/.t3/scratch/2026-10-23-fetch-https-discoveryathome-org-v0-08cd4afb/kira-source/src', '/root/.t3/scratch/2026-10-23-fetch-https-discoveryathome-org-v0-08cd4afb/ibp-reduction/research/b4ba241d49ae3adec57309d131c13f06/tmpiyh3nkuh/probe.cpp', '/root/.t3/scratch/2026-10-23-fetch-https-discoveryathome-org-v0-08cd4afb/kira-source/src/pyred/coeff_helper.cpp', '-o', '/root/.t3/scratch/2026-10-23-fetch-https-discoveryathome-org-v0-08cd4afb/ibp-reduction/research/b4ba241d49ae3adec57309d131c13f06/tmpiyh3nkuh/probe']' returned non-zero exit status 1.

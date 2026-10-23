@@ -1,0 +1,35 @@
+The Meson build system
+Version: 1.12.1
+Source dir: /root/.t3/scratch/2026-10-23-fetch-https-discoveryathome-org-v0-08cd4afb/kira-source
+Build dir: /root/.t3/scratch/2026-10-23-fetch-https-discoveryathome-org-v0-08cd4afb/kira-source/build
+Build type: native build
+Project name: Kira
+Project version: 3.0
+C compiler for the host machine: cc (gcc 14.2.0 "cc (Debian 14.2.0-19) 14.2.0")
+C linker for the host machine: cc ld.bfd 2.44
+C++ compiler for the host machine: c++ (gcc 14.2.0 "c++ (Debian 14.2.0-19) 14.2.0")
+C++ linker for the host machine: c++ ld.bfd 2.44
+Host machine cpu family: x86_64
+Host machine cpu: x86_64
+Compiler for C supports arguments -Wno-maybe-uninitialized: YES 
+Found pkg-config: YES (/usr/bin/pkg-config) 1.8.1
+Run-time dependency ginac found: YES 1.8.10
+Run-time dependency threads found: YES
+Run-time dependency zlib found: YES 1.3.1
+Found CMake: /usr/bin/cmake (3.31.6)
+Run-time dependency yaml-cpp found: YES 0.7.0
+Library dl found: YES
+Configuring config.h.in using configuration
+Program run.sh found: YES (/root/.t3/scratch/2026-10-23-fetch-https-discoveryathome-org-v0-08cd4afb/kira-source/tests/run.sh)
+Build targets in project: 4
+
+Kira 3.0
+
+  User defined options
+    buildtype: release
+    firefly  : false
+    flint    : false
+    prefix   : /root/.t3/scratch/2026-10-23-fetch-https-discoveryathome-org-v0-08cd4afb/kira-prefix
+    wrap_mode: nodownload
+
+Found ninja-1.13.2.git.kitware.jobserver-pipe-1 at /root/.t3/scratch/2026-10-23-fetch-https-discoveryathome-org-v0-08cd4afb/ibp-reduction/.venv/bin/ninja

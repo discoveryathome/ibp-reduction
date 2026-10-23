@@ -1,0 +1,3 @@
+# Preserve raw solver/build receipt bytes, including their native whitespace.
+*.log -whitespace
+*.kira -whitespace

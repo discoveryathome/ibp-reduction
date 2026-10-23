@@ -1,0 +1,9 @@
+tadpole[2]*(-1)
+tadpole[1]*((-d+2)/(2*m))
+
+tadpole[3]*(-1)
+tadpole[1]*((d^2-6*d+8)/(8*m^2))
+
+tadpole[4]*(-1)
+tadpole[1]*((-d^3+12*d^2-44*d+48)/(48*m^3))
+
