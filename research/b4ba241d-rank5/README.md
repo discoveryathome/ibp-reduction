@@ -70,6 +70,26 @@ It does not reuse Gaussian elimination or compiled affine seed coefficients.
 It shares the source identities, seed definition, cut/trivial-sector axioms and
 Python runtime; this is a separate calculation path, not a separate reviewer.
 
+A final verification addition, `geometry_verify.py`, checks all four existing
+witnesses again with the Python standard library. It does not import SymPy,
+the producer or the template parser, or read the published IBP/LI coefficients.
+It solves six external-invariant constraints over each field, inverts the
+11-denominator affine map, and differentiates the momentum forms directly for
+12 IBP and 6 LI operators. The archived operator-label/normalization bijection
+connects these geometric operators to the original witness row IDs. Recursive
+integer compositions separately reconstruct the decreasing-rank seeds and
+the shifted tube set. Each expanded row sum again equals target minus its
+master image; the denominator-map determinant is 512 in both fields.
+
+`results/geometry-check.json` records four successful geometric replays and
+rejection of changed master coefficients, witness weights, omitted rows and
+a changed propagator momentum. Three additional tests check finite-field
+inversion, parser restrictions and frozen metadata. This check was implemented
+after seeing the published positive results; it is not a fresh holdout or
+independent-person review. It still shares the geometric/IBP axioms, cut and
+trivial-sector convention, operator bijection and master list. It certifies
+the same sampled target identities, not global ranks or generic coefficients.
+
 Both samples give the following structural counts:
 
 | policy | seeds | equations | variables | pivots | global free columns | witness rows |
@@ -137,6 +157,8 @@ this run). From the repository root, with `P=research/b4ba241d-rank5`:
 
 ```sh
 .venv/bin/python "$P/test_validation.py" -v
+python3 "$P/geometry_verify.py" --out /tmp/new-geometric-replay.json
+python3 -m unittest discover -s "$P" -p test_geometry.py -v
 .venv/bin/python "$P/identities.py" --out /tmp/new-identities.json
 .venv/bin/python "$P/finite_field.py" --verify "$P/results/fields/tube-0.json"
 .venv/bin/python "$P/run_fields.py" --out /tmp/new-rank5-fields

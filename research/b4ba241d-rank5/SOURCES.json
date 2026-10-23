@@ -64,5 +64,10 @@
     "system": "Linux",
     "machine": "x86_64"
   },
-  "initial_trial_note": "The cap was enforced; original solver source, certificate, log and component timings are retained, but no standalone wall/RSS receipt was captured. Only verifier guards/exponent handling changed before the final four trials."
+  "initial_trial_note": "The cap was enforced; original solver source, certificate, log and component timings are retained, but no standalone wall/RSS receipt was captured. Only verifier guards/exponent handling changed before the final four trials.",
+  "geometric_witness_verification": {
+    "record": "GEOMETRY_VERIFY.json",
+    "result": "results/geometry-check.json",
+    "scope": "Four existing known field witnesses replayed from momentum geometry with standard-library arithmetic,without SymPy or published coefficient templates;four rejecting controls and three new tests. Same-author verification,not independent-person acceptance."
+  }
 }

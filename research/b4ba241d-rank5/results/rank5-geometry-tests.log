@@ -1,0 +1,8 @@
+test_field_inverse_and_singular_map (test_geometry.GeometricReplayTests.test_field_inverse_and_singular_map) ... ok
+test_frozen_sample_and_basis_metadata (test_geometry.GeometricReplayTests.test_frozen_sample_and_basis_metadata) ... ok
+test_restricted_momentum_parser (test_geometry.GeometricReplayTests.test_restricted_momentum_parser) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.006s
+
+OK
