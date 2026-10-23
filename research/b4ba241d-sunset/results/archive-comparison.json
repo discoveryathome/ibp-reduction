@@ -1,0 +1,95 @@
+{
+  "valid": true,
+  "distinct_native_targets": 9,
+  "masters": 2,
+  "comparisons": [
+    {
+      "method": "predecessor-best",
+      "exact_identities": 9,
+      "proof_nodes": 28
+    },
+    {
+      "method": "cached-sparse",
+      "exact_identities": 9,
+      "proof_nodes": 43
+    },
+    {
+      "method": "inherited-online",
+      "exact_identities": 9,
+      "proof_nodes": 29
+    },
+    {
+      "method": "candidate-online",
+      "exact_identities": 9,
+      "proof_nodes": 28
+    }
+  ],
+  "cost_audits": [
+    {
+      "method": "cached-sparse",
+      "valid": true,
+      "arithmetic_operations": 425,
+      "operation_counts": {
+        "div": 54,
+        "mul": 214,
+        "add": 157
+      },
+      "attempted_operations": 657,
+      "cache_hits": 232,
+      "cache_entries": 425,
+      "attempted_by_kind": {
+        "div": 86,
+        "mul": 310,
+        "add": 261
+      }
+    },
+    {
+      "method": "inherited-online",
+      "valid": true,
+      "arithmetic_operations": 139,
+      "operation_counts": {
+        "div": 26,
+        "mul": 68,
+        "add": 45
+      },
+      "attempted_operations": 185,
+      "cache_hits": 46,
+      "cache_entries": 139,
+      "attempted_by_kind": {
+        "div": 36,
+        "mul": 82,
+        "add": 67
+      }
+    },
+    {
+      "method": "candidate-online",
+      "valid": true,
+      "arithmetic_operations": 107,
+      "operation_counts": {
+        "div": 23,
+        "mul": 49,
+        "add": 35
+      },
+      "attempted_operations": 162,
+      "cache_hits": 55,
+      "cache_entries": 107,
+      "attempted_by_kind": {
+        "div": 31,
+        "mul": 72,
+        "add": 59
+      }
+    }
+  ],
+  "rejected_controls": [
+    "empty-export",
+    "missing-target",
+    "duplicate-target",
+    "master-coefficient",
+    "wrong-master-basis",
+    "executable-expression",
+    "target-normalization",
+    "missing-certificate-target",
+    "certificate-coefficient"
+  ],
+  "scope": "Exact generic d,m identities and specified field-operation/cache counts; not independent physics review or a timing claim."
+}

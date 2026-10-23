@@ -1,0 +1,19 @@
+{
+  "evidence_level":"author-checked",
+  "scope":"Nine native generic d,m identities and three frozen arithmetic/cache-count replays",
+  "environment":{"python":"3.13.5","sympy":"1.14.0","system":"Linux x86_64"},
+  "commands":[
+    {"argv":["python","research/b4ba241d-sunset/run_native.py","--input","research/readiness-20261021/kira/sunset","--out","FRESH-DIRECTORY","--kira","PINNED-KIRA"],"observed":"Return0;9 non-master targets;both native2-master files agree; unchanged inputs/binary","receipt":"results/native/receipt.json"},
+    {"argv":["python","research/b4ba241d-sunset/audit_cost.py","--source",".","--candidate","research/b4ba241d-sunset/fixtures/best.json","--out","FRESH-DIRECTORY"],"observed":"425/139/107 executed operations;657/185/162 attempts;232/46/55 hits;all exact trace arithmetic and9 altered result/cache/count controls reject","result":"results/cost/summary.json"},
+    {"argv":["python","research/b4ba241d-sunset/verify_saved.py"],"observed":"All9 distinct native targets match4 certificates;both master lists;all3 traces replay;9 native/certificate mutations reject","result":"results/archive-comparison.json"},
+    {"argv":["python","-m","unittest","discover","-s","tests","-p","test_kira.py","-v"],"observed":"2 tests pass","log":"logs/sunset-kira-tests.log"},
+    {"argv":["python","-m","unittest","discover","-s","tests","-p","test_two_loop.py","-v"],"observed":"1 test passes","log":"logs/sunset-two-loop-tests.log"},
+    {"argv":["python","tools/check_project.py"],"expected":"PASS project integrity"},
+    {"argv":["git","diff","--check"],"expected":"No whitespace errors outside scoped raw artifacts"}
+  ],
+  "source_bindings":"SOURCES.json pins the candidate,11 unchanged project source/requirements files,5 native inputs,the native executable/Fermat/build receipt and both audit-driver versions. HASHES.json binds every package artifact except itself.",
+  "failures_retained":"Initial direct unpruned replay produced the three correct operation counts but failed its candidate proof digest assertion; it lacked the intended address-space cap. Original code,raw certificates,traces,partial summary and log retained. Corrected replay uses existing pruning and2GiB cap. No native input correction or policy tuning.",
+  "finding":"Predecessor README mixes unpruned inherited-online76 proof nodes with pruned sparse43/candidate28; uniform pruning gives43/29/28,confirmed by predecessor search-result and fresh replay. No operation total changes.",
+  "shared_dependencies":["project generator and producer","project symbolic checker and native comparator","SymPy rational-polynomial arithmetic","fixed IBP/scaleless/permutation axioms"],
+  "not_checked":["separate physics/IBP-assumption or maintainer review","global master minimality","new families or policy transfer","all16 predecessor search candidates","trivial/nontrivial-operation classification","predecessor repeated timing benchmark or production speed comparison","aggregate descendant memory","process RSS for the policy replays","maximum-cache-capacity behavior"]
+}
