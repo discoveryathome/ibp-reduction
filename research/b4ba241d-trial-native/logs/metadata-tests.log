@@ -1,0 +1,7 @@
+test_invalid_native_metadata_rejects (test_metadata.MasterMetadata.test_invalid_native_metadata_rejects) ... ok
+test_native_sector_annotation_and_unannotated_preference_agree (test_metadata.MasterMetadata.test_native_sector_annotation_and_unannotated_preference_agree) ... ok
+
+----------------------------------------------------------------------
+Ran 2 tests in 0.001s
+
+OK

@@ -1,0 +1,42 @@
+{
+  "base": "9427e928040cd7d71513a443da4a42811720e537",
+  "predecessor": {
+    "pr": "https://github.com/discoveryathome/ibp-reduction/pull/7",
+    "commit": "d051133ed7c01652e21b53e34fcd5610051705a8",
+    "tree": "147b710a0af9db4668ff7ab60a1a4271e52be2ab",
+    "sources_sha256": {
+      "ibp/__init__.py": "7d4514ca124a39ea033d93a651378e0c59e2c68ae46d8afcfcf241f928a74668",
+      "ibp/contributor.py": "f3d863e7073d2c8f5a6ea684768bb6c9a6155c1eeff988f0f6160f55bf36304c",
+      "ibp/experiment.py": "28d2348a3b884f2f64b487edb7f84965a148a74e38158f3a1d1e6ca0349988e3",
+      "ibp/families.py": "400d3ba014a4a1563ec5e4690a0cd959d8bf9ba4029d158c3467d0fa40fe502f",
+      "ibp/reducer.py": "ea62332375aee0e645ca7bae4a8f7ec343dd9dd5674c214c2f557afc724f8cc0",
+      "ibp/trial.py": "3ed4ffff8f0f94098fbd66a7668aeaf5df09cebec922ec514c1e98cfbd03e5f5",
+      "ibp/two_loop.py": "65211279a7c0c1e03941596c762d19883e0ed3aeb3bb339fe42838d8f66cd4a1",
+      "ibp/two_loop_check.py": "fa69647b52be1458ce6dde6994c27211ba6db7e1bdb2ffbdfb075840709cbbde",
+      "ibp/validator.py": "bf4462d50a39ac4e382e431eb6c2007f755c44f1f75c551b94d41ce3215e83d5",
+      "tools/export_kira_one_loop.py": "5470c41a91db5e7bd3134bab07a097c5058beb5896418b996efcb6e4c4bdbc47",
+      "tools/check_kira.py": "e0205309421534bc9abbe43819413c0ce4273acece0a9bd1688904e9acd13e4d",
+      "requirements.txt": "a2496caeab755d202a198effedf09faf1d38764d1d9a73fb351579039cb56b10",
+      "contributor-trial/certificates/bubble_one_mass-online.json": "86eec27aa3056cd1e8820b4cd46304d63b773157d9d7a98f937f988af2d1a083",
+      "contributor-trial/certificates/triangle_two_mass-online.json": "19663b32cb5221af6cd2b36b6a4b717b0360b1c0685196504368cbf91b068d2f",
+      "contributor-trial/certificates/box_one_mass-online.json": "2700b170248645ee0245d1c2984d31594f6b7e0b4e6a21ad25fcb1afdc9e9a75"
+    }
+  },
+  "adapter": {
+    "path": "trial_kira.py",
+    "sha256": "4ecee6ca6e4041918ac0d6ef5a5228058598d696b48e02b9380fbdfc9d3f6976",
+    "adjustment": "Temporarily extend the pinned exporter module allowed-name tuple for the three already-declared families; restore the original object in finally. No source file or original producer catalog changed."
+  },
+  "native_build": {
+    "pr": "https://github.com/discoveryathome/ibp-reduction/pull/10",
+    "commit": "00efa9b24a290ae577da514b0efc6360f106dafe",
+    "path": "research/b4ba241d49ae3adec57309d131c13f06/BUILD.json",
+    "receipt_sha256": "d5fad6b8df36ddf103b5ee2c968f5b78c566148027f8e5d4d081b091e579f323",
+    "kira_source_commit": "fb745431f97c8899a512e638da8598b0cfad7521",
+    "kira_executable_sha256": "9d49f623f144ee90c3eb2f50290b180b93c5c85e9ca1272092cecb065eb47066",
+    "fermat_executable_sha256": "cca7f136820e21be0b9f8a23a0efe9289ce62e59d0e88702150809d9815dfc2d",
+    "runtime_library_hashes_rechecked": true,
+    "configuration": "Kira3.0 release, no FireFly/FLINT; Linux x86_64/GCC14.2.0; one Fermat7.9b worker"
+  },
+  "sources_unchanged": true
+}

@@ -1,0 +1,160 @@
+1 Fermat/Blackbox instances will be run in parallel.
+The user defined environment variable FERMATPATH for Fermat is set:
+/root/.t3/scratch/2026-10-23-fetch-https-discoveryathome-org-v0-08cd4afb/build-tools/Ferl7/fer64
+The directories for the temporary files, result files and the sector mapping files are: 
+./tmp
+./results
+./sectormappings
+One variable is set to 1: {}
+Kira prepares topology: triangle_two_mass and top level sector: 
+7 
+
+*****Integral ordering*************************************
+VERSION table created successfully
+Kira database version number: 2.1
+WEIGHTBITS table created successfully
+INTEGRALORDERING table created successfully
+Kira will use the integral ordering: 1.
+With topology: triangle_two_mass use intermediate permutation
+0 1 2 
+Following reductions will be performed for the topology: triangle_two_mass
+Sector: 7 rmax: 4 smax: 1 
+
+***********************************************************
+Prepare numerical values for the generation of the system
+***********************************************************
+set numerics
+***********************************************************
+Find IBP LI and symmetry relations for the topology: triangle_two_mass
+***********************************************************
+
+*****Generate IBP identities*******************************
+There are 3 IBP identities
+( 0.002081 s )
+
+*****Generate LI identities********************************
+There are 1 LI identities
+( 0.001535 s )
+
+*****Search trivial sectors********************************
+ 12.5% [======] 25.0% [============] 37.5% [==================] 50.0% [=========================] 62.5% [===============================] 75.0% [=====================================] 87.5% [===========================================]100.0% [==================================================]
+Non trivial sectors in total: 3
+Trivial sectors in total: 5
+( 0.0 s )
+
+Search symmetry relations: 
+  0.0% [] 33.3% [================] 66.7% [=================================]100.0% [==================================================]
+( 0.0 s )
+***********************************************************
+Prepare Symmetries for the topology: triangle_two_mass
+***********************************************************
+Build symmetries for triangle_two_mass x triangle_two_mass 
+ 25.0% [============] 50.0% [=========================] 75.0% [=====================================]100.0% [==================================================]
+Sector relations: 0
+Sector symmetries: 2
+( 0.0 s )
+***********************************************************
+Prepare numerical values for the generation of the system
+***********************************************************
+set numerics
+
+***********************************************************
+Kira starts the reduction of the topology: triangle_two_mass
+***********************************************************
+
+***** Select equations recursively ************************
+length of mandatory list: 14
+Algebraic reconstruction is switched off.
+Generate equations for topology triangle_two_mass, sector 5 (1 of 3)
+Generate equations for topology triangle_two_mass, sector 6 (2 of 3)
+Generate equations for topology triangle_two_mass, sector 7 (3 of 3)
+132 equations: 67 zero + 65 independent
+solve backward: 0.0
+prepare content for selector: 0.0
+41 independent coefficients
+directory to the masters: triangle_two_mass
+Number of master integrals: 2
+triangle_two_mass[1,0,1] # 5
+triangle_two_mass[0,1,1] # 6
+Generate equations for topology triangle_two_mass, sector 5 (1 of 3)
+Generate equations for topology triangle_two_mass, sector 6 (2 of 3)
+Generate equations for topology triangle_two_mass, sector 7 (3 of 3)
+
+Number of selected equations to reduce: 0 equations
+solve forward:      0.0
+max insertions:     0
+solve backward: 0.0
+prepare content for selector: 0.0
+total solve time:   0.0
+      19 equations: 0 zero + 19 independent
+master integrals which should be avoided
+Regenerate:
+Generate equations for topology triangle_two_mass, sector 5 (1 of 3)
+Generate equations for topology triangle_two_mass, sector 6 (2 of 3)
+Generate equations for topology triangle_two_mass, sector 7 (3 of 3)
+
+Number of selected equations to reduce: 19 equations
+( 0.0 s )
+Algebraic reconstruction is switched off.
+
+***** Select equations recursively ************************
+length of mandatory list: 14
+
+***** Bring system in triangular form *********************
+
+Iterate the system until it is in triangular form: 
+iteration: 0; items left: 4; time: ( 0.0 s )
+iteration: 1; items left: 2; time: ( 0.0 s )
+redundant: 0; insertions 10
+All coefficients will be normalized
+
+Equations out of bounds rmax and smax: 5
+Equations in the bounds rmax and smax: 14
+( 0.0 s )
+
+Write the triangular system to ./tmp/ on hard disk
+(--> ./tmp/triangle_two_mass/VERconfig, ./tmp/triangle_two_mass/VER###) 
+
+Triangular form completed after ( 0.0 s )
+FIREFLY table created successfully
+Algebraic reconstruction is switched off.
+Equation table created successfully
+
+***** Run the back substitution ***********************
+
+Load all files from ./tmp/
+Take 14 equations to reduce 14 missing equations
+
+Back substitution: 
+  0.0% []  0.0% []  0.0% []  7.1% []  7.1% []  7.1% []  7.1% []  7.1% [] 28.6% [] 28.6% [] 42.9% [] 57.1% []
+
+Equations reduced: 8 / 14
+Kira committed results ( 0.0 s )
+ 64.3% []100.0% [=]
+
+Equations reduced: 14 / 14
+Kira committed results ( 0.0 s )
+
+14 equations were reduced
+
+*****Master integrals***********************************
+triangle_two_mass[1,0,1] # 5
+triangle_two_mass[0,1,1] # 6
+
+Total number of master integrals: 2
+( 0.0 s )
+One variable is set to 1: {}
+One variable is set to 1: {}
+The input directory is set to:
+./results
+symbol_to_replace_by_one: x in kinematics.yaml is not set. 
+Mass reconstruction is disabled.
+################################################
+kira2file: Reconstruct results for triangle_two_mass
+################################################
+
+Algebraic reconstruction is switched off.
+unreduced integrals: 0.
+
+Total time:
+( 4.7 s )

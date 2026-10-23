@@ -1,0 +1,149 @@
+[
+  {
+    "family": "bubble_one_mass",
+    "argv": [
+      "/usr/bin/timeout",
+      "--kill-after=5",
+      "180",
+      "/root/.t3/scratch/2026-10-23-fetch-https-discoveryathome-org-v0-08cd4afb/kira-prefix/bin/kira",
+      "--parallel=1",
+      "jobs.yaml"
+    ],
+    "cwd": "/root/.t3/scratch/2026-10-23-fetch-https-discoveryathome-org-v0-08cd4afb/trial-native-live/bubble_one_mass",
+    "kira_sha256": "9d49f623f144ee90c3eb2f50290b180b93c5c85e9ca1272092cecb065eb47066",
+    "fermat_sha256": "cca7f136820e21be0b9f8a23a0efe9289ce62e59d0e88702150809d9815dfc2d",
+    "timeout_seconds": 180,
+    "address_space_cap_bytes_per_process": 2147483648,
+    "input_sha256": {
+      "config/integralfamilies.yaml": "37104b19bc8acfbeb9ae7117d1509b41674c47532a8f63f594a18f745b5e0fe1",
+      "config/kinematics.yaml": "03394c57c7f33121f95396793b9608853c43dedec71b8d5d63283a3dbee8a407",
+      "jobs.yaml": "76dc406015d21141f15f783a198568595d4030f6897c0bc8d7c58a9916130013",
+      "targets": "8d82cc8fe8f40837d7f450a6ad20af4232fb82a597adc0368444f528b1293346",
+      "masters": "e697698ae611cdb079bb131422fafe5d047f3ca5bcbc401a962e53256567321f"
+    },
+    "returncode": 0,
+    "elapsed_seconds": 4.740004763007164,
+    "user_seconds": 0.568491,
+    "system_seconds": 0.131633,
+    "max_individual_process_rss_bytes": 49713152,
+    "log_sha256": "a4fdcd13ad5f6edf73fd9ef74f0ebecdc6429b40d484f04a9372e29056573c29",
+    "exact_identities": 13,
+    "masters": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "export_sha256": "344cd38f3ead808ccb5bc290eea2754d01d0833b290b165d966d4b23ff8b9f71",
+    "certificate_sha256": "86eec27aa3056cd1e8820b4cd46304d63b773157d9d7a98f937f988af2d1a083",
+    "valid": true
+  },
+  {
+    "family": "triangle_two_mass",
+    "argv": [
+      "/usr/bin/timeout",
+      "--kill-after=5",
+      "180",
+      "/root/.t3/scratch/2026-10-23-fetch-https-discoveryathome-org-v0-08cd4afb/kira-prefix/bin/kira",
+      "--parallel=1",
+      "jobs.yaml"
+    ],
+    "cwd": "/root/.t3/scratch/2026-10-23-fetch-https-discoveryathome-org-v0-08cd4afb/trial-native-live/triangle_two_mass",
+    "kira_sha256": "9d49f623f144ee90c3eb2f50290b180b93c5c85e9ca1272092cecb065eb47066",
+    "fermat_sha256": "cca7f136820e21be0b9f8a23a0efe9289ce62e59d0e88702150809d9815dfc2d",
+    "timeout_seconds": 180,
+    "address_space_cap_bytes_per_process": 2147483648,
+    "input_sha256": {
+      "config/integralfamilies.yaml": "9707c48476021cb1bbcee7c731c51c3d676ad22f923d7304e4383f2e8ecba9fb",
+      "config/kinematics.yaml": "8b2d6d32eade12f67299e9ef960b55865cd59a5393040799d4445fe3fd91a302",
+      "jobs.yaml": "ffabf5d3a5a827d975853bdeddec94696ad7a9562773f1f6f39b629e7a41cf41",
+      "targets": "14538f605fe2e790e7a5b420b2e74577e75aaa44afc32fb8db035d76d0a0c025",
+      "masters": "383ab15a8f07d172175b80a155d948e2dc38bc24fc1638ac3f704f64d7ec5efe"
+    },
+    "returncode": 0,
+    "elapsed_seconds": 4.716063619009219,
+    "user_seconds": 0.58172,
+    "system_seconds": 0.104472,
+    "max_individual_process_rss_bytes": 55787520,
+    "log_sha256": "3c86bc8c87709572050e6fe62aad7b34c532ef8b3b2be2a5cae9d342cf1ece9a",
+    "exact_identities": 14,
+    "masters": [
+      [
+        0,
+        1,
+        1
+      ],
+      [
+        1,
+        0,
+        1
+      ]
+    ],
+    "export_sha256": "0d325548434aa64c47c7e81b8fa5c54828f5db100a9b43d23a196f0f523b6748",
+    "certificate_sha256": "19663b32cb5221af6cd2b36b6a4b717b0360b1c0685196504368cbf91b068d2f",
+    "valid": true
+  },
+  {
+    "family": "box_one_mass",
+    "argv": [
+      "/usr/bin/timeout",
+      "--kill-after=5",
+      "180",
+      "/root/.t3/scratch/2026-10-23-fetch-https-discoveryathome-org-v0-08cd4afb/kira-prefix/bin/kira",
+      "--parallel=1",
+      "jobs.yaml"
+    ],
+    "cwd": "/root/.t3/scratch/2026-10-23-fetch-https-discoveryathome-org-v0-08cd4afb/trial-native-live/box_one_mass",
+    "kira_sha256": "9d49f623f144ee90c3eb2f50290b180b93c5c85e9ca1272092cecb065eb47066",
+    "fermat_sha256": "cca7f136820e21be0b9f8a23a0efe9289ce62e59d0e88702150809d9815dfc2d",
+    "timeout_seconds": 180,
+    "address_space_cap_bytes_per_process": 2147483648,
+    "input_sha256": {
+      "config/integralfamilies.yaml": "10cedb9dcc9fcdf290bae18e719fd15f284924cd2e52804edae620f81742053a",
+      "config/kinematics.yaml": "9e1f55ad35904155db9d5c4277cf942b4f8020924fb30ffc71402f4aedbbf1c3",
+      "jobs.yaml": "c8e205635d94d29c6280e8c8a35d75db067621d345a3dbe9451b380b22c8f797",
+      "targets": "f34a211eb211f75832a4412f3dee3f8d18dc35285a23d09a0f593ce3eee93166",
+      "masters": "5f6d1f6624c6f84265d1589487e6a7160b946f49a2f8e05188748ca74ae27421"
+    },
+    "returncode": 0,
+    "elapsed_seconds": 4.893852835986763,
+    "user_seconds": 0.699871,
+    "system_seconds": 0.173143,
+    "max_individual_process_rss_bytes": 59207680,
+    "log_sha256": "14793ccc226d32e35d3d4a7fcd92b2fd24c961159ebe447bb405a8699bdd2d9a",
+    "exact_identities": 71,
+    "masters": [
+      [
+        0,
+        1,
+        0,
+        1
+      ],
+      [
+        1,
+        0,
+        0,
+        1
+      ],
+      [
+        1,
+        0,
+        1,
+        0
+      ],
+      [
+        1,
+        1,
+        1,
+        1
+      ]
+    ],
+    "export_sha256": "3736b9368481558d939b8ce4c06f0933625c06017da887f8c7bd06c5fdd69324",
+    "certificate_sha256": "2700b170248645ee0245d1c2984d31594f6b7e0b4e6a21ad25fcb1afdc9e9a75",
+    "valid": true
+  }
+]

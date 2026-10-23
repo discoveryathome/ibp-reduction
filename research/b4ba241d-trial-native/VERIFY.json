@@ -1,0 +1,16 @@
+{
+  "evidence_level": "author-checked",
+  "scope": "98 exact non-master one-loop identities, eight native masters and input-convention controls; no performance/acceptance claim.",
+  "interpreter_used": "../ibp-reduction/.venv/bin/python (Python3.13.5, pinned project requirements)",
+  "predecessor": "d051133ed7c01652e21b53e34fcd5610051705a8",
+  "commands": [
+    {"argv": [".venv/bin/python","research/b4ba241d-trial-native/trial_kira.py","--predecessor","../predecessor","--check","research/b4ba241d-trial-native/data"],"observed":"valid=true; 3 families, 98 exact identities, 8 masters, 12 rejecting controls.","log":"logs/verification.log"},
+    {"argv": ["python3","-m","unittest","discover","-s","research/b4ba241d-trial-native","-p","test_metadata.py","-v"],"observed":"2 tests passed in 0.001 seconds, including malformed/duplicate native metadata subcases.","log":"logs/metadata-tests.log"},
+    {"argv": [".venv/bin/python","research/b4ba241d-trial-native/trial_kira.py","--predecessor","../predecessor","--out","scratch/trial-kira-replay","--kira","/path/to/locally-built/kira"],"condition":"Fresh output directory; local library path and pinned FERMATPATH as in PR #10 build recipe.","observed":"All three delivered native calls passed without input correction or fallback; actual commands/resources/hashes are in data/runs.json.","log":"logs/generation.log"},
+    {"argv": ["../ibp-reduction/.venv/bin/python","tools/check_project.py"],"expected":"Project protocol/frontier integrity passes."},
+    {"argv": ["git","diff","--check"],"condition":"Package attributes preserve only raw .log/.kira whitespace.","expected":"Authored source/docs have no whitespace errors."}
+  ],
+  "hash_check": "From the package directory: python3 -c 'import hashlib,json,pathlib; h=json.loads(pathlib.Path(\"HASHES.json\").read_text()); assert all(hashlib.sha256(pathlib.Path(p).read_bytes()).hexdigest()==v for p,v in h.items()); print(\"PASS\",len(h))'",
+  "additional_observed": ["All 15 input hashes match recorded native receipts", "Original exporter and producer catalog objects restored after every extension", "Native executable/Fermat and all ten runtime library hashes match the preceding build receipt", "All three original online certificates pass the unchanged exact checker"],
+  "not_checked": ["Independent scientific/maintainer review, analytic IBP axioms and basis minimality", "Exceptional limits, other hosts/solvers/configurations or multi-loop transfer", "Performance/A-A benchmark and original operation-cost claims", "Aggregate RSS or cap exhaustion", "Other saved producer-policy certificates and full historical benchmark", "Full upstream dependency test suites"]
+}
