@@ -1,0 +1,67 @@
+{
+  "author_source": {
+    "url": "https://github.com/andreslunagodoy/tube_seeding",
+    "commit": "ec955d46f26ef497ca5ee7053f6f0286efb7971b",
+    "executed": false,
+    "files_sha256": {
+      "doublePentagon/IBP_LI": "cc67d9e9da53b06087c07c382a92a1f36bc471147c6f89f49fdbef3513d6d556",
+      "doublePentagon/trivialsector": "36a0b7e133584d892301d8b2e167ec81c565d6ab9129cbcabc1f0514e4bbc57f",
+      "doublePentagon/evolutionary_strategies/masters": "59692f5c410a7f6bda0385fb41a701e887b0c153a1b9ffdea72997c5b526b119",
+      "doublePentagon/kira_equation_template_generation/config/integralfamilies.yaml": "3404fdc16283fc74ef7fb5a71ad7bb4382fc0a16c08749b88c8ddaed83bba59e",
+      "doublePentagon/kira_equation_template_generation/config/kinematics.yaml": "8b5f3e1b4f6f7d6c1c4711b114035b46d2707e121757666e388d1fd97ee649d3",
+      "LICENSE": "23483acae1be150fc6cb4026b1ad8f794b40c6e131d2b6a9fb34090d4a1930c3"
+    },
+    "validation_script_sha256": "1355e9ff15eea9ae216d2e3bf11c7c189e284e1bde3ab68e175d2bc79c86fbbf"
+  },
+  "paper": {
+    "url": "https://arxiv.org/html/2606.10698v1",
+    "download_sha256": "f05e6d8aa8fc54b40fd43e93d3a6557bd20f7367d67d29e51c2629f0ceb30fe2",
+    "equations": [
+      12,
+      16,
+      17,
+      18
+    ]
+  },
+  "predecessors": [
+    {
+      "pr": "https://github.com/discoveryathome/ibp-reduction/pull/9",
+      "commit": "6ea993589a6dc4416636bec87b4f25554993dde9",
+      "credit": "Scope audit and count handoff"
+    },
+    {
+      "pr": "https://github.com/discoveryathome/ibp-reduction/pull/11",
+      "commit": "a4112a58b4aac94ceed0255a8ee4503e0cde6688",
+      "credit": "Independent count enumeration; byte-identical rank5 tube fixture",
+      "fixture_source_path": "research/b4ba241d-tube-count/data/rank-5.jsonl",
+      "fixture_sha256": "4d36f35a8327c8a62f742a7da0c90add8f3f49be11daade01088080f27829395"
+    },
+    {
+      "pr": "https://github.com/discoveryathome/ibp-reduction/pull/10",
+      "commit": "00efa9b24a290ae577da514b0efc6360f106dafe",
+      "credit": "Pinned screened native Kira source build and dependency receipts",
+      "build_receipt_sha256": "d5fad6b8df36ddf103b5ee2c968f5b78c566148027f8e5d4d081b091e579f323"
+    }
+  ],
+  "native": {
+    "source_commit": "fb745431f97c8899a512e638da8598b0cfad7521",
+    "binary_sha256": "9d49f623f144ee90c3eb2f50290b180b93c5c85e9ca1272092cecb065eb47066",
+    "fermat_sha256": "cca7f136820e21be0b9f8a23a0efe9289ce62e59d0e88702150809d9815dfc2d",
+    "workers": 1,
+    "outcome": "incomplete: CLI failure then two valid capped timeouts"
+  },
+  "fixtures_sha256": {
+    "fixtures/IBP_LI": "cc67d9e9da53b06087c07c382a92a1f36bc471147c6f89f49fdbef3513d6d556",
+    "fixtures/TUBE-SEEDING-LICENSE": "23483acae1be150fc6cb4026b1ad8f794b40c6e131d2b6a9fb34090d4a1930c3",
+    "fixtures/masters": "59692f5c410a7f6bda0385fb41a701e887b0c153a1b9ffdea72997c5b526b119",
+    "fixtures/source-config/integralfamilies.yaml": "3404fdc16283fc74ef7fb5a71ad7bb4382fc0a16c08749b88c8ddaed83bba59e",
+    "fixtures/source-config/kinematics.yaml": "8b5f3e1b4f6f7d6c1c4711b114035b46d2707e121757666e388d1fd97ee649d3",
+    "fixtures/trivialsector": "36a0b7e133584d892301d8b2e167ec81c565d6ab9129cbcabc1f0514e4bbc57f",
+    "fixtures/tube-rank5.jsonl": "4d36f35a8327c8a62f742a7da0c90add8f3f49be11daade01088080f27829395"
+  },
+  "platform": {
+    "system": "Linux",
+    "machine": "x86_64"
+  },
+  "initial_trial_note": "The cap was enforced; original solver source, certificate, log and component timings are retained, but no standalone wall/RSS receipt was captured. Only verifier guards/exponent handling changed before the final four trials."
+}

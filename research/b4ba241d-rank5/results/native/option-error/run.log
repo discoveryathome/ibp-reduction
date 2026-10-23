@@ -1,0 +1,25 @@
+1 Fermat/Blackbox instances will be run in parallel.
+/root/.t3/scratch/2026-10-23-fetch-https-discoveryathome-org-v0-08cd4afb/kira-prefix/bin/kira: unrecognized option '--prime_user=2147483647'
+
+Usage:
+  kira FILE        Run the job specified in the job file FILE.
+                   The project directory is set to the working directory.
+Options:
+   --version       Print the Kira version and exit.
+   --help          Print this help and exit.
+   --silent        Switch to silent mode.
+   --parallel=n    Run n instances of Fermat rsp. FireFly 
+                   black-box evaluators in parallel. 
+                   If the value is omitted or =physical, use 
+                   all CPU cores. 
+                   With =logical, all logical cores are used.
+   --integral_ordering=n    Use the n-th integral ordering 
+                   (possible values: 1,...,8).
+   --set_value="var=val"    Set the value of the symbol "var" to "val".
+   --set_sector=n  Perform only the reduction of sector n.
+   --prime_user=n  User makes free choice for a prime number
+                   maximum prime number supported is 9223372036854775783
+
+   --force_database_format=fermat|firefly  Updates the database to version 2.1
+                   and the correct format.
+

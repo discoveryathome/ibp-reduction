@@ -1,0 +1,18 @@
+test_changed_shift_rejected (__main__.OperatorTests.test_changed_shift_rejected) ... ok
+test_exact_bijective_match (__main__.OperatorTests.test_exact_bijective_match) ... ok
+test_missing_and_duplicate_operator_rejected (__main__.OperatorTests.test_missing_and_duplicate_operator_rejected) ... ok
+test_restricted_coefficient_parser (__main__.OperatorTests.test_restricted_coefficient_parser) ... ok
+test_all_original_row_witnesses (__main__.WitnessTests.test_all_original_row_witnesses) ... ok
+test_changed_master_coefficient_rejected (__main__.WitnessTests.test_changed_master_coefficient_rejected) ... ok
+test_changed_witness_weight_rejected (__main__.WitnessTests.test_changed_witness_weight_rejected) ... ok
+test_decreasing_rank_cardinality (__main__.WitnessTests.test_decreasing_rank_cardinality) ... ok
+test_duplicate_original_row_rejected (__main__.WitnessTests.test_duplicate_original_row_rejected) ... ok
+test_matching_fixed_master_coefficients (__main__.WitnessTests.test_matching_fixed_master_coefficients) ... ok
+test_metadata_mutations_rejected (__main__.WitnessTests.test_metadata_mutations_rejected) ... ok
+test_omitted_original_row_rejected (__main__.WitnessTests.test_omitted_original_row_rejected) ... ok
+test_separate_field_expression_evaluator (__main__.WitnessTests.test_separate_field_expression_evaluator) ... ok
+
+----------------------------------------------------------------------
+Ran 13 tests in 13.131s
+
+OK

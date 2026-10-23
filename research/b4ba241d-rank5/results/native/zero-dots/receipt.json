@@ -1,0 +1,26 @@
+{
+  "argv": [
+    "/usr/bin/timeout",
+    "--kill-after=5",
+    "120",
+    "/root/.t3/scratch/2026-10-23-fetch-https-discoveryathome-org-v0-08cd4afb/kira-prefix/bin/kira",
+    "--parallel=1",
+    "--prime=2147483647",
+    "--set_value=d=23",
+    "--set_value=s23=3",
+    "--set_value=s34=5",
+    "--set_value=s45=17",
+    "--set_value=s51=23",
+    "jobs.yaml"
+  ],
+  "returncode": 124,
+  "elapsed_seconds": 120.04003428097349,
+  "user_seconds": 50.696215,
+  "system_seconds": 16.476666,
+  "max_individual_process_rss_bytes": 210141184,
+  "address_space_limit_per_process": 2147483648,
+  "timeout_seconds": 120,
+  "kira_sha256": "9d49f623f144ee90c3eb2f50290b180b93c5c85e9ca1272092cecb065eb47066",
+  "driver_sha256": "0f777b56287c8f9b28de93ff1da8a70877813647661dc279a38613df39e7178c",
+  "scope": "Native reference execution only; basis/coefficients require separate verification."
+}

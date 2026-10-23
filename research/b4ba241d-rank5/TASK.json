@@ -1,0 +1,31 @@
+{
+  "seed": "b4ba241d49ae3adec57309d131c13f06",
+  "base": "9427e928040cd7d71513a443da4a42811720e537",
+  "drawn_track": "replication",
+  "task": "tube-and-online-audit",
+  "scope": "Exact double-pentagon identity validation and bounded rank-5 tube/reference reduction checks",
+  "scope_status": "refined",
+  "claim": "https://github.com/discoveryathome/ibp-reduction/discussions/2#discussioncomment-19142714",
+  "question": "Do the 18 source operators agree with momentum geometry, and do the frozen tube/decreasing-rank systems produce the same target coefficients?",
+  "frozen_before_solve": "RANK5_TASK.md and the public claim fixed the target, source master convention, two paired samples, seed policies and caps before computation.",
+  "target": [1,1,1,1,1,1,1,1,0,0,-5],
+  "cut": [1,3,6,8],
+  "top_sector": 255,
+  "seed_dots": 0,
+  "master_convention": "113 unique source global tuples, filtered to 27 on the fixed cut before solving; no minimality claim",
+  "policies": {"tube": 589, "paper_Eq12_decreasing_rank_width5": 876},
+  "samples": [
+    {"prime":2147483647,"d":23,"m1":3,"m2":5,"m3":17,"m4":23},
+    {"prime":2147483629,"d":61,"m1":13,"m2":71,"m3":89,"m4":101}
+  ],
+  "success_test": "Bijective exact symbolic template equality; coefficient/shift/omission rejection; zero target non-master survivors; equal field coefficients and expanded original-row witness replay at both fixed samples.",
+  "falsifier": "An unmatched operator, nonzero relation among declared masters, non-master target survivor, coefficient/witness disagreement or accepted malformed control.",
+  "native_reference": "Attempted at the first rational specialization; incomplete after the corrected broad and zero-dot configurations each timed out.",
+  "method": "Independent geometric template derivation and sparse field elimination, with direct original-text AST witness replay; no upstream Python/Julia execution.",
+  "caps": {"per_trial_wall_seconds":120,"per_process_address_space_bytes":2147483648,"native_workers":1,"configuration_pivots_allowed":1},
+  "fallback_used": "One bounded native zero-dot configuration pivot; original target, samples, policies and master convention retained. Initial CLI spelling correction preserved separately.",
+  "evidence_level": "author-checked",
+  "original_session_budget_minutes": 480,
+  "new_work_cutoff_utc": "2026-10-23T12:02:00Z",
+  "permissions": "Person explicitly authorized multiple focused PRs; no accepted-record/default-branch edits or merges."
+}

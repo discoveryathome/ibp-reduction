@@ -1,0 +1,121 @@
+{
+  "valid": true,
+  "evidence_level": "author-checked",
+  "exact_templates": 18,
+  "denominator_map_determinant": "512",
+  "matches": [
+    {
+      "source_index": 0,
+      "operator": "IBP_l1_q0",
+      "normalization": "1"
+    },
+    {
+      "source_index": 1,
+      "operator": "IBP_l2_q1",
+      "normalization": "1"
+    },
+    {
+      "source_index": 2,
+      "operator": "IBP_l2_q5",
+      "normalization": "1"
+    },
+    {
+      "source_index": 3,
+      "operator": "IBP_l1_q2",
+      "normalization": "1"
+    },
+    {
+      "source_index": 4,
+      "operator": "IBP_l1_q5",
+      "normalization": "1"
+    },
+    {
+      "source_index": 5,
+      "operator": "IBP_l1_q3",
+      "normalization": "1"
+    },
+    {
+      "source_index": 6,
+      "operator": "IBP_l1_q1",
+      "normalization": "1"
+    },
+    {
+      "source_index": 7,
+      "operator": "IBP_l2_q2",
+      "normalization": "1"
+    },
+    {
+      "source_index": 8,
+      "operator": "IBP_l2_q3",
+      "normalization": "1"
+    },
+    {
+      "source_index": 9,
+      "operator": "IBP_l2_q0",
+      "normalization": "1"
+    },
+    {
+      "source_index": 10,
+      "operator": "IBP_l2_q4",
+      "normalization": "1"
+    },
+    {
+      "source_index": 11,
+      "operator": "IBP_l1_q4",
+      "normalization": "1"
+    },
+    {
+      "source_index": 12,
+      "operator": "LI_p1_p4",
+      "normalization": "-2"
+    },
+    {
+      "source_index": 13,
+      "operator": "LI_p1_p2",
+      "normalization": "-2"
+    },
+    {
+      "source_index": 14,
+      "operator": "LI_p2_p4",
+      "normalization": "-2"
+    },
+    {
+      "source_index": 15,
+      "operator": "LI_p1_p3",
+      "normalization": "-2"
+    },
+    {
+      "source_index": 16,
+      "operator": "LI_p3_p4",
+      "normalization": "-2"
+    },
+    {
+      "source_index": 17,
+      "operator": "LI_p2_p3",
+      "normalization": "-2"
+    }
+  ],
+  "coefficient_mutations_rejected": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17
+  ],
+  "omission_duplicate_controls": 2,
+  "source_sha256": "cc67d9e9da53b06087c07c382a92a1f36bc471147c6f89f49fdbef3513d6d556",
+  "scope": "Symbolic operator verification, not integral reduction or performance."
+}
