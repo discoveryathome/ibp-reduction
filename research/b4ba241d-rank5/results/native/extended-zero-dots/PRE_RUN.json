@@ -1,0 +1,43 @@
+{
+  "argv": [
+    "/usr/bin/timeout",
+    "--kill-after=5",
+    "600",
+    "/root/.t3/scratch/2026-10-23-fetch-https-discoveryathome-org-v0-08cd4afb/kira-prefix/bin/kira",
+    "--parallel=1",
+    "--prime=2147483647",
+    "--set_value=d=23",
+    "--set_value=s23=3",
+    "--set_value=s34=5",
+    "--set_value=s45=17",
+    "--set_value=s51=23",
+    "jobs.yaml"
+  ],
+  "original_argv": [
+    "/usr/bin/timeout",
+    "--kill-after=5",
+    "120",
+    "/root/.t3/scratch/2026-10-23-fetch-https-discoveryathome-org-v0-08cd4afb/kira-prefix/bin/kira",
+    "--parallel=1",
+    "--prime=2147483647",
+    "--set_value=d=23",
+    "--set_value=s23=3",
+    "--set_value=s34=5",
+    "--set_value=s45=17",
+    "--set_value=s51=23",
+    "jobs.yaml"
+  ],
+  "input_sha256": {
+    "jobs.yaml": "2cb5e341d39abd5839d6267891d7230bd42adefeed6223b0e0548efba73a67a6",
+    "masters": "887a46b4717efeab26c04e721051578695f9365c6fa8e874611a9441336ba2a6",
+    "targets": "8402586793785abe7124346b47d9de5c98ad0c59cb1088634515ffeef2cbff1c",
+    "config/integralfamilies.yaml": "7284767d344d9a4a4626e3f8d6c38c8efbd13a1a0ca20a4148793fa744dc11cb",
+    "config/kinematics.yaml": "8b5f3e1b4f6f7d6c1c4711b114035b46d2707e121757666e388d1fd97ee649d3"
+  },
+  "kira_sha256": "9d49f623f144ee90c3eb2f50290b180b93c5c85e9ca1272092cecb065eb47066",
+  "driver_sha256": "2df1d5ff8a236df502b839f76250c1a0df0026e6b76363d329b319bef89d1e09",
+  "task_sha256": "c58a84726d0ad12303bfa6ea175acb4a25ae83a84c0dad446e7543aacb20b81d",
+  "timeout_seconds": 600,
+  "address_space_limit_per_process": 2147483648,
+  "scope": "Explicit resource-only continuation after archived120s timeouts; no timing or generic algebraic claim."
+}

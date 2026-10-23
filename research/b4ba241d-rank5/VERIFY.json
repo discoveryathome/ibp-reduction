@@ -1,0 +1,23 @@
+{
+  "evidence_level": "author-checked",
+  "scope": "18 exact operator templates plus one rank-5 target at two paired finite-field samples; native comparison incomplete",
+  "python": "3.13.5",
+  "sympy": "1.14.0",
+  "commands": [
+    {"argv":["python","research/b4ba241d-rank5/identities.py","--out","NEW.json"],"observed":"All 18 exact matches, determinant512, 18 coefficient mutations and omission/duplication rejected","artifacts":["identities.json","results/identities.log"]},
+    {"argv":["python","research/b4ba241d-rank5/run_fields.py","--out","NEW-DIRECTORY"],"observed":"Four fixed cases returned0; every original-row witness replayed and tube/reference coefficients match at each sample","artifacts":["results/fields/receipts.json","results/field-driver.log"]},
+    {"argv":["python","research/b4ba241d-rank5/test_validation.py","-v"],"observed":"15 tests pass, including four witness replays and coefficient/shift/witness/metadata/parser mutations","artifact":"results/validation-final.log"},
+    {"argv":["python3","research/b4ba241d-rank5/geometry_verify.py","--out","NEW.json"],"observed":"Four original witnesses replay from field momentum geometry without SymPy or published coefficients;four altered coefficient/weight/row/momentum controls reject","artifact":"results/geometry-check.json"},
+    {"argv":["python3","-m","unittest","discover","-s","research/b4ba241d-rank5","-p","test_geometry.py","-v"],"observed":"3 tests pass:field inverse/singularity,momentum grammar,sample/master metadata","artifact":"results/rank5-geometry-tests.log"},
+    {"argv":["python","research/b4ba241d-rank5/run_kira.py","--directory","FRESH-NATIVE-INPUT-DIRECTORY","--kira","PINNED-KIRA"],"observed":"Corrected default-dot and zero-dot jobs both timeout124; no native basis/coefficients validated","artifact":"results/native/"},
+    {"argv":["python","results/native/extended-zero-dots/driver.py","--input","results/native/zero-dots","--out","FRESH-DIRECTORY","--kira","PINNED-KIRA","--task","results/native/extended-zero-dots/PREDECLARED_TASK.md"],"observed":"Explicit later resource-only continuation:600s limit,same five inputs and2GiB/one-worker constraints; aborted by signal6 after308.036s with std::bad_alloc; no completed native comparison","artifact":"results/native/extended-zero-dots/"},
+    {"argv":["python","tools/check_project.py"],"observed":"PASS: protocol schemas, track weights, artifact hashes, frozen evaluation binding"},
+    {"argv":["git","diff","--check"],"expected":"No whitespace errors outside scoped raw-artifact attributes"}
+  ],
+  "proof_boundary": "Symbolic equality certifies the 18 operator templates. Independent original-row replay certifies only each stated field target identity. Matrix rank diagnostics are solver-reported, not independently rank-certified.",
+  "shared_inputs": ["source IBP/LI data","source trivial-sector assumptions","source master convention","seed policy and cut","Python runtime"],
+  "geometric_replay_boundary":"Additional same-author verification of the four existing known witnesses,implemented after their reported success. Shares geometry/IBP axioms,cut/trivial-sector convention,operator-label/normalization bijection and master list,but does not use SymPy,the producer or published coefficient templates. See GEOMETRY_VERIFY_TASK.md and GEOMETRY_VERIFY.json.",
+  "source_bindings": "SOURCES.json and HASHES.json bind source fixtures, all inputs, executable source versions, outputs and failure logs. The field certificates themselves additionally bind template/master hashes and frozen target/sample/policy metadata.",
+  "all_attempts": ["preliminary tube/sample0 success with initial verifier source retained","18 exact source matches and coefficient mutation controls","four capped final field trials","initial unsupported native --prime_user option","corrected native unrestricted-dot timeout","one zero-dot native configuration pivot timeout","13-test initial validation, then 15-test geometry-inclusive validation","later explicitly claimed600s resource-only continuation aborted with std::bad_alloc under unchanged2GiB cap; original scientific inputs/code/results unchanged"],
+  "not_checked": ["generic algebraic target coefficients or rational reconstruction","closure of all generated columns or global master minimality","completed native coefficients/basis conversion","best-tuned Kira performance or author backend/timing reproduction","full original author point/prime grid","other cuts, targets, ranks or multi-ISP paths","independent scientific or maintainer review","aggregate descendant memory or preliminary trial process-RSS"]
+}

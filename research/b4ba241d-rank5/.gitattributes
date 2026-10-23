@@ -1,0 +1,5 @@
+# Preserve raw upstream/configuration and executable log bytes for their hashes.
+*.log -whitespace
+fixtures/IBP_LI -whitespace
+fixtures/source-config/*.yaml -whitespace
+results/native/**/config/*.yaml -whitespace

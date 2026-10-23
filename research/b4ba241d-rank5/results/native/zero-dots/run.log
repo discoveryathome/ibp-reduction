@@ -1,0 +1,231 @@
+1 Fermat/Blackbox instances will be run in parallel.
+Force Kira to generate the system modulo prime number nth: 2147483647
+Set the symbol: d=23
+Set the symbol: s23=3
+Set the symbol: s34=5
+Set the symbol: s45=17
+Set the symbol: s51=23
+The user defined environment variable FERMATPATH for Fermat is set:
+/root/.t3/scratch/2026-10-23-fetch-https-discoveryathome-org-v0-08cd4afb/build-tools/Ferl7/fer64
+The directories for the temporary files, result files and the sector mapping files are: 
+./tmp
+./results
+./sectormappings
+One variable is set to 1: {s12==1}
+With topology: doublePentagon use permutation criteria option 1.
+Prefer in ascending order:
+1. massless propagators
+2. shortest propagators
+Kira prepares topology: doublePentagon and top level sector: 
+255 
+
+*****Integral ordering*************************************
+VERSION table created successfully
+Kira database version number: 2.1
+WEIGHTBITS table created successfully
+INTEGRALORDERING table created successfully
+Kira will use the integral ordering: 1.
+With topology: doublePentagon use intermediate permutation
+0 3 1 4 2 7 6 5 8 9 10 
+Following reductions will be performed for the topology: doublePentagon
+Sector: 255 rmax: 8 smax: 5 dmax: 0 
+
+***********************************************************
+Prepare numerical values for the generation of the system
+***********************************************************
+set numerics
+***********************************************************
+Find IBP LI and symmetry relations for the topology: doublePentagon
+***********************************************************
+
+*****Generate IBP identities*******************************
+There are 12 IBP identities
+( 0.035279 s )
+
+*****Generate LI identities********************************
+There are 6 LI identities
+( 0.099229 s )
+
+*****Search trivial sectors********************************
+  1.0% []  2.1% [=]  3.1% [=]  4.1% [==]  5.1% [==]  6.2% [===]  7.2% [===]  8.2% [====]  9.2% [====] 10.3% [=====] 11.3% [=====] 12.3% [======] 13.3% [======] 14.4% [=======] 15.4% [=======] 16.4% [========] 17.4% [========] 18.5% [=========] 19.5% [=========] 20.5% [==========] 21.5% [==========] 22.6% [===========] 23.6% [===========] 24.6% [============] 25.6% [============] 26.7% [=============] 27.7% [=============] 28.7% [==============] 29.7% [==============] 30.8% [===============] 31.8% [===============] 32.8% [================] 33.8% [================] 34.9% [=================] 35.9% [=================] 36.9% [==================] 37.9% [==================] 39.0% [===================] 40.0% [===================] 41.0% [====================] 42.0% [=====================] 43.1% [=====================] 44.1% [======================] 45.1% [======================] 46.1% [=======================] 47.2% [=======================] 48.2% [========================] 49.2% [========================] 50.2% [=========================] 51.3% [=========================] 52.3% [==========================] 53.3% [==========================] 54.3% [===========================] 55.4% [===========================] 56.4% [============================] 57.4% [============================] 58.4% [=============================] 59.5% [=============================] 60.5% [==============================] 61.5% [==============================] 62.5% [===============================] 63.6% [===============================] 64.6% [================================] 65.6% [================================] 66.7% [=================================] 67.7% [=================================] 68.7% [==================================] 69.7% [==================================] 70.8% [===================================] 71.8% [===================================] 72.8% [====================================] 73.8% [====================================] 74.9% [=====================================] 75.9% [=====================================] 76.9% [======================================] 77.9% [======================================] 79.0% [=======================================] 80.0% [=======================================] 81.0% [========================================] 82.0% [=========================================] 83.1% [=========================================] 84.1% [==========================================] 85.1% [==========================================] 86.1% [===========================================] 87.2% [===========================================] 88.2% [============================================] 89.2% [============================================] 90.2% [=============================================] 91.3% [=============================================] 92.3% [==============================================] 93.3% [==============================================] 94.3% [===============================================] 95.4% [===============================================] 96.4% [================================================] 97.4% [================================================] 98.4% [=================================================] 99.5% [=================================================]100.0% [==================================================]
+Non trivial sectors in total: 128
+Trivial sectors in total: 1920
+( 0.5 s )
+
+Search symmetry relations: 
+  0.0% [] 12.5% [======] 25.0% [============] 37.5% [==================] 50.0% [=========================] 62.5% [===============================] 75.0% [=====================================] 87.5% [===========================================]100.0% [==================================================]
+( 0.1 s )
+***********************************************************
+Prepare Symmetries for the topology: doublePentagon
+***********************************************************
+Build symmetries for doublePentagon x doublePentagon 
+ 11.1% [=====] 22.2% [===========] 33.3% [================] 44.4% [======================] 55.6% [===========================] 66.7% [=================================] 77.8% [======================================] 88.9% [============================================]100.0% [==================================================]
+Sector relations: 1
+Sector symmetries: 13
+( 0.0 s )
+***********************************************************
+Prepare numerical values for the generation of the system
+***********************************************************
+set numerics
+
+***********************************************************
+Kira starts the reduction of the topology: doublePentagon
+***********************************************************
+
+***** Select equations recursively ************************
+length of mandatory list: 28
+Algebraic reconstruction is switched off.
+set: d = 23
+set: s23 = 3
+set: s34 = 5
+set: s45 = 17
+set: s51 = 23
+Generate equations for topology doublePentagon, sector 165 (1 of 16)
+Generate equations for topology doublePentagon, sector 173 (2 of 16)
+Generate equations for topology doublePentagon, sector 167 (3 of 16)
+Generate equations for topology doublePentagon, sector 175 (4 of 16)
+Generate equations for topology doublePentagon, sector 181 (5 of 16)
+Generate equations for topology doublePentagon, sector 189 (6 of 16)
+Generate equations for topology doublePentagon, sector 183 (7 of 16)
+Generate equations for topology doublePentagon, sector 191 (8 of 16)
+Generate equations for topology doublePentagon, sector 229 (9 of 16)
+Generate equations for topology doublePentagon, sector 237 (10 of 16)
+Generate equations for topology doublePentagon, sector 231 (11 of 16)
+Generate equations for topology doublePentagon, sector 239 (12 of 16)
+Generate equations for topology doublePentagon, sector 245 (13 of 16)
+Generate equations for topology doublePentagon, sector 253 (14 of 16)
+Generate equations for topology doublePentagon, sector 247 (15 of 16)
+Generate equations for topology doublePentagon, sector 255 (16 of 16)
+88812 equations: 38313 zero + 50499 independent
+solve backward: 0.3
+prepare content for selector: 0.1
+22751 independent coefficients
+directory to the masters: doublePentagon
+Number of master integrals: 26
+doublePentagon[1,1,1,1,1,1,1,1,-1,-1,0] # 255
+doublePentagon[1,1,1,0,1,1,0,1,0,0,0]   # 183
+doublePentagon[1,1,1,1,1,1,1,1,0,0,0]   # 255
+doublePentagon[1,1,1,1,1,1,1,1,-2,0,0]  # 255
+doublePentagon[1,1,1,0,1,1,1,1,-1,0,0]  # 247
+doublePentagon[1,1,1,1,1,1,1,1,0,-1,-1] # 255
+doublePentagon[1,0,1,0,0,1,0,1,0,0,0]   # 165
+doublePentagon[1,0,1,1,0,1,1,1,0,0,0]   # 237
+doublePentagon[1,1,1,-1,1,1,1,1,0,0,0]  # 247
+doublePentagon[1,1,1,1,1,1,1,1,-1,0,-1] # 255
+doublePentagon[1,0,1,1,1,1,0,1,0,0,0]   # 189
+doublePentagon[1,0,1,0,1,1,1,1,0,0,0]   # 245
+doublePentagon[1,1,1,1,0,1,1,1,0,0,0]   # 239
+doublePentagon[1,1,1,1,1,1,0,1,0,0,0]   # 191
+doublePentagon[1,1,1,1,1,1,1,1,0,-1,0]  # 255
+doublePentagon[1,1,1,1,1,1,1,1,-1,0,0]  # 255
+doublePentagon[1,1,1,0,1,1,1,1,0,0,0]   # 247
+doublePentagon[1,0,1,1,0,1,0,1,0,0,0]   # 173
+doublePentagon[1,1,1,1,1,1,1,1,0,0,-1]  # 255
+doublePentagon[1,1,1,1,-1,1,1,1,0,0,0]  # 239
+doublePentagon[1,-1,1,1,1,1,1,1,0,0,0]  # 253
+doublePentagon[1,0,1,1,1,1,1,1,0,0,0]   # 253
+doublePentagon[1,1,1,1,0,1,0,1,0,0,0]   # 175
+doublePentagon[1,1,1,1,1,1,-1,1,0,0,0]  # 191
+doublePentagon[1,1,1,1,1,1,1,1,0,-2,0]  # 255
+doublePentagon[1,1,1,1,0,1,1,1,-1,0,0]  # 239
+Generate equations for topology doublePentagon, sector 165 (1 of 16)
+Generate equations for topology doublePentagon, sector 173 (2 of 16)
+Generate equations for topology doublePentagon, sector 167 (3 of 16)
+Generate equations for topology doublePentagon, sector 175 (4 of 16)
+Generate equations for topology doublePentagon, sector 181 (5 of 16)
+Generate equations for topology doublePentagon, sector 189 (6 of 16)
+Generate equations for topology doublePentagon, sector 183 (7 of 16)
+Generate equations for topology doublePentagon, sector 191 (8 of 16)
+Generate equations for topology doublePentagon, sector 229 (9 of 16)
+Generate equations for topology doublePentagon, sector 237 (10 of 16)
+Generate equations for topology doublePentagon, sector 231 (11 of 16)
+Generate equations for topology doublePentagon, sector 239 (12 of 16)
+Generate equations for topology doublePentagon, sector 245 (13 of 16)
+Generate equations for topology doublePentagon, sector 253 (14 of 16)
+Generate equations for topology doublePentagon, sector 247 (15 of 16)
+Generate equations for topology doublePentagon, sector 255 (16 of 16)
+
+Number of selected equations to reduce: 0 equations
+solve forward:      0.2
+max insertions:     0
+solve backward: 0.1
+prepare content for selector: 0.0
+total solve time:   0.3
+   32208 equations: 0 zero + 32208 independent
+master integrals which should be avoided
+Regenerate:
+Generate equations for topology doublePentagon, sector 165 (1 of 16)
+Generate equations for topology doublePentagon, sector 173 (2 of 16)
+Generate equations for topology doublePentagon, sector 167 (3 of 16)
+Generate equations for topology doublePentagon, sector 175 (4 of 16)
+Generate equations for topology doublePentagon, sector 181 (5 of 16)
+Generate equations for topology doublePentagon, sector 189 (6 of 16)
+Generate equations for topology doublePentagon, sector 183 (7 of 16)
+Generate equations for topology doublePentagon, sector 191 (8 of 16)
+Generate equations for topology doublePentagon, sector 229 (9 of 16)
+Generate equations for topology doublePentagon, sector 237 (10 of 16)
+Generate equations for topology doublePentagon, sector 231 (11 of 16)
+Generate equations for topology doublePentagon, sector 239 (12 of 16)
+Generate equations for topology doublePentagon, sector 245 (13 of 16)
+Generate equations for topology doublePentagon, sector 253 (14 of 16)
+Generate equations for topology doublePentagon, sector 247 (15 of 16)
+Generate equations for topology doublePentagon, sector 255 (16 of 16)
+
+Number of selected equations to reduce: 32208 equations
+( 29.5 s )
+Algebraic reconstruction is switched off.
+set: d = 23
+set: s23 = 3
+set: s34 = 5
+set: s45 = 17
+set: s51 = 23
+
+***** Select equations recursively ************************
+length of mandatory list: 28
+
+***** Bring system in triangular form *********************
+
+Iterate the system until it is in triangular form: 
+iteration: 0; items left: 8725; time: ( 7.7 s )
+iteration: 1; items left: 6203; time: ( 13.8 s )
+iteration: 2; items left: 5171; time: ( 19.5 s )
+iteration: 3; items left: 4287; time: ( 24.1 s )
+iteration: 4; items left: 3589; time: ( 28.3 s )
+iteration: 5; items left: 3047; time: ( 32.3 s )
+iteration: 6; items left: 2691; time: ( 35.2 s )
+iteration: 7; items left: 2355; time: ( 37.7 s )
+iteration: 8; items left: 2186; time: ( 40.0 s )
+iteration: 9; items left: 2093; time: ( 42.1 s )
+iteration: 10; items left: 1965; time: ( 44.1 s )
+iteration: 11; items left: 1902; time: ( 46.1 s )
+iteration: 12; items left: 1799; time: ( 48.1 s )
+iteration: 13; items left: 1764; time: ( 50.2 s )
+iteration: 14; items left: 1698; time: ( 52.0 s )
+iteration: 15; items left: 1615; time: ( 53.7 s )
+iteration: 16; items left: 1573; time: ( 55.3 s )
+iteration: 17; items left: 1497; time: ( 56.9 s )
+iteration: 18; items left: 1477; time: ( 58.5 s )
+iteration: 19; items left: 1464; time: ( 59.9 s )
+iteration: 20; items left: 1421; time: ( 61.3 s )
+iteration: 21; items left: 1380; time: ( 62.7 s )
+iteration: 22; items left: 1343; time: ( 64.0 s )
+iteration: 23; items left: 1339; time: ( 65.3 s )
+iteration: 24; items left: 1308; time: ( 66.6 s )
+iteration: 25; items left: 1272; time: ( 67.7 s )
+iteration: 26; items left: 1283; time: ( 69.2 s )
+iteration: 27; items left: 1267; time: ( 70.6 s )
+iteration: 28; items left: 1238; time: ( 71.9 s )
+iteration: 29; items left: 1251; time: ( 73.2 s )
+iteration: 30; items left: 1209; time: ( 74.5 s )
+iteration: 31; items left: 1179; time: ( 75.8 s )
+iteration: 32; items left: 1153; time: ( 77.0 s )
+iteration: 33; items left: 1147; time: ( 78.2 s )
+iteration: 34; items left: 1107; time: ( 79.3 s )
+iteration: 35; items left: 1095; time: ( 80.5 s )
+iteration: 36; items left: 1086; time: ( 81.7 s )
+iteration: 37; items left: 1043; time: ( 82.8 s )
+iteration: 38; items left: 1016; time: ( 84.0 s )
+iteration: 39; items left: 1001; time: ( 85.2 s )
+iteration: 40; items left: 980; time: ( 86.3 s )
+iteration: 41; items left: 972; time: ( 87.4 s )
+iteration: 42; items left: 963; 

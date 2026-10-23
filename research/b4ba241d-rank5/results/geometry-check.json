@@ -1,0 +1,57 @@
+{
+  "valid": true,
+  "method": "Standard-library finite-field Gram constraints,affine inverse and direct momentum differentiation;no SymPy or published coefficient parser.",
+  "cases": [
+    {
+      "valid": true,
+      "mode": "tube",
+      "sample": 0,
+      "seed_count": 589,
+      "original_rows": 5938,
+      "denominator_map_determinant_mod_prime": 512,
+      "external_gram_determinant_mod_prime": 671094441
+    },
+    {
+      "valid": true,
+      "mode": "tube",
+      "sample": 1,
+      "seed_count": 589,
+      "original_rows": 5938,
+      "denominator_map_determinant_mod_prime": 512,
+      "external_gram_determinant_mod_prime": 2014074559
+    },
+    {
+      "valid": true,
+      "mode": "decreasing",
+      "sample": 0,
+      "seed_count": 876,
+      "original_rows": 7479,
+      "denominator_map_determinant_mod_prime": 512,
+      "external_gram_determinant_mod_prime": 671094441
+    },
+    {
+      "valid": true,
+      "mode": "decreasing",
+      "sample": 1,
+      "seed_count": 876,
+      "original_rows": 7479,
+      "denominator_map_determinant_mod_prime": 512,
+      "external_gram_determinant_mod_prime": 2014074559
+    }
+  ],
+  "rejected_controls": [
+    "master-coefficient",
+    "witness-weight",
+    "omitted-row",
+    "changed-geometric-momentum"
+  ],
+  "elapsed_seconds": 6.459863358002622,
+  "shared_inputs": [
+    "frozen geometry and dimensional-regularization axioms",
+    "operator label/normalization bijection",
+    "cut/trivial-sector conventions",
+    "source master list",
+    "existing known witnesses"
+  ],
+  "scope": "Same-author verification of four existing field target identities;not a new holdout,independent-person review,rank proof or generic target reconstruction."
+}

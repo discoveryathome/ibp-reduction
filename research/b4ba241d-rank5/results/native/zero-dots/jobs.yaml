@@ -1,0 +1,40 @@
+{
+  "jobs": [
+    {
+      "reduce_sectors": {
+        "reduce": [
+          {
+            "sectors": [
+              255
+            ],
+            "r": 8,
+            "s": 5,
+            "d": 0
+          }
+        ],
+        "select_integrals": {
+          "select_mandatory_list": [
+            [
+              "doublePentagon",
+              "targets"
+            ]
+          ]
+        },
+        "preferred_masters": "masters",
+        "run_initiate": true,
+        "run_triangular": true,
+        "run_back_substitution": true
+      }
+    },
+    {
+      "kira2file": {
+        "target": [
+          [
+            "doublePentagon",
+            "targets"
+          ]
+        ]
+      }
+    }
+  ]
+}
