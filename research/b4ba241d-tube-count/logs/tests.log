@@ -1,0 +1,12 @@
+test_absent_uncut_propagators_can_carry_numerators (test_counts.TubeCounts.test_absent_uncut_propagators_can_carry_numerators) ... ok
+test_adjacent_translation_overlap_is_deduplicated (test_counts.TubeCounts.test_adjacent_translation_overlap_is_deduplicated) ... ok
+test_duplicate_missing_and_extra_shift_reject (test_counts.TubeCounts.test_duplicate_missing_and_extra_shift_reject) ... ok
+test_floor_or_exception_omissions_are_rejected (test_counts.TubeCounts.test_floor_or_exception_omissions_are_rejected) ... ok
+test_published_counts_and_each_sector (test_counts.TubeCounts.test_published_counts_and_each_sector) ... ok
+test_tuple_integrity_and_trivial_fixture (test_counts.TubeCounts.test_tuple_integrity_and_trivial_fixture) ... ok
+test_wrong_cut_dot_positive_isp_and_rank_reject (test_counts.TubeCounts.test_wrong_cut_dot_positive_isp_and_rank_reject) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.055s
+
+OK

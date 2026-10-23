@@ -1,0 +1,16 @@
+{
+  "README.md": "0e5dadf06fe9a5e732149dfb848b171c244af53f1b77b5a3cee4fda788c2053d",
+  "SOURCES.json": "8b2b511807d269da3ee83c37cd9f4c450d28a6a5d9da40d2d49e48478a984cb2",
+  "TASK.json": "398d18edbf7b2c72450fa4d10a3e8aac94a77b8507a37ea1865821227f0ec9f6",
+  "VERIFY.json": "3a0e57948f53126ca11a9564ee218ad870a3b52a45823f3fec1e14d8524da86b",
+  "count_seeds.py": "59d6fa72034a23281cdd3fcad2eab13eedd03f2faf2150ae1e7b5005f4d6ea2c",
+  "data/counts.json": "baaccf090698d81d36557b2205b99d467521c38fc378b53e382a3fbf762c02ad",
+  "data/rank-4.jsonl": "f781c6b0c94f130fcc85008e62c292fffc44e4cf97a7d657a2123eb721313e9c",
+  "data/rank-5.jsonl": "4d36f35a8327c8a62f742a7da0c90add8f3f49be11daade01088080f27829395",
+  "data/rank-6.jsonl": "624d1ff48cfebea1e9b0890ac0b31f9f86be2f9e6c2485c4e5d13929b73035ed",
+  "fixtures/TUBE-SEEDING-LICENSE": "23483acae1be150fc6cb4026b1ad8f794b40c6e131d2b6a9fb34090d4a1930c3",
+  "fixtures/trivialsector": "36a0b7e133584d892301d8b2e167ec81c565d6ab9129cbcabc1f0514e4bbc57f",
+  "logs/generation.log": "baaccf090698d81d36557b2205b99d467521c38fc378b53e382a3fbf762c02ad",
+  "logs/tests.log": "78f566400653562a7edb0a9dc39fe0577dc2891c03560976bdfbddf2a3c8daa1",
+  "test_counts.py": "f11f60421f707d2ff1ce54e749e32427c0522d555b370ac22cec1c31e6598576"
+}
