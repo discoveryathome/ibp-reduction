@@ -1,0 +1,68 @@
+{
+  "evidence_level": "author-checked",
+  "scope": "Seven frozen one-loop Kira 3.0 projects, 115 exact non-master identities and 15 prescribed native masters; no performance or acceptance claim.",
+  "base": "9427e928040cd7d71513a443da4a42811720e537",
+  "predecessor": "d051133ed7c01652e21b53e34fcd5610051705a8",
+  "interpreter_used": "/root/.t3/scratch/2026-10-23-fetch-https-discoveryathome-org-v0-08cd4afb/ibp-reduction/.venv/bin/python",
+  "python_version": "3.13.5",
+  "conditions": "Run from this repository root with requirements.txt installed. A separate clean pinned predecessor supplies the exporter/importer, not an accepted frontier change. Native replay additionally needs the screened build described in BUILD.md.",
+  "commands": [
+    {
+      "cwd": "repository root",
+      "argv": ["git", "diff", "--check", "9427e928040cd7d71513a443da4a42811720e537"],
+      "condition": "The package-local .gitattributes preserves raw .log/.kira whitespace; authored source/docs remain checked."
+    },
+    {
+      "cwd": "repository root",
+      "argv": [".venv/bin/python", "research/b4ba241d49ae3adec57309d131c13f06/verify_saved.py", "--predecessor", "../predecessor"],
+      "timeout_seconds": 60,
+      "observed": "PASS on the archived copy: 7 families, 115 exact identities, 15 native masters checked in both files, 3 analytic ratios, 10 rejecting controls.",
+      "log": "logs/verify-saved.log"
+    },
+    {
+      "cwd": "pinned predecessor root",
+      "argv": ["../ibp-reduction/.venv/bin/python", "-m", "unittest", "discover", "-s", "tests", "-v"],
+      "timeout_seconds": 60,
+      "observed": "29 tests passed in 17.893 seconds. The earlier targeted Kira bridge run passed 13 tests in 11.914 seconds. These are test times, not solver-performance evidence."
+    },
+    {
+      "cwd": "pinned predecessor root",
+      "argv": ["../ibp-reduction/.venv/bin/python", "tools/check_project.py"],
+      "timeout_seconds": 30,
+      "observed": "PASS: protocol schemas, track weights, artifact hashes, and frozen evaluation binding."
+    },
+    {
+      "cwd": "task workspace",
+      "argv": ["ibp-reduction/.venv/bin/python", "ibp-reduction/research/b4ba241d49ae3adec57309d131c13f06/probe_arithmetic.py", "--predecessor", "predecessor", "--source", "kira-source", "--out", "arithmetic-replay.json"],
+      "timeout_seconds": 30,
+      "observed": "Release and integer modes each had 0 mismatches in 100009 cases, with 64 mantissa bits. This finite diagnostic is not exhaustive proof.",
+      "saved_result": "arithmetic-probe.json"
+    },
+    {
+      "cwd": "task workspace",
+      "argv": ["ibp-reduction/.venv/bin/python", "predecessor/tools/export_kira_one_loop.py", "--out", "native-replay"],
+      "timeout_seconds": 30,
+      "observed": "7 families, 35 generated inputs, no solver execution; delivered native input digests match the predecessor's generated input manifest."
+    },
+    {
+      "cwd": "task workspace",
+      "argv": ["ibp-reduction/.venv/bin/python", "ibp-reduction/research/b4ba241d49ae3adec57309d131c13f06/run_native.py", "--predecessor", "predecessor", "--inputs", "native-replay", "--kira", "kira-prefix/bin/kira"],
+      "conditions": "LD_LIBRARY_PATH includes the local prefix/lib and lib64; FERMATPATH names the pinned official Linux fer64. See BUILD.md. Fresh output tree required.",
+      "timeout_seconds_per_native_trial": 180,
+      "observed": "All 7 native runs passed, no unreduced requested integrals, all 115 exact comparisons and both native master files match. Actual commands/resources/digests are in native/run-receipts.json."
+    }
+  ],
+  "hash_check": {
+    "cwd": "repository root",
+    "command": ".venv/bin/python -c 'import hashlib,json,pathlib; p=pathlib.Path(\"research/b4ba241d49ae3adec57309d131c13f06\"); h=json.loads((p/\"HASHES.json\").read_text()); assert all(hashlib.sha256((p/f).read_bytes()).hexdigest()==v for f,v in h.items()); print(\"PASS: package hashes\",len(h))'"
+  },
+  "negative_controls": ["empty/malformed master metadata", "duplicate normalized master", "incorrect sector annotation", "empty export", "missing target", "duplicate target", "coefficient error invisible at d=4,6,8", "wrong native final master", "missing native final master"],
+  "not_checked": [
+    "Independent scientific or maintainer review, full analytic IBP axioms and basis minimality",
+    "Native FIRE, other Kira versions/configurations, other hosts, new families or multi-loop transfer",
+    "Performance comparison, interleaved/A-A benchmark, aggregate RSS or separately timed builds",
+    "Timeout/memory-cap activation under resource exhaustion",
+    "Full historical 17-certificate experiment replay and frozen benchmark replay",
+    "Full upstream Kira and dependency test suites"
+  ]
+}

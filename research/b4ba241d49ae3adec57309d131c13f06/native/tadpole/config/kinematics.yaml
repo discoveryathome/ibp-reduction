@@ -1,0 +1,13 @@
+{
+  "kinematics": {
+    "incoming_momenta": [],
+    "outgoing_momenta": [],
+    "kinematic_invariants": [
+      [
+        "m",
+        2
+      ]
+    ],
+    "scalarproduct_rules": []
+  }
+}

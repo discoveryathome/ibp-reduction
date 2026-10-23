@@ -1,0 +1,194 @@
+1 Fermat/Blackbox instances will be run in parallel.
+The user defined environment variable FERMATPATH for Fermat is set:
+/root/.t3/scratch/2026-10-23-fetch-https-discoveryathome-org-v0-08cd4afb/build-tools/Ferl7/fer64
+The directories for the temporary files, result files and the sector mapping files are: 
+./tmp
+./results
+./sectormappings
+One variable is set to 1: {}
+Kira prepares topology: box_massless and top level sector: 
+15 
+
+*****Integral ordering*************************************
+VERSION table created successfully
+Kira database version number: 2.1
+WEIGHTBITS table created successfully
+INTEGRALORDERING table created successfully
+Kira will use the integral ordering: 1.
+With topology: box_massless use intermediate permutation
+0 1 3 2 
+Following reductions will be performed for the topology: box_massless
+Sector: 15 rmax: 5 smax: 1 
+
+***********************************************************
+Prepare numerical values for the generation of the system
+***********************************************************
+set numerics
+***********************************************************
+Find IBP LI and symmetry relations for the topology: box_massless
+***********************************************************
+
+*****Generate IBP identities*******************************
+There are 4 IBP identities
+( 0.003301 s )
+
+*****Generate LI identities********************************
+There are 3 LI identities
+( 0.005689 s )
+
+*****Search trivial sectors********************************
+  6.2% [===] 12.5% [======] 18.8% [=========] 25.0% [============] 31.2% [===============] 37.5% [==================] 43.8% [=====================] 50.0% [=========================] 56.2% [============================] 62.5% [===============================] 68.8% [==================================] 75.0% [=====================================] 81.2% [========================================] 87.5% [===========================================] 93.8% [==============================================]100.0% [==================================================]
+Non trivial sectors in total: 7
+Trivial sectors in total: 9
+( 0.0 s )
+
+Search symmetry relations: 
+  0.0% [] 25.0% [============] 50.0% [=========================] 75.0% [=====================================]100.0% [==================================================]
+( 0.0 s )
+***********************************************************
+Prepare Symmetries for the topology: box_massless
+***********************************************************
+Build symmetries for box_massless x box_massless 
+ 20.0% [==========] 40.0% [====================] 60.0% [==============================] 80.0% [========================================]100.0% [==================================================]
+Sector relations: 4
+Sector symmetries: 7
+( 0.0 s )
+***********************************************************
+Prepare numerical values for the generation of the system
+***********************************************************
+set numerics
+
+***********************************************************
+Kira starts the reduction of the topology: box_massless
+***********************************************************
+
+***** Select equations recursively ************************
+length of mandatory list: 62
+Algebraic reconstruction is switched off.
+Generate equations for topology box_massless, sector 10 (1 of 7)
+Generate equations for topology box_massless, sector 11 (2 of 7)
+Generate equations for topology box_massless, sector 5 (3 of 7)
+Generate equations for topology box_massless, sector 7 (4 of 7)
+Generate equations for topology box_massless, sector 13 (5 of 7)
+Generate equations for topology box_massless, sector 14 (6 of 7)
+Generate equations for topology box_massless, sector 15 (7 of 7)
+1111 equations: 693 zero + 418 independent
+solve backward: 0.0
+prepare content for selector: 0.0
+66 independent coefficients
+directory to the masters: box_massless
+Number of master integrals: 3
+box_massless[1,0,1,0] #  5
+box_massless[0,1,0,1] # 10
+box_massless[1,1,1,1] # 15
+Generate equations for topology box_massless, sector 10 (1 of 7)
+Generate equations for topology box_massless, sector 11 (2 of 7)
+Generate equations for topology box_massless, sector 5 (3 of 7)
+Generate equations for topology box_massless, sector 7 (4 of 7)
+Generate equations for topology box_massless, sector 13 (5 of 7)
+Generate equations for topology box_massless, sector 14 (6 of 7)
+Generate equations for topology box_massless, sector 15 (7 of 7)
+
+Number of selected equations to reduce: 0 equations
+solve forward:      0.0
+max insertions:     0
+solve backward: 0.0
+prepare content for selector: 0.0
+total solve time:   0.0
+      68 equations: 0 zero + 68 independent
+master integrals which should be avoided
+Regenerate:
+Generate equations for topology box_massless, sector 10 (1 of 7)
+Generate equations for topology box_massless, sector 11 (2 of 7)
+Generate equations for topology box_massless, sector 5 (3 of 7)
+Generate equations for topology box_massless, sector 7 (4 of 7)
+Generate equations for topology box_massless, sector 13 (5 of 7)
+Generate equations for topology box_massless, sector 14 (6 of 7)
+Generate equations for topology box_massless, sector 15 (7 of 7)
+
+Number of selected equations to reduce: 68 equations
+( 0.0 s )
+Algebraic reconstruction is switched off.
+
+***** Select equations recursively ************************
+length of mandatory list: 62
+
+***** Bring system in triangular form *********************
+
+Iterate the system until it is in triangular form: 
+iteration: 0; items left: 6; time: ( 0.0 s )
+iteration: 1; items left: 2; time: ( 0.0 s )
+redundant: 0; insertions 12
+All coefficients will be normalized
+
+Equations out of bounds rmax and smax: 6
+Equations in the bounds rmax and smax: 62
+( 0.0 s )
+
+Write the triangular system to ./tmp/ on hard disk
+(--> ./tmp/box_massless/VERconfig, ./tmp/box_massless/VER###) 
+
+Triangular form completed after ( 0.0 s )
+FIREFLY table created successfully
+Algebraic reconstruction is switched off.
+Equation table created successfully
+
+***** Run the back substitution ***********************
+
+Load all files from ./tmp/
+Take 62 equations to reduce 62 missing equations
+
+Back substitution: 
+  0.0% []  0.0% []  0.0% []  0.0% []  0.0% []  0.0% []  3.2% []  3.2% []  3.2% []  3.2% []  3.2% []  4.8% []  8.1% [] 11.3% [] 11.3% [] 14.5% [] 14.5% [] 16.1% [] 16.1% [] 17.7% [] 17.7% [] 17.7% [] 19.4% [] 19.4% [] 22.6% [] 22.6% [] 24.2% [] 24.2% [] 25.8% [] 25.8% [] 27.4% [] 27.4% [] 30.6% [] 33.9% [] 33.9% [] 38.7% [] 41.9% [] 41.9% []
+
+Equations reduced: 26 / 62
+Kira committed results ( 0.0 s )
+ 45.2% [] 50.0% [] 54.8% [] 54.8% [] 54.8% []
+
+Equations reduced: 34 / 62
+Kira committed results ( 0.0 s )
+ 58.1% [] 59.7% [] 59.7% [] 61.3% [] 64.5% []
+
+Equations reduced: 40 / 62
+Kira committed results ( 0.0 s )
+ 69.4% [] 69.4% [] 72.6% []
+
+Equations reduced: 45 / 62
+Kira committed results ( 0.0 s )
+ 72.6% [] 72.6% []
+
+Equations reduced: 45 / 62
+Kira committed results ( 0.0 s )
+ 75.8% [] 79.0% [] 80.6% [] 83.9% [] 85.5% [] 88.7% []
+
+Equations reduced: 55 / 62
+Kira committed results ( 0.0 s )
+ 93.5% [] 96.8% []100.0% [=]
+
+Equations reduced: 62 / 62
+Kira committed results ( 0.0 s )
+
+62 equations were reduced
+
+*****Master integrals***********************************
+box_massless[1,0,1,0] #  5
+box_massless[0,1,0,1] # 10
+box_massless[1,1,1,1] # 15
+
+Total number of master integrals: 3
+( 0.0 s )
+One variable is set to 1: {}
+One variable is set to 1: {}
+The input directory is set to:
+./results
+symbol_to_replace_by_one: x in kinematics.yaml is not set. 
+Mass reconstruction is disabled.
+################################################
+kira2file: Reconstruct results for box_massless
+################################################
+
+Algebraic reconstruction is switched off.
+unreduced integrals: 0.
+
+Total time:
+( 4.8 s )

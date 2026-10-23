@@ -1,0 +1,23 @@
+{
+  "kira_commit": "fb745431f97c8899a512e638da8598b0cfad7521",
+  "predecessor_commit": "d051133ed7c01652e21b53e34fcd5610051705a8",
+  "probe_source_sha256": "76ac870dea3e2d3b19389e05734e5717dabe2488f7e10d8f5f34737ed7549ff0",
+  "cpp_probe_sha256": "04501951a08be9f333481bf555219a9871174b2391e1667cfc3c24e675547693",
+  "harness_adjustment": "Explicit uint64_t initializer-list constants; upstream arithmetic unchanged.",
+  "coefficient_source_sha256": "6d4f98782e9be398f7e7583ae740ba093784ddbf5cca74a180919b91f82e5e3d",
+  "rows": [
+    {
+      "mode": "release",
+      "mantissa_bits": 64,
+      "cases": 100009,
+      "failures": 0
+    },
+    {
+      "mode": "integer",
+      "mantissa_bits": 64,
+      "cases": 100009,
+      "failures": 0
+    }
+  ],
+  "scope": "Fixed-seed 100009-case diagnostic per mode, not exhaustive correctness."
+}

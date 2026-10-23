@@ -1,0 +1,147 @@
+1 Fermat/Blackbox instances will be run in parallel.
+The user defined environment variable FERMATPATH for Fermat is set:
+/root/.t3/scratch/2026-10-23-fetch-https-discoveryathome-org-v0-08cd4afb/build-tools/Ferl7/fer64
+The directories for the temporary files, result files and the sector mapping files are: 
+./tmp
+./results
+./sectormappings
+One variable is set to 1: {}
+Kira prepares topology: tadpole and top level sector: 
+1 
+
+*****Integral ordering*************************************
+VERSION table created successfully
+Kira database version number: 2.1
+WEIGHTBITS table created successfully
+INTEGRALORDERING table created successfully
+Kira will use the integral ordering: 1.
+With topology: tadpole use intermediate permutation
+0 
+Following reductions will be performed for the topology: tadpole
+Sector: 1 rmax: 4 smax: 1 
+
+***********************************************************
+Prepare numerical values for the generation of the system
+***********************************************************
+set numerics
+***********************************************************
+Find IBP LI and symmetry relations for the topology: tadpole
+***********************************************************
+
+*****Generate IBP identities*******************************
+There are 1 IBP identities
+( 0.000416 s )
+
+*****Generate LI identities********************************
+There are 0 LI identities
+( 5.7e-05 s )
+
+*****Search trivial sectors********************************
+ 50.0% [=========================]100.0% [==================================================]
+Non trivial sectors in total: 1
+Trivial sectors in total: 1
+( 0.0 s )
+
+Search symmetry relations: 
+  0.0% []100.0% [==================================================]
+( 0.0 s )
+***********************************************************
+Prepare Symmetries for the topology: tadpole
+***********************************************************
+Build symmetries for tadpole x tadpole 
+ 50.0% [=========================]100.0% [==================================================]
+Sector relations: 0
+Sector symmetries: 0
+( 0.0 s )
+***********************************************************
+Prepare numerical values for the generation of the system
+***********************************************************
+set numerics
+
+***********************************************************
+Kira starts the reduction of the topology: tadpole
+***********************************************************
+
+***** Select equations recursively ************************
+length of mandatory list: 3
+Algebraic reconstruction is switched off.
+Generate equations for topology tadpole, sector 1 (1 of 1)
+4 equations: 0 zero + 4 independent
+solve backward: 0.0
+prepare content for selector: 0.0
+8 independent coefficients
+directory to the masters: tadpole
+Number of master integrals: 1
+tadpole[1] # 1
+Generate equations for topology tadpole, sector 1 (1 of 1)
+
+Number of selected equations to reduce: 0 equations
+solve forward:      0.0
+max insertions:     0
+solve backward: 0.0
+prepare content for selector: 0.0
+total solve time:   0.0
+       3 equations: 0 zero + 3 independent
+master integrals which should be avoided
+Regenerate:
+Generate equations for topology tadpole, sector 1 (1 of 1)
+
+Number of selected equations to reduce: 3 equations
+( 0.0 s )
+Algebraic reconstruction is switched off.
+
+***** Select equations recursively ************************
+length of mandatory list: 3
+
+***** Bring system in triangular form *********************
+
+Iterate the system until it is in triangular form: 
+iteration: 0; items left: 0; time: ( 0.0 s )
+redundant: 0; insertions 0
+All coefficients will be normalized
+
+Equations out of bounds rmax and smax: 0
+Equations in the bounds rmax and smax: 3
+( 0.0 s )
+
+Write the triangular system to ./tmp/ on hard disk
+(--> ./tmp/tadpole/VERconfig, ./tmp/tadpole/VER###) 
+
+Triangular form completed after ( 0.0 s )
+FIREFLY table created successfully
+Algebraic reconstruction is switched off.
+Equation table created successfully
+
+***** Run the back substitution ***********************
+
+Load all files from ./tmp/
+Take 3 equations to reduce 3 missing equations
+
+Back substitution: 
+  0.0% [] 33.3% []100.0% [=]
+
+Equations reduced: 3 / 3
+Kira committed results ( 0.0 s )
+
+3 equations were reduced
+
+*****Master integrals***********************************
+tadpole[1] # 1
+
+Total number of master integrals: 1
+( 0.0 s )
+One variable is set to 1: {}
+One variable is set to 1: {}
+The input directory is set to:
+./results
+symbol_to_replace_by_one: x in kinematics.yaml is not set. 
+Mass reconstruction is disabled.
+################################################
+kira2file: Reconstruct results for tadpole
+################################################
+
+Algebraic reconstruction is switched off.
+unreduced integrals: 0.
+
+Total time:
+( 4.7 s )

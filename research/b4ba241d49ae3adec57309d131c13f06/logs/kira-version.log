@@ -1,0 +1,3 @@
+Kira version: 3.0 (Git: 3.0)
+Build configuration: release; non-MPI; 64 bit weights; without jemalloc;
+without FireFly

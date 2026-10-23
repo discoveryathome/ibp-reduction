@@ -1,0 +1,39 @@
+{
+  "jobs": [
+    {
+      "reduce_sectors": {
+        "reduce": [
+          {
+            "sectors": [
+              15
+            ],
+            "r": 5,
+            "s": 1
+          }
+        ],
+        "select_integrals": {
+          "select_mandatory_list": [
+            [
+              "box_massless",
+              "targets"
+            ]
+          ]
+        },
+        "preferred_masters": "masters",
+        "run_initiate": true,
+        "run_triangular": true,
+        "run_back_substitution": true
+      }
+    },
+    {
+      "kira2file": {
+        "target": [
+          [
+            "box_massless",
+            "targets"
+          ]
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "integralfamilies": [
+    {
+      "name": "tadpole",
+      "loop_momenta": [
+        "k"
+      ],
+      "top_level_sectors": [
+        1
+      ],
+      "propagators": [
+        [
+          "k",
+          "-m"
+        ]
+      ]
+    }
+  ]
+}

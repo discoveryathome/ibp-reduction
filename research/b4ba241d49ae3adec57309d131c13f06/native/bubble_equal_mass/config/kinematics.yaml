@@ -1,0 +1,33 @@
+{
+  "kinematics": {
+    "incoming_momenta": [
+      "p1"
+    ],
+    "outgoing_momenta": [
+      "q"
+    ],
+    "kinematic_invariants": [
+      [
+        "m",
+        2
+      ],
+      [
+        "s",
+        2
+      ]
+    ],
+    "scalarproduct_rules": [
+      [
+        [
+          "p1",
+          "p1"
+        ],
+        "s"
+      ]
+    ],
+    "momentum_conservation": [
+      "q",
+      "p1"
+    ]
+  }
+}

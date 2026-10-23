@@ -1,0 +1,147 @@
+1 Fermat/Blackbox instances will be run in parallel.
+The user defined environment variable FERMATPATH for Fermat is set:
+/root/.t3/scratch/2026-10-23-fetch-https-discoveryathome-org-v0-08cd4afb/build-tools/Ferl7/fer64
+The directories for the temporary files, result files and the sector mapping files are: 
+./tmp
+./results
+./sectormappings
+One variable is set to 1: {}
+Kira prepares topology: bubble_massless and top level sector: 
+3 
+
+*****Integral ordering*************************************
+VERSION table created successfully
+Kira database version number: 2.1
+WEIGHTBITS table created successfully
+INTEGRALORDERING table created successfully
+Kira will use the integral ordering: 1.
+With topology: bubble_massless use intermediate permutation
+0 1 
+Following reductions will be performed for the topology: bubble_massless
+Sector: 3 rmax: 4 smax: 1 
+
+***********************************************************
+Prepare numerical values for the generation of the system
+***********************************************************
+set numerics
+***********************************************************
+Find IBP LI and symmetry relations for the topology: bubble_massless
+***********************************************************
+
+*****Generate IBP identities*******************************
+There are 2 IBP identities
+( 0.000959 s )
+
+*****Generate LI identities********************************
+There are 0 LI identities
+( 7.1e-05 s )
+
+*****Search trivial sectors********************************
+ 25.0% [============] 50.0% [=========================] 75.0% [=====================================]100.0% [==================================================]
+Non trivial sectors in total: 1
+Trivial sectors in total: 3
+( 0.0 s )
+
+Search symmetry relations: 
+  0.0% [] 50.0% [=========================]100.0% [==================================================]
+( 0.0 s )
+***********************************************************
+Prepare Symmetries for the topology: bubble_massless
+***********************************************************
+Build symmetries for bubble_massless x bubble_massless 
+ 33.3% [================] 66.7% [=================================]100.0% [==================================================]
+Sector relations: 0
+Sector symmetries: 1
+( 0.0 s )
+***********************************************************
+Prepare numerical values for the generation of the system
+***********************************************************
+set numerics
+
+***********************************************************
+Kira starts the reduction of the topology: bubble_massless
+***********************************************************
+
+***** Select equations recursively ************************
+length of mandatory list: 5
+Algebraic reconstruction is switched off.
+Generate equations for topology bubble_massless, sector 3 (1 of 1)
+16 equations: 7 zero + 9 independent
+solve backward: 0.0
+prepare content for selector: 0.0
+15 independent coefficients
+directory to the masters: bubble_massless
+Number of master integrals: 1
+bubble_massless[1,1] # 3
+Generate equations for topology bubble_massless, sector 3 (1 of 1)
+
+Number of selected equations to reduce: 0 equations
+solve forward:      0.0
+max insertions:     0
+solve backward: 0.0
+prepare content for selector: 0.0
+total solve time:   0.0
+       5 equations: 0 zero + 5 independent
+master integrals which should be avoided
+Regenerate:
+Generate equations for topology bubble_massless, sector 3 (1 of 1)
+
+Number of selected equations to reduce: 5 equations
+( 0.0 s )
+Algebraic reconstruction is switched off.
+
+***** Select equations recursively ************************
+length of mandatory list: 5
+
+***** Bring system in triangular form *********************
+
+Iterate the system until it is in triangular form: 
+iteration: 0; items left: 0; time: ( 0.0 s )
+redundant: 0; insertions 0
+All coefficients will be normalized
+
+Equations out of bounds rmax and smax: 0
+Equations in the bounds rmax and smax: 5
+( 0.0 s )
+
+Write the triangular system to ./tmp/ on hard disk
+(--> ./tmp/bubble_massless/VERconfig, ./tmp/bubble_massless/VER###) 
+
+Triangular form completed after ( 0.0 s )
+FIREFLY table created successfully
+Algebraic reconstruction is switched off.
+Equation table created successfully
+
+***** Run the back substitution ***********************
+
+Load all files from ./tmp/
+Take 5 equations to reduce 5 missing equations
+
+Back substitution: 
+  0.0% []  0.0% []  0.0% [] 60.0% []100.0% [=]
+
+Equations reduced: 5 / 5
+Kira committed results ( 0.0 s )
+
+5 equations were reduced
+
+*****Master integrals***********************************
+bubble_massless[1,1] # 3
+
+Total number of master integrals: 1
+( 0.0 s )
+One variable is set to 1: {}
+One variable is set to 1: {}
+The input directory is set to:
+./results
+symbol_to_replace_by_one: x in kinematics.yaml is not set. 
+Mass reconstruction is disabled.
+################################################
+kira2file: Reconstruct results for bubble_massless
+################################################
+
+Algebraic reconstruction is switched off.
+unreduced integrals: 0.
+
+Total time:
+( 4.7 s )

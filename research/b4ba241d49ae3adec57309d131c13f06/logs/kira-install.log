@@ -1,0 +1,4 @@
+ninja: Entering directory `kira-source/build'
+[1/26] Generating src/pyred/config.h with a custom command
+[1/2] Installing files
+Installing src/kira/kira to /root/.t3/scratch/2026-10-23-fetch-https-discoveryathome-org-v0-08cd4afb/kira-prefix/bin

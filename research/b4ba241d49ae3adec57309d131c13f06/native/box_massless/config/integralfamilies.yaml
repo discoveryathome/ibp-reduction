@@ -1,0 +1,31 @@
+{
+  "integralfamilies": [
+    {
+      "name": "box_massless",
+      "loop_momenta": [
+        "k"
+      ],
+      "top_level_sectors": [
+        15
+      ],
+      "propagators": [
+        [
+          "k",
+          "0"
+        ],
+        [
+          "k+p1",
+          "0"
+        ],
+        [
+          "k+p2",
+          "0"
+        ],
+        [
+          "k+p3",
+          "0"
+        ]
+      ]
+    }
+  ]
+}

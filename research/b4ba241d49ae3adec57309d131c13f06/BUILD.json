@@ -1,0 +1,182 @@
+{
+  "project_base": "9427e928040cd7d71513a443da4a42811720e537",
+  "predecessor": {
+    "commit": "d051133ed7c01652e21b53e34fcd5610051705a8",
+    "tree": "147b710a0af9db4668ff7ab60a1a4271e52be2ab",
+    "tracked_source_clean": true
+  },
+  "kira_source": {
+    "url": "https://gitlab.com/kira-pyred/kira.git",
+    "tag": "3.0",
+    "commit": "fb745431f97c8899a512e638da8598b0cfad7521",
+    "tree": "d035b20c9f940a308d7483aa82f1398e8da7116b",
+    "tracked_source_clean": true
+  },
+  "yaml_cpp_source": {
+    "url": "https://github.com/jbeder/yaml-cpp.git",
+    "tag": "yaml-cpp-0.7.0",
+    "commit": "0579ae3d976091d7d664aa9d2527e0d0cff25763",
+    "tree": "3b4adf4e0b979fd6fb9213034acaf4864327d1aa",
+    "tracked_source_clean": true
+  },
+  "archives": [
+    {
+      "url": "https://www.ginac.de/CLN/cln-1.3.7.tar.bz2",
+      "filename": "cln-1.3.7.tar.bz2",
+      "sha256": "7c7ed8474958337e4df5bb57ea5176ad0365004cbb98b621765bc4606a10d86b",
+      "bytes": 1337235
+    },
+    {
+      "url": "https://www.ginac.de/ginac-1.8.10.tar.bz2",
+      "filename": "ginac-1.8.10.tar.bz2",
+      "sha256": "6cac1973a5325de0b9bcb8e392988ae95fbc37aa66c0f1f1d3b8e64c08cec1b9",
+      "bytes": 1517978
+    },
+    {
+      "url": "https://home.bway.net/lewis/fermat64/Ferl7.tar.gz",
+      "filename": "Ferl7.tar.gz",
+      "sha256": "67954cc4cbc6e96b8a2080e142e0ce7cad05d1036edc928e6600de47888a606c",
+      "bytes": 4507889
+    }
+  ],
+  "host": {
+    "system": "Linux",
+    "machine": "x86_64",
+    "kernel": "6.12.113+deb13-amd64",
+    "python": "3.13.5",
+    "logical_cpus_available": 16
+  },
+  "tools": {
+    "compiler": "g++ (Debian 14.2.0-19) 14.2.0",
+    "make": "GNU Make 4.4.1",
+    "cmake": "cmake version 3.31.6",
+    "meson": "1.12.1",
+    "ninja": "1.13.2.git.kitware.jobserver-pipe-1"
+  },
+  "python_dependencies": [
+    "attrs==26.1.0",
+    "jsonschema==4.26.0",
+    "jsonschema-specifications==2025.9.1",
+    "meson==1.12.1",
+    "mpmath==1.3.0",
+    "ninja==1.13.2",
+    "referencing==0.37.0",
+    "rpds-py==2026.9.1",
+    "sympy==1.14.0"
+  ],
+  "native_build_options": {
+    "buildtype": "release",
+    "debug": false,
+    "optimization": "3",
+    "b_lto": false,
+    "b_ndebug": "false",
+    "c_args": [],
+    "c_std": "c11",
+    "cpp_args": [],
+    "cpp_std": "c++17",
+    "firefly": false,
+    "flint": false,
+    "mpi": false,
+    "weight_width": "64",
+    "static": false
+  },
+  "parallel_build_jobs": 4,
+  "kira_version": "Kira version: 3.0 (Git: 3.0)\nBuild configuration: release; non-MPI; 64 bit weights; without jemalloc;\nwithout FireFly\n",
+  "kira_executable": {
+    "sha256": "9d49f623f144ee90c3eb2f50290b180b93c5c85e9ca1272092cecb065eb47066",
+    "bytes": 4275008
+  },
+  "fermat_executable": {
+    "embedded_banner": "Fermat for Linux Ubuntu, Intel64, rational C version 7.9b.",
+    "sha256": "cca7f136820e21be0b9f8a23a0efe9289ce62e59d0e88702150809d9815dfc2d",
+    "bytes": 4946368,
+    "provenance": "Official separately downloaded Linux archive; not a repository-committed executable; not redistributed."
+  },
+  "runtime_dynamic_libraries": [
+    {
+      "path": "/usr/lib/x86_64-linux-gnu/libz.so.1.3.1",
+      "sha256": "85590dd58edf5445e18bc7193e5ebc01ac5841f1ae187e97705a662e90c6421e",
+      "bytes": 125376
+    },
+    {
+      "path": "/root/.t3/scratch/2026-10-23-fetch-https-discoveryathome-org-v0-08cd4afb/kira-prefix/lib/libyaml-cpp.so.0.7.0",
+      "sha256": "c8cb91b3d697fc7e69b445a4cb5fa95272e695db42cd97ce0ff7085e9316af7a",
+      "bytes": 1486192
+    },
+    {
+      "path": "/root/.t3/scratch/2026-10-23-fetch-https-discoveryathome-org-v0-08cd4afb/kira-prefix/lib/libginac.so.13.1.2",
+      "sha256": "8d80bd21d38941850d0fc28850e95ca14365879f85cb5bc6422ece1bdb5aea07",
+      "bytes": 47870664
+    },
+    {
+      "path": "/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33",
+      "sha256": "972bb2a18b71140dab0240f8a1f68ab3fb1d56bcd4c4f824a91b70888faf5a00",
+      "bytes": 2497768
+    },
+    {
+      "path": "/usr/lib/x86_64-linux-gnu/libm.so.6",
+      "sha256": "6d567d53e895273ca14a1f9dc164fc6c8d39aed2f60aa46a733c2784228915f3",
+      "bytes": 977112
+    },
+    {
+      "path": "/usr/lib/x86_64-linux-gnu/libgcc_s.so.1",
+      "sha256": "30c61ab012a4241bed033725a09b61f5fdd3bb7df95ee852d0b096520524c7af",
+      "bytes": 182856
+    },
+    {
+      "path": "/usr/lib/x86_64-linux-gnu/libc.so.6",
+      "sha256": "9792e3cbb541c8f44c7acf5f14f4022ea62998ecc787d326bed4d8b6547dfd92",
+      "bytes": 1995216
+    },
+    {
+      "path": "/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2",
+      "sha256": "c8438e4fde1934e61c88311633f00949ff645d5c04cdb8671fa3d78164d2f307",
+      "bytes": 225672
+    },
+    {
+      "path": "/root/.t3/scratch/2026-10-23-fetch-https-discoveryathome-org-v0-08cd4afb/kira-prefix/lib/libcln.so.6.0.7",
+      "sha256": "16b6c38482a449bb2c859cb8c117b0da7baa2f97dcd1164f339cf383ed7cbfd6",
+      "bytes": 38800352
+    },
+    {
+      "path": "/usr/lib/x86_64-linux-gnu/libgmp.so.10.5.0",
+      "sha256": "d15e1585c6c267296459570c8ac217ca9123044bcd4e896d2f686b32333445d2",
+      "bytes": 566080
+    }
+  ],
+  "pyred_generated_config_sha256": "23176ff4971c9e6a29d9b3105090ac1aa4b7e1373842cdb8fb8c28fa6c540a87",
+  "run_harness_sha256": "218eefab693d7285d56dc75c67b8b1b02f1b7f82b7de1d88c342db5774e67213",
+  "native_seconds_total": 33.18971996899927,
+  "native_seconds_scope": "Seven single correctness runs, each including Kira and Fermat startup. Excludes builds, input generation, Python exact comparisons, orientation and verification. Not benchmark data.",
+  "memory_scope": "2 GiB address-space cap per process; one Fermat worker. wait4 RSS is a maximum for an individual process, not aggregate concurrent memory.",
+  "configuration_adjustments": [],
+  "setup_failures": [
+    {
+      "stage": "source extraction",
+      "detail": "Initial tar tried archived uid/gid ownership and returned errors in the sandbox. Partial CLN/GiNaC trees were deleted; clean --no-same-owner extraction passed byte comparisons for every file before builds."
+    },
+    {
+      "stage": "probe harness compilation",
+      "log": "logs/arithmetic-probe-initial.log",
+      "detail": "GCC could not deduce mixed uint64_t/ULL initializer-list types. Only the probe constants were made explicitly uint64_t; upstream Kira source stayed pristine."
+    },
+    {
+      "stage": "native driver launch",
+      "log": "logs/native-tadpole-missing-time.log",
+      "detail": "GNU /usr/bin/time was absent, so no solver process started. Replaced this optional measurement dependency with standard-library os.wait4 before any native reduction."
+    }
+  ],
+  "screening": {
+    "helper_sha256": "bfb3dc631d0adf391d462b6c0274af0f7110f2c59724d661a263d824ae9c9e6d",
+    "high_findings": 0,
+    "notes": [
+      "Three yaml-cpp CI sudo warnings are in unused test/install scripts; tests/tools disabled.",
+      "Downloaded official Fermat executable outside git triggers the generic committed-binary warning; its actual provenance was checked."
+    ]
+  },
+  "not_bundled": [
+    "Third-party source archives or executable/library binaries",
+    "Fermat documentation and executable",
+    "Kira intermediate SQLite databases and temporary equation files"
+  ]
+}

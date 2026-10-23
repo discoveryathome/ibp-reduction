@@ -1,0 +1,3 @@
+box_massless[1,0,1,0]
+box_massless[0,1,0,1]
+box_massless[1,1,1,1]

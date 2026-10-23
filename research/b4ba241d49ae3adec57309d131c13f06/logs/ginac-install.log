@@ -1,0 +1,107 @@
+Making install in ginac
+make[1]: Entering directory '/root/.t3/scratch/2026-10-23-fetch-https-discoveryathome-org-v0-08cd4afb/build-tools/ginac-1.8.10/ginac'
+make  install-am
+make[2]: Entering directory '/root/.t3/scratch/2026-10-23-fetch-https-discoveryathome-org-v0-08cd4afb/build-tools/ginac-1.8.10/ginac'
+make[3]: Entering directory '/root/.t3/scratch/2026-10-23-fetch-https-discoveryathome-org-v0-08cd4afb/build-tools/ginac-1.8.10/ginac'
+ /usr/bin/mkdir -p '/root/.t3/scratch/2026-10-23-fetch-https-discoveryathome-org-v0-08cd4afb/kira-prefix/lib'
+ /bin/bash ../libtool   --mode=install /usr/bin/install -c   libginac.la '/root/.t3/scratch/2026-10-23-fetch-https-discoveryathome-org-v0-08cd4afb/kira-prefix/lib'
+libtool: install: /usr/bin/install -c .libs/libginac.so.13.1.2 /root/.t3/scratch/2026-10-23-fetch-https-discoveryathome-org-v0-08cd4afb/kira-prefix/lib/libginac.so.13.1.2
+libtool: install: (cd /root/.t3/scratch/2026-10-23-fetch-https-discoveryathome-org-v0-08cd4afb/kira-prefix/lib && { ln -s -f libginac.so.13.1.2 libginac.so.13 || { rm -f libginac.so.13 && ln -s libginac.so.13.1.2 libginac.so.13; }; })
+libtool: install: (cd /root/.t3/scratch/2026-10-23-fetch-https-discoveryathome-org-v0-08cd4afb/kira-prefix/lib && { ln -s -f libginac.so.13.1.2 libginac.so || { rm -f libginac.so && ln -s libginac.so.13.1.2 libginac.so; }; })
+libtool: install: /usr/bin/install -c .libs/libginac.lai /root/.t3/scratch/2026-10-23-fetch-https-discoveryathome-org-v0-08cd4afb/kira-prefix/lib/libginac.la
+libtool: finish: PATH="/root/.elan/bin:/root/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/sbin" ldconfig -n /root/.t3/scratch/2026-10-23-fetch-https-discoveryathome-org-v0-08cd4afb/kira-prefix/lib
+----------------------------------------------------------------------
+Libraries have been installed in:
+   /root/.t3/scratch/2026-10-23-fetch-https-discoveryathome-org-v0-08cd4afb/kira-prefix/lib
+
+If you ever happen to want to link against installed libraries
+in a given directory, LIBDIR, you must either use libtool, and
+specify the full pathname of the library, or use the '-LLIBDIR'
+flag during linking and do at least one of the following:
+   - add LIBDIR to the 'LD_LIBRARY_PATH' environment variable
+     during execution
+   - add LIBDIR to the 'LD_RUN_PATH' environment variable
+     during linking
+   - use the '-Wl,-rpath -Wl,LIBDIR' linker flag
+   - have your system administrator add LIBDIR to '/etc/ld.so.conf'
+
+See any operating system documentation about shared libraries for
+more information, such as the ld(1) and ld.so(8) manual pages.
+----------------------------------------------------------------------
+ /usr/bin/mkdir -p '/root/.t3/scratch/2026-10-23-fetch-https-discoveryathome-org-v0-08cd4afb/kira-prefix/include/ginac'
+ /usr/bin/install -c -m 644 ginac.h add.h archive.h assertion.h basic.h class_info.h clifford.h color.h constant.h container.h ex.h excompiler.h expair.h expairseq.h exprseq.h fail.h factor.h fderivative.h flags.h function.h hash_map.h idx.h indexed.h inifcns.h integration_kernel.h integral.h Gt.h Gt_helpers.h lst.h matrix.h mul.h ncmul.h normal.h numeric.h operators.h power.h print.h pseries.h ptr.h registrar.h '/root/.t3/scratch/2026-10-23-fetch-https-discoveryathome-org-v0-08cd4afb/kira-prefix/include/ginac'
+ /usr/bin/install -c -m 644 relational.h structure.h symbol.h symmetry.h tensor.h version.h wildcard.h compiler.h parser/parser.h parser/parse_context.h '/root/.t3/scratch/2026-10-23-fetch-https-discoveryathome-org-v0-08cd4afb/kira-prefix/include/ginac'
+make[3]: Leaving directory '/root/.t3/scratch/2026-10-23-fetch-https-discoveryathome-org-v0-08cd4afb/build-tools/ginac-1.8.10/ginac'
+make[2]: Leaving directory '/root/.t3/scratch/2026-10-23-fetch-https-discoveryathome-org-v0-08cd4afb/build-tools/ginac-1.8.10/ginac'
+make[1]: Leaving directory '/root/.t3/scratch/2026-10-23-fetch-https-discoveryathome-org-v0-08cd4afb/build-tools/ginac-1.8.10/ginac'
+Making install in check
+make[1]: Entering directory '/root/.t3/scratch/2026-10-23-fetch-https-discoveryathome-org-v0-08cd4afb/build-tools/ginac-1.8.10/check'
+make[2]: Entering directory '/root/.t3/scratch/2026-10-23-fetch-https-discoveryathome-org-v0-08cd4afb/build-tools/ginac-1.8.10/check'
+make[2]: Nothing to be done for 'install-exec-am'.
+make[2]: Nothing to be done for 'install-data-am'.
+make[2]: Leaving directory '/root/.t3/scratch/2026-10-23-fetch-https-discoveryathome-org-v0-08cd4afb/build-tools/ginac-1.8.10/check'
+make[1]: Leaving directory '/root/.t3/scratch/2026-10-23-fetch-https-discoveryathome-org-v0-08cd4afb/build-tools/ginac-1.8.10/check'
+Making install in ginsh
+make[1]: Entering directory '/root/.t3/scratch/2026-10-23-fetch-https-discoveryathome-org-v0-08cd4afb/build-tools/ginac-1.8.10/ginsh'
+make  install-am
+make[2]: Entering directory '/root/.t3/scratch/2026-10-23-fetch-https-discoveryathome-org-v0-08cd4afb/build-tools/ginac-1.8.10/ginsh'
+make[3]: Entering directory '/root/.t3/scratch/2026-10-23-fetch-https-discoveryathome-org-v0-08cd4afb/build-tools/ginac-1.8.10/ginsh'
+ /usr/bin/mkdir -p '/root/.t3/scratch/2026-10-23-fetch-https-discoveryathome-org-v0-08cd4afb/kira-prefix/bin'
+  /bin/bash ../libtool   --mode=install /usr/bin/install -c ginsh '/root/.t3/scratch/2026-10-23-fetch-https-discoveryathome-org-v0-08cd4afb/kira-prefix/bin'
+libtool: install: /usr/bin/install -c .libs/ginsh /root/.t3/scratch/2026-10-23-fetch-https-discoveryathome-org-v0-08cd4afb/kira-prefix/bin/ginsh
+ /usr/bin/mkdir -p '/root/.t3/scratch/2026-10-23-fetch-https-discoveryathome-org-v0-08cd4afb/kira-prefix/share/man/man1'
+ /usr/bin/install -c -m 644 ginsh.1 '/root/.t3/scratch/2026-10-23-fetch-https-discoveryathome-org-v0-08cd4afb/kira-prefix/share/man/man1'
+make[3]: Leaving directory '/root/.t3/scratch/2026-10-23-fetch-https-discoveryathome-org-v0-08cd4afb/build-tools/ginac-1.8.10/ginsh'
+make[2]: Leaving directory '/root/.t3/scratch/2026-10-23-fetch-https-discoveryathome-org-v0-08cd4afb/build-tools/ginac-1.8.10/ginsh'
+make[1]: Leaving directory '/root/.t3/scratch/2026-10-23-fetch-https-discoveryathome-org-v0-08cd4afb/build-tools/ginac-1.8.10/ginsh'
+Making install in tools
+make[1]: Entering directory '/root/.t3/scratch/2026-10-23-fetch-https-discoveryathome-org-v0-08cd4afb/build-tools/ginac-1.8.10/tools'
+make[2]: Entering directory '/root/.t3/scratch/2026-10-23-fetch-https-discoveryathome-org-v0-08cd4afb/build-tools/ginac-1.8.10/tools'
+ /usr/bin/mkdir -p '/root/.t3/scratch/2026-10-23-fetch-https-discoveryathome-org-v0-08cd4afb/kira-prefix/bin'
+  /bin/bash ../libtool   --mode=install /usr/bin/install -c viewgar '/root/.t3/scratch/2026-10-23-fetch-https-discoveryathome-org-v0-08cd4afb/kira-prefix/bin'
+libtool: install: /usr/bin/install -c .libs/viewgar /root/.t3/scratch/2026-10-23-fetch-https-discoveryathome-org-v0-08cd4afb/kira-prefix/bin/viewgar
+ /usr/bin/mkdir -p '/root/.t3/scratch/2026-10-23-fetch-https-discoveryathome-org-v0-08cd4afb/kira-prefix/libexec'
+ /usr/bin/install -c ginac-excompiler '/root/.t3/scratch/2026-10-23-fetch-https-discoveryathome-org-v0-08cd4afb/kira-prefix/libexec'
+ /usr/bin/mkdir -p '/root/.t3/scratch/2026-10-23-fetch-https-discoveryathome-org-v0-08cd4afb/kira-prefix/share/man/man1'
+ /usr/bin/install -c -m 644 viewgar.1 '/root/.t3/scratch/2026-10-23-fetch-https-discoveryathome-org-v0-08cd4afb/kira-prefix/share/man/man1'
+make[2]: Leaving directory '/root/.t3/scratch/2026-10-23-fetch-https-discoveryathome-org-v0-08cd4afb/build-tools/ginac-1.8.10/tools'
+make[1]: Leaving directory '/root/.t3/scratch/2026-10-23-fetch-https-discoveryathome-org-v0-08cd4afb/build-tools/ginac-1.8.10/tools'
+Making install in doc
+make[1]: Entering directory '/root/.t3/scratch/2026-10-23-fetch-https-discoveryathome-org-v0-08cd4afb/build-tools/ginac-1.8.10/doc'
+Making install in tutorial
+make[2]: Entering directory '/root/.t3/scratch/2026-10-23-fetch-https-discoveryathome-org-v0-08cd4afb/build-tools/ginac-1.8.10/doc/tutorial'
+make[3]: Entering directory '/root/.t3/scratch/2026-10-23-fetch-https-discoveryathome-org-v0-08cd4afb/build-tools/ginac-1.8.10/doc/tutorial'
+make[3]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/root/.t3/scratch/2026-10-23-fetch-https-discoveryathome-org-v0-08cd4afb/kira-prefix/share/info'
+ /usr/bin/install -c -m 644 ./ginac.info '/root/.t3/scratch/2026-10-23-fetch-https-discoveryathome-org-v0-08cd4afb/kira-prefix/share/info'
+make[3]: Leaving directory '/root/.t3/scratch/2026-10-23-fetch-https-discoveryathome-org-v0-08cd4afb/build-tools/ginac-1.8.10/doc/tutorial'
+make[2]: Leaving directory '/root/.t3/scratch/2026-10-23-fetch-https-discoveryathome-org-v0-08cd4afb/build-tools/ginac-1.8.10/doc/tutorial'
+Making install in reference
+make[2]: Entering directory '/root/.t3/scratch/2026-10-23-fetch-https-discoveryathome-org-v0-08cd4afb/build-tools/ginac-1.8.10/doc/reference'
+make[3]: Entering directory '/root/.t3/scratch/2026-10-23-fetch-https-discoveryathome-org-v0-08cd4afb/build-tools/ginac-1.8.10/doc/reference'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/root/.t3/scratch/2026-10-23-fetch-https-discoveryathome-org-v0-08cd4afb/build-tools/ginac-1.8.10/doc/reference'
+make[2]: Leaving directory '/root/.t3/scratch/2026-10-23-fetch-https-discoveryathome-org-v0-08cd4afb/build-tools/ginac-1.8.10/doc/reference'
+Making install in examples
+make[2]: Entering directory '/root/.t3/scratch/2026-10-23-fetch-https-discoveryathome-org-v0-08cd4afb/build-tools/ginac-1.8.10/doc/examples'
+make[3]: Entering directory '/root/.t3/scratch/2026-10-23-fetch-https-discoveryathome-org-v0-08cd4afb/build-tools/ginac-1.8.10/doc/examples'
+make[3]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/root/.t3/scratch/2026-10-23-fetch-https-discoveryathome-org-v0-08cd4afb/kira-prefix/share/info'
+ /usr/bin/install -c -m 644 ./ginac-examples.info '/root/.t3/scratch/2026-10-23-fetch-https-discoveryathome-org-v0-08cd4afb/kira-prefix/share/info'
+make[3]: Leaving directory '/root/.t3/scratch/2026-10-23-fetch-https-discoveryathome-org-v0-08cd4afb/build-tools/ginac-1.8.10/doc/examples'
+make[2]: Leaving directory '/root/.t3/scratch/2026-10-23-fetch-https-discoveryathome-org-v0-08cd4afb/build-tools/ginac-1.8.10/doc/examples'
+make[2]: Entering directory '/root/.t3/scratch/2026-10-23-fetch-https-discoveryathome-org-v0-08cd4afb/build-tools/ginac-1.8.10/doc'
+make[3]: Entering directory '/root/.t3/scratch/2026-10-23-fetch-https-discoveryathome-org-v0-08cd4afb/build-tools/ginac-1.8.10/doc'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/root/.t3/scratch/2026-10-23-fetch-https-discoveryathome-org-v0-08cd4afb/build-tools/ginac-1.8.10/doc'
+make[2]: Leaving directory '/root/.t3/scratch/2026-10-23-fetch-https-discoveryathome-org-v0-08cd4afb/build-tools/ginac-1.8.10/doc'
+make[1]: Leaving directory '/root/.t3/scratch/2026-10-23-fetch-https-discoveryathome-org-v0-08cd4afb/build-tools/ginac-1.8.10/doc'
+make[1]: Entering directory '/root/.t3/scratch/2026-10-23-fetch-https-discoveryathome-org-v0-08cd4afb/build-tools/ginac-1.8.10'
+make[2]: Entering directory '/root/.t3/scratch/2026-10-23-fetch-https-discoveryathome-org-v0-08cd4afb/build-tools/ginac-1.8.10'
+make[2]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/root/.t3/scratch/2026-10-23-fetch-https-discoveryathome-org-v0-08cd4afb/kira-prefix/lib/pkgconfig'
+ /usr/bin/install -c -m 644 ginac.pc '/root/.t3/scratch/2026-10-23-fetch-https-discoveryathome-org-v0-08cd4afb/kira-prefix/lib/pkgconfig'
+make[2]: Leaving directory '/root/.t3/scratch/2026-10-23-fetch-https-discoveryathome-org-v0-08cd4afb/build-tools/ginac-1.8.10'
+make[1]: Leaving directory '/root/.t3/scratch/2026-10-23-fetch-https-discoveryathome-org-v0-08cd4afb/build-tools/ginac-1.8.10'
