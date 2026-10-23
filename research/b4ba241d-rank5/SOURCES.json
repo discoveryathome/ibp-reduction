@@ -48,7 +48,8 @@
     "binary_sha256": "9d49f623f144ee90c3eb2f50290b180b93c5c85e9ca1272092cecb065eb47066",
     "fermat_sha256": "cca7f136820e21be0b9f8a23a0efe9289ce62e59d0e88702150809d9815dfc2d",
     "workers": 1,
-    "outcome": "incomplete: CLI failure then two valid capped timeouts"
+    "outcome": "incomplete: CLI failure, two120s timeouts and an explicitly declared600s resource-only continuation aborted with std::bad_alloc",
+    "resource_continuation": "CONTINUATION.json"
   },
   "fixtures_sha256": {
     "fixtures/IBP_LI": "cc67d9e9da53b06087c07c382a92a1f36bc471147c6f89f49fdbef3513d6d556",

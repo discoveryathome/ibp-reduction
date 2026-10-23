@@ -5,8 +5,10 @@ tube source agree symbolically with a separate momentum-space derivation.
 At two fixed finite-field samples, the 589-seed tube and 876-seed decreasing-rank
 systems reduce one rank-5 target to identical coefficients in the frozen source
 27-master convention. All four expanded original-equation witnesses replay.
-The attempted native Kira cross-check is **incomplete**: both valid configurations
-hit the 120-second wall limit. This package establishes no generic algebraic
+The attempted native Kira cross-check is **incomplete**: both initial valid
+configurations hit the 120-second wall limit; a later explicitly declared
+600-second resource-only continuation aborted with `std::bad_alloc` after
+308.036 seconds under the same 2 GiB cap. This package establishes no generic algebraic
 reduction, complete master basis, native coefficient comparison or speedup.
 
 ## Frozen experiment
@@ -102,6 +104,20 @@ All three inputs, logs, receipts and driver versions are retained under
 `results/native/`. The failed broad configuration is not a best-tuned Kira
 benchmark; no relative timing claim follows from the two timeouts. Intermediate
 databases, core dumps, binaries and third-party build trees are not bundled.
+
+After publishing the original partial result at commit
+`59cd25e05db9e306438678eb55b1e7836802afcd`, one additional resource plan was
+explicitly claimed before execution (see `CONTINUATION.json`). It raised only
+the zero-dot job's wall limit to 600 seconds, keeping all five scientific input
+files, first specialization, binary, one worker and 2 GiB per-process cap fixed.
+This is a post-timeout continuation, not part of the original preregistered
+experiment. `results/native/extended-zero-dots/` contains the pre-run manifest,
+task, exact inputs, driver, log and receipt. The process aborted by signal 6
+after 308.036 seconds while normalizing coefficients, with `std::bad_alloc` in
+the log; maximum individual-process RSS was 295,923,712 bytes. This observation
+does not diagnose the allocation failure or establish an intrinsic memory
+requirement. No complete native images or basis conversion were checked, and
+no further retry was made. The original scientific artifacts are unchanged.
 
 The four final field trials took 50.723, 87.540, 50.232 and 87.140 s wall time,
 including generation, elimination, witness expansion and replay. Peak process
